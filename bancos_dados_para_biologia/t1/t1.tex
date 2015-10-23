@@ -13,7 +13,7 @@
   match(a:Person)-[:ACTED\_IN\{roles:['Agent Smith']\}]-$>$(m:Movie\{title:'The Matrix'\})\
   return\ a; \\
 \item Encontre os atores que nasceram depois de 1960 \\ \\
-match(a:Person) \\
+match(a:Actor) \\
 where a.born $>$ 1960 \\
 return a;
 \item Encontre os atores que atuaram no filme \emph{Matrix Reload} \\ \\
