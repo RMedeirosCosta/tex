@@ -1,0 +1,82 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{graphicx}
+
+\graphicspath{{img/}}
+
+\begin{document}
+\begin{enumerate}
+\item Encontre o ator que interpretou o personagem \emph{Agent Smith} no filme \emph{The Matrix}. \\ \\
+  match(a:Person)-[:ACTED\_IN\{roles:['Agent Smith']\}]-$>$(m:Movie\{title:'The Matrix'\})\
+  return\ a; \\
+\item Encontre os atores que nasceram depois de 1960 \\ \\
+match(a:Person)-[:ACTED\_IN]-$>$(:Movie) \\
+where a.born $>$ 1960 \\
+return distinct a;
+\item Encontre os atores que atuaram no filme \emph{Matrix Reload} \\ \\
+  match(a)-[:ACTED\_IN]-$>$(m:Movie\{title:'The Matrix Reloaded'\}) \\
+  return\ a; \\
+\item Encontre o nome do diretor do filme \emph{The Devil's Advocate} \\ \\
+  match(p:Person)-[:DIRECTED]-$>$(m:Movie) \\
+  where m.title =\textasciitilde\ 'The Devil.s Advocate' \\
+  return p.name; \\
+\item Encontre 10 pessoas \\ \\
+  match(p:Person) \\
+  return\ p \\
+  limit\ 10; \\
+\item Encontre filmes lançados nos anos 90 \\ \\
+  match(m:Movie) \\
+  where (m.released $>=$ 1990 and m.released $<=$ 2000) \\
+  return m;
+\item Encontre todos os filmes de \emph{Tom Cruise} \\ \\
+  match(p:Person \{name:'Tom Cruise'\})-[:ACTED\_IN]-$>$(m:Movie) \\
+  return m; \\
+\item Encontre os atores que fizeram filmes com \emph{Tom Hanks} \\
+  match(p:Person)-[:ACTED\_IN]-$>$(m:Movie)$<$-[]-(tom:Person\{name:'Tom Hanks'\}) \\
+  return p; \\
+\item Mostre de que forma as pessoas estão relacionadas com o filme \emph{Sleepless in Seattle} \\ \\
+  match(m:Movie\{title:'Sleepless in Seattle'\})-[r]-() \\
+  return r; \\
+\item Liste todos os atores que estão até a uma distância de tamanho 3 do ator \emph{Kevin Bacon} \\ \\
+  match(a:Person \{name:"Kevin Bacon"\})-[r*1..3]-(m:Person) \\
+  return m \\
+\item Mostre o caminho mais curte do ator \emph{Kevin Bacon} até a atriz \emph{Meg Ryan} \\ \\
+  match(a:Person \{name:"Kevin Bacon"\}), (b:Person \{name:"Meg Ryan"\}), \\
+  sp=allShortestPaths((a)-[r*]-(b)) \\
+  return sp \\
+\item Estenda a rede de coatores de Tom Hanks. Ou seja, encontre os atores que não trabalharam com \emph{Tom Hanks}, mas trabalharam (como atores) com seus coatores. \\ \\
+  MATCH \\
+      (coAtoresTom:Person)-[:ACTED\_IN]-$>$(m:Movie)$<$-[:ACTED\_IN]-(tom:Person\{name:"Tom Hanks"\}), \\
+      (atores:Person)-[:ACTED\_IN]-$>$(m2:Movie)$<$-[:ACTED\_IN]-(coAtoresTom) \\
+  where not (atores)-[:ACTED\_IN]-$>$(:Movie)$<$-[:ACTED\_IN]-(tom) \\
+  RETURN coAtoresTom; \\
+\item Encontre alguém que possa apresentar o \emph{Tom Hanks} ao \emph{Tom Cruise} \\ \\
+  match (cruise:Person \{name:"Tom Cruise"\})-[]-(:Movie)-[]-(alguem:Person)-[]-(:Movie)-[]-(hanks:Person\{name:"Tom Hanks"\}) \\
+return alguem;
+
+  
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
