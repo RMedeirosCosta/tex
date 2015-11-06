@@ -1,0 +1,18 @@
+match (person:Person)-[:BOUGHT]->(product:Product)<-[:BOUGHT]-(anotherPerson:Person)-[:BOUGHT]->(anotherProduct:Product)
+where not (person)-[:BOUGHT]->(anotherProduct)
+return person.name, collect(distinct anotherProduct.name)
+order by person.name
+
+=========================================================================================================
+
+match(person:Person)-[:BOUGHT]->(product:Product)-[:MADE_BY]->(itsBrand:Brand)<-[:MADE_BY]-(recommendedProduct:Product)
+where not (person)-[:BOUGHT]->(recommendedProduct)
+return person.name, collect(distinct recommendedProduct.name)
+order by person.name
+
+========================================================================================================
+
+match (brotherOrSister:Person)<-[:FATHER_OF|:MOTHER_OF]-(parent:Person)-[:FATHER_OF|:MOTHER_OF]->(person:Person)-[:BOUGHT]->(recommendedProduct:Product)
+where not (brotherOrSister)-[:BOUGHT]->(recommendedProduct)
+return brotherOrSister.name, collect(recommendedProduct)
+order by brotherOrSister.name
