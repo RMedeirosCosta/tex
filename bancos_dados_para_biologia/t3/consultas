@@ -17,3 +17,26 @@ order by person.name
 
 ==============================================================================
 
+match(a)-[r]-(b)
+return a.protein, b.protein, r.combined_score
+order by r.combined_score desc;
+
+=============================================================================
+
+match(p1)-[r]-(p2)
+where r.textmining > 0.95
+return p1, r, p2 limit 400;
+
+=============================================================================
+
+match(a {protein:'525254.HMPREF0072_2242'}
+match(a)-[r]-(b)
+return a, b
+
+=============================================================================
+
+match (p1 {protein:"525254.HMPREF0072_2242"}), (p2 {protein:"525254.HMPREF0072_0483"}),
+sp = shortestPath((p1)-[r*]-(p2))
+return sp;
+
+
