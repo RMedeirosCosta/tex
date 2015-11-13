@@ -42,7 +42,13 @@ merge (p1)-[r:INTERACTS_WITH]-(p2)
 order by person.name
 \end{lstlisting}
 
-Utilizou-se o \emph{using periodic commit 600} para evitar problemas referentes a gerenciamento da memória, conforme sugere a documentação oficial do \emph{Neo4j}. O número 600 é a quantidade de registros por \textif{commit}.
+Utilizou-se o \emph{using periodic commit 600} para evitar problemas referentes a gerenciamento da memória, conforme sugere a documentação oficial do \emph{Neo4j}. O número 600 é a quantidade de registros por \textif{commit}. \\
+
+Criou-se um índice, para melhorar a performance das consultas:
+
+\begin{lstlisting}[frame=single]
+CREATE INDEX ON :Protein(protein)
+\end{lstlisting}
 
 Após realizado ao importação, foi consultado a quantidade de nós e relações e foi exibido as informações do sistema para verificar se a importação ocorreu sem erros. Conforme demonstrado na Figura 1 e 2.
 
