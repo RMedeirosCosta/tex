@@ -1,0 +1,33 @@
+
+ Neo4jBook: Na área da ciência da computação, teoria dos grafos são aplicados para desenvolvimento de chips, gerenciamento de redes, sistemas de recomendações e modelagem UML (Contextualizar o leitor com uma nota de rodapé). Problemas de roteamentos, como: lista de todas rotas disponíveis entre cidades, o melhor caminho entre elas, distância velocidade permitida e entre outros. Os algoritimos de busca na web também utilizam a teorida dos grafos, na prática eles verificam a importância de um site pela quantidade de links direcionados para ele.
+ Goldbenberg: Redes de relacionamentos estruturados em grafos são aplicados comunidades virtuais, tais como Facebook, MySpace e Linkedin.
+  Japoneses: Visualização massiva de dados são instrumentos importantes para pesquisadores entenderem grande conjunto de dados.
+  Herman: Visualização em grafos tem aplicações em várias áreas do conhecimento. A hierarquia de um sistema de arquivos pode ser representada como uma árvore. Grafos também são aplicados na biologia e na química, como em mapas moleculares, padrões de interação entre proteínas, árvores filogenéticas e mapas genéticos.
+Neo4jbook:  Visualização em grafos facilita o reconhecimento de padrões
+- Problema
+ Herman: Se a quantidade de elementos é grande, pode comprometer a performance ou exeder os limmites de visualização da plataforma. Com uma quantidade elevadíssima de nós e relacionamentos, até a compreenssão dos elementos pode ser prejudicado.
+ Japoneses: Os Japoneses elencam que há outros desafios, tais como: Falta de memória RAM (Contextualizar RAM), tempo elevado de processamento e insuficiência de espaço para visualização. 
+- A hipótese da pesquisa
+  Japoneses: Dividir um grande conjunto de dados em porções menores e exibir apenas o necessário para o usuário.
+  Visualizar excessivas quantidades de dados utilizando um banco de dados em grafos como ferramenta para reduzir em conjunto de dados menores que serão relevantes para análise.
+  - Como é organizado o artigo e um pequeno resumo de cada seção
+
+
+- O objetivo da pesquisa
+  Visualizar excessivas quantidades de dados utilizando um banco de dados em grafos como ferramenta para reduzir em conjunto de dados menores que serão relevantes para análise.
+
+- A justificativa para o objetivo
+  Japoneses: Visualização massiva de dados são instrumentos importantes para pesquisadores entenderem grande conjunto de dados.
+  Herman: Visualização em grafos tem aplicações em várias áreas do conhecimento. A hierarquia de um sistema de arquivos pode ser representada como uma árvore. Grafos também são aplicados na biologia e na química, como em mapas moleculares, padrões de interação entre proteínas, árvores filogenéticas e mapas genéticos.
+  Goldbenberg: Redes de relacionamentos estruturados em grafos são aplicados comunidades virtuais, tais como Facebook, MySpace e Linkedin.
+  Neo4jBook: Na área da ciência da computação, teoria dos grafos são aplicados para desenvolvimento de chips, gerenciamento de redes, sistemas de recomendações e modelagem UML (Contextualizar o leitor com uma nota de rodapé). Problemas de roteamentos, lista de todas disponíveis entre cidades, o melhor caminho entre elas, distância, velocidade permitida e etc. Os algoritimos de busca na web também utilizam a teorida dos grafos, na prática eles verificam a importância de um site pela quantidade de links direcionados para ele.
+ Visualização em grafos facilita o reconhecimento de padrões
+  
+- Problema
+ Herman: Se a quantidade de elementos é grande, pode comprometer a performance ou exeder os limmites de visualização da plataforma. Com uma quantidade elevadíssima de nós e relacionamentos, até a compreenssão dos elementos pode ser prejudicado.
+ Japoneses: Os Japoneses elencam que há outros desafios, tais como: Falta de memória RAM (Contextualizar RAM), tempo elevado de processamento e insuficiência de espaço para visualização. 
+
+- A hipótese da pesquisa
+  Japoneses: Dividir um grande conjunto de dados em porções menores e exibir apenas o necessário para o usuário.
+  
+- Como é organizado o artigo e um pequeno resumo de cada seção
