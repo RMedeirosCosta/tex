@@ -1,0 +1,28 @@
+using periodic commit 3000
+load csv with headers from "file:/home/ricardo/data/macaca_mulatta.csv" as l fieldterminator ' '
+merge (p1 :Protein {name: l.protein1});
+
+===============================================================================
+
+using periodic commit 3000
+load csv with headers from "file:/home/ricardo/data/macaca_mulatta.csv" as l fieldterminator ' '
+merge (p1 :Protein {name: l.protein2});
+
+===============================================================================
+
+using periodic commit 5000
+load csv with headers from 'file:/home/ricardo/data/macaca_mulatta.csv' as l fieldTerminator ' '
+
+match(p1 :Protein {name: l.protein1}),
+     (p2 :Protein {name: l.protein2})
+
+merge (p1)-[r:INTERACTS_WITH]-(p2)
+	on create set r.combined_score = toFloat(l.combined_score),
+				  r.neighborhood = toFloat(l.neighborhood),
+				  r.fusion = toFloat(l.fusion),
+				  r.cooccurence = toFloat(l.cooccurence),
+				  r.homology = toFloat(l.homology),
+				  r.coexpression = toFloat(l.coexpression),
+                  r.experimental = toFloat(l.experimental),
+				  r.knowledge = toFloat(l.knowledge),
+				  r.textmining = toFloat(l.textmining);     
