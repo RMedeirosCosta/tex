@@ -8,23 +8,10 @@
      
 \sloppy
 
-\title{Instructions for Authors of SBC Conferences\\ Papers and Abstracts}
-
-\author{Luciana P. Nedel\inst{1}, Rafael H. Bordini\inst{2}, Flávio Rech
-  Wagner\inst{1}, Jomi F. Hübner\inst{3} }
-
-
-\address{Instituto de Informática -- Universidade Federal do Rio Grande do Sul
-  (UFRGS)\\
-  Caixa Postal 15.064 -- 91.501-970 -- Porto Alegre -- RS -- Brazil
-\nextinstitute
-  Department of Computer Science -- University of Durham\\
-  Durham, U.K.
-\nextinstitute
-  Departamento de Sistemas e Computação\\
-  Universidade Regional de Blumenal (FURB) -- Blumenau, SC -- Brazil
-  \email{\{nedel,flavio\}@inf.ufrgs.br, R.Bordini@durham.ac.uk,
-  jomi@inf.furb.br}
+\title{Visualização de Grandes Quantidades de Dados em Grafo\\ Uma Abordagem para Limitações Conhecidas}
+\author{Ricardo Medeiros da Costa Junior\inst{1}, Carlos Silla Junior\inst{1}}
+\address{Universidade Tecnológica Federal do Paraná - (UTFPR)\\
+\email{ricardo.medeiros.costa@gmail.com, emailDoProfessor@dominio.com}
 }
 
 \begin{document} 
@@ -32,27 +19,16 @@
 \maketitle
 
 \begin{abstract}
-  This meta-paper describes the style to be used in articles and short papers
-  for SBC conferences. For papers in English, you should add just an abstract
-  while for the papers in Portuguese, we also ask for an abstract in
-  Portuguese (``resumo''). In both cases, abstracts should not have more than
-  10 lines and must be in the first page of the paper.
+  Large graph visualization have been used for many knowledge areas. However, for big amount of data, there are many hardware limitations. To avoid this problems, it was showed an attempt which it was used a graph database that aims export subset of the whole of data, providing a way to show it on the visualization software. This attempt was successful for the cases which there are possibilities to show the data in smallers fragments.
 \end{abstract}
      
-\begin{resumo} 
-  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e
-  resumos de artigos para publicação nos anais das conferências organizadas
-  pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos
-  escritos em português. Artigos em inglês deverão apresentar apenas abstract.
-  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
-  não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
-  página do artigo.
+\begin{resumo}
+ Visualização de grandes quantidades de dados em grafos são utilizadas em importantes áreas do conhecimento. Todavia, quando se trata de visualização de massiva quantidade de dados, limitações de hardware podem prejudicar a exibição e o entendimento da análise. Para contornar esse problema é demonstrado uma abordagem no qual é utilizado um banco de dados em grafos que tem por objetivo gerar subconjuntos dos dados permitindo a apresentação do grafo por meio da aplicação de visualização. Essa abordagem mostrou-se eficiente para casos em que há possibilidade de visualizar os dados separadamente em fragmentos menores.
 \end{resumo}
-
 
 \section{Introdução} 
 
-A Teoria dos Grafos, desde que foi inventada no século XVIII por Leonhard Euler vem contribuindo para o desenvolvimento da humanidade (Wikipédia). De acordo com Neo4jBook, a Teoria dos Grafos é aplicada em várias áreas da Ciência da Computação, tais como: desenvolvimento de chips, gerenciamento de redes, sitemas de recomendações e modelagem UML (Unified Modeling Language) [Uma linguagem de modelagem na área da Engenharia de Software que tem por objetivo prover um padrão de visualização do design de um sistema.] Além disso, grafos são utilizados para resolver problemas de roteamento, lista de todas as rotas disponíveis entre cidades, encontrar o melhor caminho entre localizações, verificar distância, velocidade permitida entre outros problemas. Outro exemplo de aplicação da Teoria dos Grafos são os algoritimos de busca na web. Estes algoritimos verificam a importância de um site pela quantidade de links direcionados para este site. Goldeberg (ano) afirma  que redes de relacionamentos estruturadas em grafos são aplicadas em comunidades virtuais, por exemplo: Facebook, MySpace e Linkedin.
+A Teoria dos Grafos, desde que foi inventada no século XVIII por Leonhard Euler, vem contribuindo para o desenvolvimento da humanidade (Wikipédia). De acordo com Neo4jBook, a Teoria dos Grafos é aplicada em várias áreas da Ciência da Computação, tais como: desenvolvimento de chips, gerenciamento de redes, sitemas de recomendações e modelagem UML (Unified Modeling Language) \footnote{Uma linguagem de modelagem na área da Engenharia de Software que tem por objetivo prover um padrão de visualização do design de um sistema.} Além disso, grafos são utilizados para resolver problemas de roteamento, lista de todas as rotas disponíveis entre cidades, encontrar o melhor caminho entre localizações, verificar distância, velocidade permitida entre outros problemas. Outro exemplo de aplicação da Teoria dos Grafos são os algoritimos de busca na web. Estes algoritimos verificam a importância de um site pela quantidade de links direcionados para este site. Goldeberg (ano) afirma  que redes de relacionamentos estruturadas em grafos são aplicadas em comunidades virtuais, por exemplo: Facebook, MySpace e Linkedin.
 
 A visualização dessas redes de relacionamento são instrumentos importantes para pesquisadores entenderem massiva quantidade de dados (Japoneses). Herman (ano) destaca algumas áres do conhecimento que a visualização de dados em grafos tem aplicabilidade. A hierarquia de um sistema de arquivos pode ser representada como uma árvore, que por sua vez é um grafo. Esse tipo de visualização de dados também é utilizado na biologia e na química, por meio de mapas moleculares, padrões de interação entre proteínas, árvores filogenéticas e mapas genéticos. Soma-se a isso, a visualização em grafos facilita o reconhecimento de padrões (Neo4jbook).
 
@@ -89,7 +65,7 @@ A ferramenta selecionada para armazenar os dados em grafos é o Neo4j.\footnote{D
 
 O Neo4j possui uma funcionalidade para importar determinados tipos de dados, incluindo CSV (\textit{Comma Separated Value}) \footnote{Um arquivo no qual os dados são estruturados em formato de tabela e os valores são separados por vírgulas ou qualquer outro caracter de separação} satisfazendo a primeira necessidade para a tecnologia de armazenamento dos dados. Para se realizar consultas no Neo4j é utilizado a linguagem descritiva Cypher, cuja é parecida com o SQL. Essa linguagem será responsável por filtrar os resultados, reduzindo o conjunto de dados em uma porção menor que será exibida na ferramenta de visualização. Entretanto, o Neo4j \footnote{Pelo menos até a versão 2.3 utilizada nessa pesquisa} não possui a funcionalidade de exportação dos dados em um formato conhecido pelas ferramentas de visualização de forma nativa. Para contornar esse problema, foi utilizado o programa Neo4j-Shell, disponível em https://github.com/jexp/neo4j-shell-tools. Com essa ferramenta é possível exportar dados realizados por meio de consultas Cypher em vários tipos de formatos, inclusive \textit{Graphml}, um padrão de arquivos de grafos que é lido por vários \textit{softwares} de visualização de grafos, possui informações adicionais para visualização dos dados e contém dois principais objetivos: Simplicidade e Generalização. (Graphml)
 
-Além das três necessidades para atingir o objetivo da pesquisa, o Neo4j possui outros atrativos, tais como: sua versão \textit{Community} está sob a licença GPL (\textit{General Public License}) v3.0 que visa a liberdade para uso do software para qualquer propósito; tem uma comunidade ativa, o que facilita a busca por suporte ou documentação na internet; é multiplataforma, pois foi desenvolvido para rodar sobre a máquina virtual do Java; é escalável, sua performance é otimizada para lidar com muito relacionamentos e é flexível se comparado com outras arquiteturas de banco de dados, porque não é necessário criar um esquema rígido para modelar o banco de dados.
+Além das três necessidades para atingir o objetivo da pesquisa, o Neo4j possui outros atrativos, tais como: sua versão \textit{Community} está sob a licença GPL (\textit{General Public License}) v3.0 que visa a liberdade para uso do software para qualquer propósito; tem uma comunidade ativa, o que facilita a busca por suporte ou documentação na internet; é multiplataforma, pois foi desenvolvido para rodar sobre a máquina virtual do Java; é escalável, sua performance é otimizada para lidar com muito relacionamentos e é flexível se comparado com outras arquiteturas de banco de dados, porque não é necessário criar um esquema rígido para pmodelar o banco de dados.
           
 \subsection{Ferramenta de Visualização: Gephi}
          
@@ -184,77 +160,22 @@ A classificação por grau funciona da seguinte forma, o software analisa qual o g
 
 A partição por modularidade é semelhante a clusterização em mineração de dados. Na prática essa funcionalidade agrupa os nós semelhantes em cores distintas. Desta forma, o especialista no domínio dos dados consegue visualizar comunidades em seus dados e isso pode ocasionar na identificação de padrões. Na Figura 9 é exibido a amostra após aplicado o recurso de modularidade.
 
-\subsection{Subsections}
-
-The subsection titles must be in boldface, 12pt, flush left.
-
-\section{Figures and Captions}\label{sec:figs}
-
-
-Figure and table captions should be centered if less than one line
-(Figure~\ref{fig:exampleFig1}), otherwise justified and indented by 0.8cm on
-both margins, as shown in Figure~\ref{fig:exampleFig2}. The caption font must
-be Helvetica, 10 point, boldface, with 6 points of space before and after each
-caption.
-
 \begin{figure}[ht]
 \centering
-\includegraphics[width=1\textwidth]{fig1.jpg}
-\caption{A typical figure}
-\label{fig:exampleFig1}
+\includegraphics[width=1\textwidth]{9}
+\caption{Grafo com partição por modularidade}
+\label{fig:figure9}p
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{fig2.jpg}
-\caption{This figure is an example of a figure caption taking more than one
-  line and justified considering margins mentioned in Section~\ref{sec:figs}.}
-\label{fig:exampleFig2}
-\end{figure}
+\section{Conclusões}
 
-In tables, try to avoid the use of colored or shaded backgrounds, and avoid
-thick, doubled, or unnecessary framing lines. When reporting empirical data,
-do not use more decimal digits than warranted by their precision and
-reproducibility. Table caption must be placed before the table (see Table 1)
-and the font used must also be Helvetica, 10 point, boldface, with 6 points of
-space before and after each caption.
+O problema de visualização de grandes quantidades de dados em grafos descrito no seção introdutória foi resolvido conforme apresentado na seção de desenvolvimento. Primeiramente foi realizado a importação dos dados para um banco de dados em grafos cujo provê meios necessários para exportação dos dados de forma prática, apenas informando a consulta Cypher que gerará subconjuntos com amostras do conjunto universo, para um formato que pode ser lido pelo \emph{software} de visualização. No entanto, antes de gerar um subconjunto, realizou-se a exportação do banco de dados completo afim de verificar a limitação na exibição dos dados. Após constatar que não foi possível visualizar o conjunto de dados completos, exportou-se um fragmento do banco de dados no qual foi visualizado com sucesso pela aplicação de análise.
 
-\begin{table}[ht]
-\centering
-\caption{Variables to be considered on the evaluation of interaction
-  techniques}
-\label{tab:exTable1}
-\includegraphics[width=1\textwidth]{table.jpg}
-\end{table}
+Vale salientar que esse tipo de abordagem possui algumas limitações. Se for necessário analisar todos os dados como um todo, sem poder dividí-los, essa abordagem é ineficaz. Outra possível falha é gerar uma amostra insuficiente, que pode afetar a análise dos dados.
 
-\section{Images}
-
-All images and illustrations should be in black-and-white, or gray tones,
-excepting for the papers that will be electronically available (on CD-ROMs,
-internet, etc.). The image resolution on paper should be about 600 dpi for
-black-and-white images, and 150-300 dpi for grayscale images.  Do not include
-images with excessive resolution, as they may take hours to print, without any
-visible difference in the result. 
-
-\section{References}
-
-Bibliographic references must be unambiguous and uniform.  We recommend giving
-the author names references in brackets, e.g. \cite{knuth:84},
-\cite{boulic:91}, and \cite{smith:99}.
-
-The references must be listed using 12 point font size, with 6 points of space
-before each reference. The first line of each reference should not be
-indented, while the subsequent should be indented by 0.5 cm.
+Foi demonstrado no final da seção de desenvolvimento como algumas funcionalidades de uma aplicação de visualização de dados em grafos pode auxiliar na classificação e clusterização dos dados. Uma sugestão para um trabalho futuro seria conciliar essa abordagem com um especialista no domínio dos dados que possa validar se os padrões encontrados na visualização é relevante para área de conhecimento dos dados.
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
 
 \end{document}
-
-
-
-
-
-
-
-
