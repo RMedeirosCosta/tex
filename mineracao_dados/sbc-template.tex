@@ -5,6 +5,7 @@
 \usepackage[latin1]{inputenc}
 \usepackage{hyperref}
 \usepackage{float}
+\usepackage{natbib}
 
 \graphicspath{{img/}}
      
@@ -30,7 +31,7 @@
 
 \section{Introdução} 
 
-A Teoria dos Grafos, desde que foi inventada no século XVIII por Leonhard Euler, vem contribuindo para o desenvolvimento da humanidade (Wikipédia). De acordo com Neo4jBook, a Teoria dos Grafos é aplicada em várias áreas da Ciência da Computação, tais como: desenvolvimento de chips, gerenciamento de redes, sistemas de recomendações e modelagem UML (Unified Modeling Language) \footnote{Uma linguagem de modelagem na área da Engenharia de Software que tem por objetivo prover um padrão de visualização do design de um sistema.} Além disso, grafos são utilizados para resolver problemas de roteamento, lista de todas as rotas disponíveis entre cidades, encontrar o melhor caminho entre localizações, verificar distância, velocidade permitida entre outros problemas. Outro exemplo de aplicação da Teoria dos Grafos são os algoritimos de busca na web. Estes algoritimos verificam a importância de um site pela quantidade de links direcionados para este site. Goldeberg (ano) afirma  que redes de relacionamentos estruturadas em grafos são aplicadas em comunidades virtuais, por exemplo: Facebook, MySpace e Linkedin.
+A Teoria dos Grafos, desde que foi inventada no século XVIII por Leonhard Euler, vem contribuindo para o desenvolvimento da humanidade \cite{historiaGrafos}. De acordo com \cite{learningNeo4j}, a Teoria dos Grafos é aplicada em várias áreas da Ciência da Computação, tais como: desenvolvimento de chips, gerenciamento de redes, sistemas de recomendações e modelagem UML (Unified Modeling Language) \footnote{Uma linguagem de modelagem na área da Engenharia de Software que tem por objetivo prover um padrão de visualização do design de um sistema.} Além disso, grafos são utilizados para resolver problemas de roteamento, lista de todas as rotas disponíveis entre cidades, encontrar o melhor caminho entre localizações, verificar distância, velocidade permitida entre outros problemas. Outro exemplo de aplicação da Teoria dos Grafos são os algoritimos de busca na web. Estes algoritimos verificam a importância de um site pela quantidade de links direcionados para este site. Goldeberg (ano) afirma  que redes de relacionamentos estruturadas em grafos são aplicadas em comunidades virtuais, por exemplo: Facebook, MySpace e Linkedin.
 
 A visualização dessas redes de relacionamento é um instrumento importante para pesquisadores entenderem massiva quantidade de dados (Japoneses). Herman (ano) destaca algumas áres do conhecimento que a visualização de dados em grafos tem aplicabilidade. A hierarquia de um sistema de arquivos pode ser representada como uma árvore, que por sua vez é um grafo. Esse tipo de visualização de dados também é utilizado na biologia e na química, por meio de mapas moleculares, padrões de interação entre proteínas, árvores filogenéticas e mapas genéticos. Soma-se a isso, a visualização em grafos facilita o reconhecimento de padrões (Neo4jbook).
 
@@ -75,7 +76,7 @@ Gephi é um dos softwares de código aberto mais populares na área de análise e vi
 
 Como o Gephi está sob as licenças CDDL-1.0 (\textit{Common Development and Distribution License}) e a GPL v3.0 que permitem a utilização do software de forma gratuita, o emprego do software na pesquisa pode ser realizado sem nenhuma restrição legal. Outra vantagem do Gephi, é que este software usa OpenGL como motor de visualização cujo provê uma performance considerável na exibição do grafo (Japoneses).
 
-Além do mais, são características do Gephi o emprego de algoritimos que estão no estado da arte em desenho de grafos; métricas para mensuração tais como: média para caminho mais curto, coeficiente de agrupamento, proximidade, entre outras; soma-se a isso, a customização que é possível ser feita por esta ferramenta, no qual pode-se alterar cores, rótulos e tamanhos baseado em \textit{rankings} de graus, por exemplo. É possível aplicar um algoritimo chamado de \empth{Modularidade} que detecta agrupamentos e aplica cores distintas para esses agrupamentos (gephi).
+Além do mais, são características do Gephi o emprego de algoritimos que estão no estado da arte em desenho de grafos; métricas para mensuração tais como: média para caminho mais curto, coeficiente de agrupamento, proximidade, entre outras; soma-se a isso, a customização que é possível ser feita por esta ferramenta, no qual pode-se alterar cores, rótulos e tamanhos baseado em \textit{rankings} de graus, por exemplo. É possível aplicar um algoritimo chamado de \emph{Modularidade} que detecta agrupamentos e aplica cores distintas para esses agrupamentos (gephi).
 
 \section{Desenvolvimento}
 
@@ -94,7 +95,7 @@ Antes de realizar a importação, foi criado um índice para o rótulo \emph{Protein
 
 A primeira sentença é a criação do índice. A cláusula \emph{using periodic commit 5000} quer dizer que é necessário realizar o commit a cada 5000 objetos carregados na memória, assim como a criação do índice, é um prática recomendada pela documentação oficial do Neo4j. Logo em seguida, nota-se \emph{load csv with headers from} que em uma tradução literal significa: "carregar csv com cabeçalhos vindo do arquivo". Ao lado consta a localização do arquivo. A cláusula \emph{as} aponta um "apelido" para a linha atual do arquivo, que no caso é a letra \emph{l}. A cláusula \emph{fieldterminator} especifica o separador do arquivo csv, que é um espaço. A palavra reservada \emph{merge} age da seguinte forma, caso não tenha uma relação ou nó que atende as condições destacadas na sentença, então esse objeto é criado. Para simplificar, é procurado o nós do tipo \emph{Protein} com a propriedade \emph{name} com valor da célula corrente da coluna \emph{protein1}. Caso encontre, nada é realizado. Se esse nó não for encontrado, então ele é criado com essas características.
 
-A cláusula \emph{match} da terceira senteça tenta combinar o objeto de acordo com as características informadas na sentença. Nesse caso, dois nós, p1 e p2, que possuem rótulo \emph{Protein} com \emph{name} de acordo com a célula da coluna \emph{protein1} e \emph{protein2}, respectivamente. O formato ()-[]-() serve para especificar a relação de um nó, com outro nó. Os parênteses representam os nós e os colchetes a relação. A letra \empth{r} é utilizada com um "apelido" assim com a letra \emph{l} foi usada anteriormente. O \empth{set} nessa sentença, age de forma similar que ao \emph{merge}, mas ao contrário do \emph{merge} esta cláusula é para proriedades. O resto da sentença especifica que é criado uma propriedade na relação para cada coluna remanescente na linha, com o valor de cada célula convertida para elementos do conjunto dos reais. Após execução da última sentença, é possível vizualizar os dados físicos do banco de dados, como: tamanho total do banco, quantidade de nós, propriedades, relaçoes, tipos de relações inseridas e outras informações. Essas informações podem ser vistas na Figura \ref{fig:figure3}.
+A cláusula \emph{match} da terceira senteça tenta combinar o objeto de acordo com as características informadas na sentença. Nesse caso, dois nós, p1 e p2, que possuem rótulo \emph{Protein} com \emph{name} de acordo com a célula da coluna \emph{protein1} e \emph{protein2}, respectivamente. O formato ()-[]-() serve para especificar a relação de um nó, com outro nó. Os parênteses representam os nós e os colchetes a relação. A letra \emph{r} é utilizada com um "apelido" assim com a letra \emph{l} foi usada anteriormente. O \emph{set} nessa sentença, age de forma similar que ao \emph{merge}, mas ao contrário do \emph{merge} esta cláusula é para proriedades. O resto da sentença especifica que é criado uma propriedade na relação para cada coluna remanescente na linha, com o valor de cada célula convertida para elementos do conjunto dos reais. Após execução da última sentença, é possível vizualizar os dados físicos do banco de dados, como: tamanho total do banco, quantidade de nós, propriedades, relaçoes, tipos de relações inseridas e outras informações. Essas informações podem ser vistas na Figura \ref{fig:figure3}.
 
 \begin{figure}[H]
 \centering
@@ -187,7 +188,9 @@ Vale salientar que esse tipo de abordagem possui algumas limitações. Se for nece
 
 Foi demonstrado no final da seção de desenvolvimento como algumas funcionalidades de uma aplicação de visualização de dados em grafos pode auxiliar na classificação e clusterização dos dados. Uma sugestão para um trabalho futuro seria conciliar essa abordagem com um especialista no domínio dos dados que possa validar se os padrões encontrados na visualização é relevante para área de conhecimento dos dados.
 
-\bibliographystyle{sbc}
+%\bibliographystyle{sbc}
+\nocite{*}
 \bibliography{sbc-template}
+\bibliographystyle{plain}
 
 \end{document}
