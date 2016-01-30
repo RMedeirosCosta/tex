@@ -1,0 +1,39 @@
+O capítulo começa explicando a diferença entre Depth-First Search and breadth-first search. É comentado que depth-first é uma boa estratégia quando estamos tentando seguir um caminho para descobrir pedaços discretos de informação.
+
+Informed Depth-First Search é modificação do padrão uninformed depth-first search.A busca é terminada assim que é encontrado determinado ramo, é citado, por exemplo, quando é encontrado um nó que possui relações que não satisfazem o padrão de busca ou quando a busca já "cruzou" o suficiente. No uninformed é realizado "atravessamentos" até o nó e depois é retornado ao nó raiz e tentado outro caminho. O Informed Depth-First pode ter desempenho superior. Cypher realiza suas buscas utilizando esse tipo de algoritmo.
+
+Breadth-first é diferente, pois explora o grafo um nível de cada vez. A maioria dos algoritmos utilizados não são um puro breadth-first search pois possuem algumas melhorias. Breadth-first search é frequentemente utilizado em algoritmos para busca de caminhos ou quando inteiro precisa ser sistematicamente encontrado.
+
+Breadth-first é base para algoritmos clássicos em grafo, incluíndo o Dijkstra's algorithm. Esse algoritmo foi publicado em 1956 e é utilizado para encontrar o caminho mais próximo entre dois nós de determinado grafo. Desde que foi publicado,
+esse algoritmo vem sendo estudado e vem recebendo otimizações por cientistas da computação.
+
+EXPLICAR O FUNCIONAMENTO DO ALGORITMO.
+
+De acordo com a explicação sobre o caminho mais curto de Sydney até Perth, é possível notar que Dijkstra's funciona bem, mas pela sua natureza de ser uma algoritmo não dirigido, pode ocorrer casos de pior performance em algumas topologias. Em alguns casos é explorado o grafo mais que o necessário, em outros pode ser explorado o grafo inteiro :O
+Devido a cada nó ser considerado por vez em um caso isolado, o algoritmo pode seguir caminhos que não irão contribuir para o caminho mais curto entre os nós.
+É demonstrado que embora o algoritmo Dijkstra funcionou bem para encontrar o caminho mais curto até Perth, um ser humano que poderia analisar o gráfico poderia chegar a mesma conclusão sem explorar o norte simplesmente porque o caminho parecia ser mais longe. É concluído que se houvesse uma maneira de inferir algum mecanismo heurístico para guiar pode determinados caminhos, "desperdícios" poderiam ser evitados.
+
+A* Algorithm
+O algoritmo A* é um aperfeiçoamento do algoritmo Dijkstra. Ele utilizado observações sobre algumas buscas que são informadas para obter melhores escolhas sobre os caminhos utilizados. A* combina aspectos do Dijkstra's, cujo prefere nós perto do atual ponto de partida e best-first search, no qual prefere nós perto do destino para fornecer uma solução otimizada para encontrar caminhos mais curtos em um grafo.
+
+No A* é separado o custo do caminho em duas partes:
+
+g(N) Custo do caminho do ponto de partida até algum nó N
+h(N) Custo estimado do caminho do nó N até o nó destino, utilizando heurística.
+
+O A* vai balanceando g(N) e h(N) assim que vai iterando no grafo, ou seja garantindo que a cada iteração é escolhido o nome com menor custo total f(N) = g(N) + h(N)
+
+MOSTRAR UMA IMPLEMENTAÇÃO, PIOR CASO E ETC.
+
+Por fim é concluído que algoritmos do tipo breadth-first são particularmente bons para encontrar caminhos. No entanto, eles tem outras utilidades. Podem ser considerados alguns algoritmos de higher-order que vem da teoria dos grafos para obter previsões sobre dados conectados.
+
+Técnicas da teoria dos grafos é geralmente aplicada a uma grande variedade de problemas. Tem especialmente aplicadas quando precisamos obter algum entendimento sobre um novo domínio ou até entender quais são os entendimentos que podem ser extraídos de um domínio. Em alguns casos há algumas técnicas da teoria dos grafos e das ciências sociais que podem facilmente ser aplicadas para obter entendimento.
+
+Triadic Closure é uma propriedade de grafos sociais que funcionam da seguinte maneira: Se dois nós estão conectados por um terceiro nó, esses dois nós provavelmente irão se conectar no futuro.
+
+PROCURAR ARTIGOS
+
+Structural Balance
+PROCURAR ARTIGOS
+
+Local Bridges
