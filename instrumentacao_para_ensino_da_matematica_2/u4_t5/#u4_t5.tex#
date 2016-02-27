@@ -1,0 +1,110 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{longtab1le}
+
+\graphicspath{{img/}}
+
+\begin{document}
+\begin{flushleft}\includegraphics{logo}\\
+\textbf{UNIVERSIDADE ESTADUAL DE PONTA GROSSA} \\
+SISTEMA UNIVERSIDADE ABERTA DO BRASIL - UAB \\
+\underline{Licenciatura em Matemática | Polo UAB em Jacarezinho}\end{flushleft} 
+\textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} 151774301 \\
+\textbf{DISCIPLINA:} Instrumentação para o Ensino da Matemática II \\
+\textbf{ATIVIDADE:} Tarefa atividade 5  \\
+\begin{enumerate}
+\item Faça uma leitura do texto I ``resolução de problemas no ensino-aprendizagem de Matemática'', de Paiva e Rego, das páginas 1 à 4, a partir da leitura efetivada construa uma linha do tempo para evidenciar as principais fases históricas da resolução de problemas em matemática. Considere os períodos abaixo listados: \\ 
+  \begin{center}
+  \begin{longtable}{| c | p{10cm} |} \hline
+    \textbf{Período} & \textbf{Características de cada período} \\
+    ANTIGUIDADE & A resolução de problemas esteve na base da criação 
+    dos processos de contagem e do conceito de números, 
+    a resolução de problemas práticos levou ao desenvolvimento da 
+    Matemática pelos romanos, gregos, chineses, mesopotâmios e egípcios. & \hline 
+    SÉCULO XIX & Escrita de livros-texto relativos aos conteúdos Matemáticos era integrada por diversos problemas matemáticos, mas apresentavam uma visão limitada da perspectiva da aprendizagem e da capacidade de resolvê-los.
+ &  \hline 
+    SÉCULO XX & Com a migração da comunidade rural para as cidades ocorreu a necessidade de uma maior quantidade de pessoas possuírem o conhecimento matemático, valorizando assim o ensino desta disciplina, mas este era baseado na repetição de procedimentos e na memorização de regras, formulas e definições. Ao professor cabia ensinar e ao aluno aprender, através de aula expositiva.
+ & \hline 
+    DÉCADA DE 1940 & A comunidade de educadores e pesquisadores apresentava interesse pela Resolução de Problemas, considerando seu ensino e aprendizagem, surgindo os primeiros resultados de estudos.
+ & \hline 
+    DÉCADA DE 1950 & Os trabalhos realizados nesta área enfatizavam a aplicação de uma grande quantidade de questões para os alunos, dando importância à resposta e não ao processo. Mas neste período pesquisadores começaram a defender que o ensino deveria valorizar mais as estratégias do que os resultados. & \hline 
+    DÉCADA DE 1960/1970 & O ensino de Matemática começou a ser influenciado pelo Movimento da Matemática Moderna, que valorizava o trabalho com base na linguagem da teoria dos conjuntos, na axiomatização, nas estruturas algébricas e na lógica. Valorizava o ensino dos símbolos, de propriedades e o uso da terminologia completa. & \hline
+    DÉCADA DE 1980 & Ocorreu o marco da valorização da resolução de problemas, com a publicação do documento “An Agenda for Action: recommendations for school Mathematics of the 1980’s” pena NTCM que apontava a primeira e mais importante das suas recomendações à resolução de problemas como foco do ensino de Matemática. & \hline 
+    DÉCADA DE 1990 & Surgiu diversos estudos sobre a utilização da resolução de problemas no processo de ensino-aprendizagem, os que se destacaram foi os trabalhos de autores como Lourdes de la Rosa Onuchic e Luiz Roberto Dante.
+ & \hline 
+    ANOS 2000 (ATUALIDADE) & Ocorreu à elaboração dos Parâmetros Curriculares Nacionais que discutia a necessidade de um processo de aprendizagem contextualizado com base na realidade dos alunos, preparando-os para o exercício de uma cidadania plena, e para a adoção dos temas transversais, demonstrava a importância dada à resolução de problemas não apenas para a própria Matemática, mas também para as outras áreas de conhecimento.
+ & \hline 
+  \end{longtable} \\
+  \end{center}
+\item O ensino de matemática por meio de resolução de problemas, segundo ONUCHIC (1999), pode ser abordado de três formas diferentes: \\
+  \begin{enumerate}
+  \item Ensinar sobre resolução de problemas. \\ \\
+      Ensinar sobre resolução de problemas, constitui-se em demonstrar o estudo sobre os modelos e procedimentos utilizados para a resolução de problemas, destacando a estrutura desses procedimentos.
+    \item Ensinar a resolver problemas. \\ \\
+      Ensinar a resolver problemas nesta forma o professor se retêm nas formas como os problemas matemáticos podem ser resolvidos e como chegar à sua resposta, focando no processo, no ato ensinar a resolver corretamente os problemas e como utilizar processos, procedimentos e conhecimentos matemáticos para isto ocorra.
+      
+    \item Ensinar por meio de resolução de problemas. \\ \\
+       O ensinar por meio da resolução de problemas é visto não só como ponto de partida para a aprendizagem da Matemática, mas como o meio principal de realiza-lo.
+  \end{enumerate}
+  Explique como se faz o ensino de matemática em cada uma delas. \\
+
+\item O que significa resolução de problemas como metodologia de ensino da Matemática. \\ \\
+  É um dos caminhos metodológicos mais considerados e incentivados pelos pesquisadores da área, eles defendem que esse modelo ajuda a desenvolver a estrutura cognitiva do aluno, exercitar sua criatividade e torná-lo capaz de aprender significativamente conseguindo aplicar o conhecimento conquistado em diferentes contextos da Matemática e em outras áreas de conhecimento, assim como nas situações da vida cotidiana. O trabalho nesta metodologia enfatiza o processo de resolução, possibilitando ao professor analisar a forma como o aluno pensou, identificar quais as estratégias que ele utilizou e identificar quais as dificuldades que ele encontrou no decorrer do processo.
+
+\item O que significa um problema e um problema matemático?  \\
+Um problema matemático é uma situação que requer a realização de uma sequência de ações ou operações para obter um resultado através dos dados acessíveis no enunciado. O problema é uma questão que deve desafiar o aluno a buscar soluções, ele é uma questão não resolvida e que é objeto de discussão, em qualquer domínio do conhecimento, sendo uma questão a ser solucionada e para que isso aconteça precisa utilizar os conhecimentos que possui. 
+  
+\item Explique a classificação de problemas, segundo Dante. Exemplifique. \\ \\
+  \begin{description}
+    \item[Exercícios de reconhecimento:]        faz com que os alunos trabalhem funções como reconhecer, identificar, lembrar-se de algum conceito, definição ou propriedade. 
+Ex.: Dados os números -5, 6, 7, -2, 10, 1/2, 4², 7/9 quais são números pertencente ao conjunto dos inteiros? 
+    \item[Exercícios de algoritmos:]  os alunos devem aplicar um algoritmo estudado anteriormente, este tipo de exercício é utilizado para treinar a aplicação dos algoritmos das operações elementares. 
+Ex.: Resolva a expressão algébrica. 8(x – 6) + 4x + 1. 
+    \item[Problemas padrões:]  solicita a aplicação direta de um ou mais algoritmos previamente aprendidos, não possui estratégia. São apresentados no final de capítulo nos livros didáticos, possuindo a solução do problema próprio enunciado e a tarefa é transformar a linguagem usual em linguagem matemática, reconhecendo as operações ou algoritmos necessários para resolvê-lo, não desafiando os alunos a desenvolverem estratégias. 
+Ex.: Maria possui 60 balas e quer dar para seus 10 amigos em quantidades iguais. Quantas balas Maria irá dar a cada um deles? 
+    \item[Problemas-processo ou heurísticos:]  proporciona ao aluno a chance de pensar e arquitetar um plano de ação, uma estratégia que poderá levá-lo à solução do problema, desafiando os alunos a pensarem em estratégia de resolução, tornando-se mais interessantes do que os problemas padrões, com estes problemas os alunos desenvolvem a criatividade, a iniciativa e o espírito explorador. Estes problemas valorizam mais a estratégia e os procedimentos utilizados que a própria resposta correta.
+Ex: Dez amigos se encontram e trocam presentes. Quantos presentes são trocados, se cada um deu um presente ao outro uma única vez? E se ao invés de dez, fossem quinze amigos, quantos presentes seriam dados? 
+    \item[Problemas de aplicação ou situações-problema:]  buscam responder alguma situação contextualizada que precisa da Matemática para a sua resolução, matematizam situações do cotidiano. A maioria de problemas desse tipo utilizam tabelas e gráficos e podem envolver outras áreas de ensino.
+Ex.: Na loja “Americanas”, um par de chuteiras custava R\$ 50,00. No ano passado, foram vendidos para a Seleção Brasileira 20.736 pares de chuteiras. Qual o total em reais que a loja arrecadou na venda das chuteiras?
+    \item[Problemas de quebra-cabeça:] desafiam o aluno a perceber um artifício para a obtenção da resposta do problema, dependendo muitas vezes mais da percepção desse artifício do que da utilização de algoritmos matemáticos. 
+      Ex.: O Sr. Brown tem 6 luvas pretas e 12 luvas marrom em seu guarda-roupa. Sem olhar, ele pega algumas luvas do guarda-roupa. Qual o mínimo número de luvas que o Sr. Brown terá que pegar para ter certeza que encontrou um par de luvas da mesma cor?
+      
+  \end{description}
+
+\item Segundo a \emph{``Heurística de Polya''}, há um conjunto de etapas para resolução de problemas. Explique cada uma delas. \\
+  \begin{description}
+  \item[1ª etapa: Compreender o Problema -]
+    Compreender bem o problema é a fase inicial e indispensável do processo, é necessária a familiarização com os aspectos envolvidos, para que o aluno consiga compreender o problema. O professor pode fazer questionamentos sobre o problema, levando o aluno a enxergar o problema através de vários pontos de vista. O aluno precisa acima de tudo desejar resolvê-lo, porque só compreender não é suficiente, sendo importante a escolha do problema de acordo com aspectos cognitivos, culturais e sociais dos alunos. O professor deve auxiliar o processo referente à capacidade de fazer perguntas relativas ao problema até que todos os alunos sejam capazes de, por si só, conduzirem o processo.
+  \item[2ª etapa: Elaborar um Plano de Ação –]
+    Primeiramente deve ser estabelecida uma conexão entre os dados presentes no problema e o que ele pede, partindo da linguagem usual e chegando a uma sentença matemática. O caminho percorrido para a compreensão do problema até chegar à ideia de um plano nem sempre é fácil. Esta ideia de plano pode surgir de forma gradual, através de tentativas fracassadas, ou por meio de ideias repentinas e imediatas. Mas tudo depende do problema, dos conhecimentos prévios dos alunos e de suas experiências em relação à resolução de problemas. Quanto maior a variedade de problemas eles resolvem, maior a quantidade de referências que possuem.
+  \item[3ª etapa: Executar o Plano -]
+    é necessário colocar em prática as estratégias elaboradas na etapa anterior, observando, analisando e registrando cada passo a ser dado, efetuando os cálculos e procedimentos necessários. Quanto mais detalhada for à etapa de elaboração do plano, mais fácil será sua execução. O aluno obtém o que é convencionalmente chamado de resposta do problema. Nesta etapa pode ser identificada as dificuldades dos alunos com a utilização de alguns algoritmos ou na compreensão de alguns conceitos matemáticos.
+  \item[4ª etapa: Verificar –]
+    Nesta etapa é realizada uma análise retrospectiva do processo, é um excelente exercício de aprendizagem, serve para detectar e corrigir os possíveis enganos. Ao analisarmos a solução obtida pelo aluno, estamos repassando todo o percurso de resolução do problema, fazendo com que o aluno reveja como pensou inicialmente, como encaminhou a estratégia de solução, como efetuou os cálculos e a pertinência da resposta encontrada. Sendo levantado se necessário alguns questionamentos sobre outras possibilidades de resolução, caminhos que levem a uma resposta de forma mais rápida ou utilizando outra forma de pensamento. 
+  \end{description}  
+
+\item Resolva o problema abaixo, segundo a Heurística de Polya. \\
+  O elevador de um \textit{shopping} tem um sensor de segurança que apita caso a carga alcance o limite de 770 kg. Certo dia, quando esse elevador parou num dos andares, já transportando várias pessoas, Angélica entrou segurando uma caixa. Imediatamente o sensor tocou, e Angélica saiu deixando a caixa lá dentro. Mas, mesmo assim, o sensor continou a tocar. Angélica resolveu então tirar a caixa e voltar ao elevador e percebeu que, dessa forma, ele funcionou sem problemas. Supondo que, antes da entrada de Angélica com a caixa, o levador estivesse com 700 kg, qual era a massa mínima da caixa? E a máxima?
+  \begin{description}
+  \item[Fase 1 - Compreender o Problema:]
+    Neste exemplo procura-se o peso da caixa. Anota-se os dados. Elevador suporta 770kg. Angélica com a caixa fazia o elevador apitar, sem a caixa não. Mesmo apenas a caixa dentro do elevador, ele continuava a apitar. Como é suposto que o elevador já possuia 700 kg antes de Angélica entrar, estima-se que a caixa tenha mais de 71 kg e Angélica tenha 70 kg ou menos. 
+  \item[Fase 2 - Elaborar um Plano:] Pode-se usar qualquer um dos planos de ação para resolver esse problema.
+  \item[Fase 3 – Execução do Plano:] Nesta fase é colocado todos os planos de ação em prática.
+    \begin{description}
+    \item[i) Na execução da Dramatização:] através da representação de um quadrado no chão representando o elevador, uma média de cinco alunos dentro desse quadrado representando que o elevador esta quase cheio e um aluno ou aluno representando o personagem Angélica e uma caixa, seria analisado o que foi representado no problema, chegando a conclusão que Angélica tem que pesar 70 kg ou menos e a caixa deve pensar 71 kg ou mais.
+    \item[ii) Por tentativa e erro:] nessa opção pode-se escrever os números referente ao peso de Angélica e da caixa, um por um até alcançar os valores que supririam a resolução de todas as questões do enunciado.
+    \item[iii) Redução ao que tem menos:] podemos raciocinar da seguinte maneira, se Angélica e a caixa possuíssem o mesmo valor cada uma sozinhas poderia subir no elevador, ou se fosse dividido o peso de 70 kg entre eles os dois poderiam subir, mas como apenas Angélica sem a caixa consegue compreende que ela sozinha pode englobar os 70 kg e a caixa sozinha é maior que os 70 kg.
+    \item[iv) De maneira análoga pode-se fazer a redução ao que tem mais:] compreende que a caixa é igual ou maior que 71 kg, porque ela sozinha não pode ficar no elevador e o peso restante para que o elevador esteja lotado é de 70 kg.
+    \item[v) Representação Algébriga:] Atribuem-se variáveis aos dados do problema. Assim, \emph{a} seria Angélica, \emph{e} o elevador com 700kg, \emph{el} o elevador lotado (770 kg) e \emph{c} a caixa, sendo assim ficaria: $ a+e < el; a+e+c > el; c+e > el $.
+    \item[vi) Representação Gráfica:] Desenha-se figuras que representam o elevador lotado, a caixa e Angélica, desenhando a caixa dentro do elevador ele não sairia do lugar (apitaria), desenhando Angélica e a caixa dentro do elevador ele continuaria sem sair do lugar (apitaria) e desenhando apenas Angélica poderíamos desenhar o elevador subindo ou descendo.
+    \end{description}
+\item[Fase 4 – Verificação:] nessa etapa analisa-se a solução e verifica-se se o resultado obtido realmente satisfaz as condições dispostas no problema. No retrospecto o aluno refaz os passos dados na execução do plano, verifica como efetuou os cálculos e como foi concretizada a estratégia da resolução, funcionando como um processo de feedback.
+
+  \end{description}
+ 
+\end{enumerate}
+\end{document}
