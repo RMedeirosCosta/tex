@@ -14,118 +14,188 @@
 \noident
 \textbf{UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ | UTFPR}
 \textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} a1598996 \\
-\textbf{DISCIPLINA:} Banco de Dados para Biologia \\
-\textbf{ATIVIDADE:} Sistema de Recomendações | Tarefa 3 
+\textbf{DISCIPLINA:} Programação para Bioinformática \\
+\textbf{ATIVIDADE:} Lista de Exercícios 1  
 
-\section{Persistência dos dados}
-O organismo selecionado para a importação foi o \emph{Anaerococcus Lactolyticus}. Foi realizado a importação com a seguinte consulta:
+\section{Para cada exercício faça}
+\begin{enumerate}
+\item Análise do Problema
+\item Algoritmo
+\item Fluxograma
+\item Teste de mesa
+\end{enumerate}
 
-\begin{lstlisting}[frame=single]
-using periodic commit 600
-load csv with headers from
-'file:/Users/cleversonbarbosanalesso/Downloads/
-anaerococcus_lactolyticus.csv' as l fieldterminator ' '
-merge (p1: Protein {protein: l.protein1})
-merge (p2: Protein {protein: l.protein2})
+\begin{enumerate}
+  \item Dado dois números naturais verificar quem é o maior
+    \begin{description}
+      
+    \end{description}
+  \item Dado dois números naturais verificar quem é o maior
+    \begin{description}
+      \item[Análise do Problema:] O exercício pede que dado dois números naturais deve-se verificar qual é o maior.
+Um procedimento razoável para resolver esse problema é verificar se as entradas são válidas (se são números naturais) e assim informar qual é o maior ou se não houver maior, que os números são iguais. 
 
-merge (p1)-[r\:INTERACTS_WITH]-(p2)
-      on create set r.combined_score = toFloat(l.combined_score),
-        r.neighborhood = toFloat(l.neighborhood),
-          r.fusion = toFloat(l.fusion),
-            r.cooccurence = toFloat(l.cooccurence),
-                  r.homology = toFloat(l.homology),
-                  r.coexpression = toFloat(l.coexpression),
-                    r.experimental = toFloat(l.experimental),
-                      r.knowledge = toFloat(l.knowledge),
-                  r.textmining = toFloat(l.textmining)
-order by person.name
-\end{lstlisting}
+      \item[Algoritmo:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{ex1_1}
+         \caption[Algoritmo Exercício 1]{\textbf{Algoritmo 1}}
+         \end{figure}
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{ex1_2}
+         \caption[Algoritmo Exercício 1]{\textbf{Algoritmo 1}}
+         \end{figure} 
+         
 
-Utilizou-se o \emph{using periodic commit 600} para evitar problemas referentes a gerenciamento de memória, conforme sugere a documentação oficial do \emph{Neo4j}. O número 600 é a quantidade de registros por \textit{commit}. \\
+      \item[Fluxograma:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{fluxograma1}
+         \caption[Fluxograma 1]{\textbf{Fluxograma 1}}
+         \end{figure}
+         
+       \item[Teste de mesa:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{teste1}
+         \caption[Teste de mesa 1]{\textbf{Teste de mesa 1}}
+         \end{figure}          
+    \end{description}
+  \item Dado 4 notas, calcular a média aritmética.
+    \begin{description}
+      \item[Análise do Problema:] O exercício pede que seja informado a média aritmética de 4 notas informadas pelo usuário. Uma abordagem é solicitar que o usuário informe as 4 notas, validar se as entradas são válidas (ou seja, que são números positivos dos conjuntos dos reais), calcular a média aritmética (o somatório das notas dividido pela quantidade de notas) e informar o resultado para o usuário.
 
-Criou-se um índice, para melhorar a performance das consultas:
+      \item[Algoritmo:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+        
+       \item[Fluxograma:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+         
+       \item[Teste de mesa:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+         
+    \end{description}
+  \item Dado 3 notas, calcular a média ponderada sendo nota 1 peso 2, nota 2 peso 5 e nota 3 peso 3.
+    \begin{description}
+      \item[Análise do Problema:] O exercício pede que seja calculada a média ponderada de 3 notas, sendo a primeira nota com peso 2, a segunda com peso 5 e a terceira com peso 3. Uma solução para esse problema é solicitar que o usuário informe as 3 notas, validá-las (verificar se são números positivos pertencentes ao conjunto dos números reais), calcular a média poderada (somatório de cada nota multiplicado pelo seu peso dividido pelo somatório dos pesos) e informar o resultado ao usuário.
 
-\begin{lstlisting}[frame=single]
-CREATE INDEX ON :Protein(protein)
-\end{lstlisting}
+      \item[Algoritmo:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+        
+       \item[Fluxograma:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+         
+       \item[Teste de mesa:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+         
+    \end{description}
+  \item Dados um número inteiro posititivo n, imprimir os n primeiros naturais ímpares.
+    \begin{description}
+      \item[Análise do Problema:] O exercício pede que após o usuário informar um número natural, seja impresso na tela os n primeiros naturais ímpares. É possível resolver isso solicitando a entrada pelo usuário, validá-la (verificar se é um natural. Ou seja, um número inteiro positivo), obter todos os números ímpares até o determinado número (verificando se o resto da divisão do número em questão é diferente a zero) e mostrar esses números para o usuário.
 
-Após realizado a importação, foi consultado a quantidade de nós e relações e foi exibido as informações do sistema para verificar se a importação ocorreu sem erros. Conforme demonstrado na Figura 1 e 2.
+      \item[Algoritmo:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+        
+       \item[Fluxograma:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+         
+       \item[Teste de mesa:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+         
+    \end{description}
+  \item Dado um número real na base binária, transformá-lo para base decimal.
+    \begin{description}
+      \item[Análise do Problema:] O exercício pede que converta um número natural de base binária para um número de base decimal. Uma alternativa é validar a entrada do usuário se realmente é um número natural de base binária (verificando se os dígitos são 0 ou 1 e se é um número natural), converter o número (realizando o somatório de cada termo multiplicado por 2 elevado a n-i, cujo n é a quantidade de dígitos e i é a posição atual) e informando o resultado para o usuário.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1\textwidth]{1}
-  \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
-\end{figure} 
+      \item[Algoritmo:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+        
+       \item[Fluxograma:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+         
+       \item[Teste de mesa:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+         
+    \end{description}
+      \item Dado um número natural > 10, verificar se n é palíndromo.
+    \begin{description}
+      \item[Análise do Problema:] O exercício pede para verificar se uma entrada informada por um usuário é um número palíndromo. Por definição, um número palíndromo é igual ao seu reverso. Então para solucionar esse problema é capturada a entrada pelo usuário, verifica-se se o número natural é maior que 11 (uma restrição do enunciado), obtém seu reverso e realiza-se a comparação do número informado com o seu reverso. Se forem iguais, o número é palíndromo; se não forem, não é.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1\textwidth]{2}
-  \caption[2 - Informações do sistema]{\textbf{Informações do sistema}}
-\end{figure}
+      \item[Algoritmo:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+        
+       \item[Fluxograma:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+         
+       \item[Teste de mesa:]
+         \begin{figure}[H]
+         \centering
+         \includegraphics[width=1\textwidth]{1}
+         \caption[1 - Quantidade de nós e relações]{\textbf{Quantidade de nós e relações}}
+         \end{figure} 
+         
+    \end{description}
+\end{enumerate}
 
-O banco criado possui 2.173 nós e 241.368 relações.
+\end{enumerate}
+\end{enumerate}
 
-\section{Listando Interações pelo Combined Score}
-
-\begin{lstlisting}[frame=single]
-match(a)-[r]-(b)
-return a.protein, b.protein, r.combined_score
-order by r.combined_score desc;
-\end{lstlisting}
-
-O resultado: 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1\textwidth]{3}
-  \caption[3 - Listando Interações pelo Combined Score]{\textbf{Listando Interações pelo Combined Score}}
-\end{figure} 
-
-\section{Filtrando Interações}
-Foi adicionado nessa consulta a cláusula \emph{limit 400}, com objetivo de ser exibido apenas 400 resultados para facilitar a visualização.
-
-\begin{lstlisting}[frame=single]
-match(p1)-[r]-(p2)
-where r.textmining > 0.95
-return p1, r, p2 limit 400;
-\end{lstlisting} 
-
-O resultado: 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1\textwidth]{4}
-  \caption[4 - Filtrando Interações]{\textbf{Filtrando Interações}}
-\end{figure}
-
-\section{Contexto de uma Proteína}
-
-\begin{lstlisting}[frame=single]
-match(a {protein:'525254.HMPREF0072_2242'}
-match(a)-[r]-(b)
-return a, b
-\end{lstlisting}
-
-O resultado:
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1\textwidth]{5}
-  \caption[5 - Context de uma Proteína]{\textbf{Contexto de uma Proteína}}
-\end{figure} 
-
-\section{Caminho Mais Curto}
-
-\begin{lstlisting}[frame=single]
-match (p1 {protein:''525254.HMPREF0072_2242''}), 
-      (p2 {protein:''525254.HMPREF0072_0483''}),
-sp = shortestPath((p1)-[r*]-(p2))
-return sp;
-
-\end{lstlisting}
-
-O resultado:
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1\textwidth]{6}
-  \caption[6 - Caminho mais curto]{\textbf{Caminho mais curto}}
-\end{figure}
 
 \end{document}
