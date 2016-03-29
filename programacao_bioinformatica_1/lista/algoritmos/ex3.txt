@@ -1,0 +1,74 @@
+# Autor: Ricardo Medeiros da Costa Junior
+# Titulo: Exercicio 3
+# Data: 22/03/2016
+# Objetivo: Dados 3 notas, calcular a media ponderada, sendo Nota 1 peso 2, nota 2 peso 5 e nota 3 peso 3.
+# Entrada: nota1, nota2, nota3 (numeros reais)
+# Saida: A media ponderada
+# Obs.: Verificar se os 3 numeros sao numeros reais e depois mostrar a media ponderada deles
+
+algoritmo exercicio_3;
+
+inicio
+    main();
+fim
+
+procedimento reinicia_programa()
+inicio
+    imprime("Numero invalido. Programa sera reiniciado. POR FAVOR! \n"
+            "Informe um real positivo.");
+    main();
+    interrompa();
+fim
+
+funcao obter_entrada(qtd_notas: inteiro) : matriz[][] de reais;
+variaveis
+    // Linha 0 notas e linha 1 pesos
+    notas : matriz[][] de reais;
+    i : inteiro;
+    nota : real;
+fim-variaveis
+
+inicio
+    para i de 0 ate qtd_notas passo 1 faca
+        nota := leia("Digite a " + (i+1) + " nota: "));
+
+	se nota < 0 entao
+	    reinicia_programa();
+	fim-se
+	
+	notas[0][i] := nota;
+    fim-para
+    
+    notas[1][0] := 2;
+    notas[1][1] := 5;
+    notas[1][2] := 3;    
+
+    retorne notas;
+fim
+
+funcao calcular(notas: matriz[][] de reais) : real;
+variaveis
+    somatorio_notas : real;
+    somatorio_pesos : inteiro;
+    i : inteiro;    
+fim-variaveis
+
+inicio
+    somatorio_notas = 0.0;
+    somatorio_pesos = 0;
+
+    para i de 0 ate tamanho(notas)-1 passo 1 faca
+        somatorio_notas = (somatorio_notas + (peso * notas[0][i]));
+	somatorio_pesos = (somatorio_pesos + notas[1][i]);
+    fim-para
+
+    retorne (somatorio_notas / somatorio_pesos);
+fim
+
+procedimento main()
+constantes
+    QTD_NOTAS = 3;
+fim-constantes
+inicio
+    imprime("A media ponderada é" + calcular(obter_entrada(QTD_NOTAS)));
+fim

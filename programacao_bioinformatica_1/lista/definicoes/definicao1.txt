@@ -1,0 +1,2 @@
+O exercício pede que dado dois números naturais deve-se verificar qual é o maior.
+Um procedimento razoável para resolver esse problema é verificar se as entradas são válidas (se são números naturais) e assim informar qual é o maior ou se não houver maior, que os números são iguais.

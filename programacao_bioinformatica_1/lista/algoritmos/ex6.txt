@@ -1,0 +1,59 @@
+# Autor: Ricardo Medeiros da Costa Junior
+# Titulo: Exercicio 6
+# Data: 22/03/2016
+# Objetivo: Dado um numero natural maior que 10, verificar se o numero e palindromo
+# Entrada: numero (inteiro)
+# Saida: resposta se o numero e palindromo ou nao
+# Obs.: Verificar se o numero e natural maior que 10 e depois informar se e palindromo ou nao. Por definicao, todo numero palindromo e igual ao seu reverso
+
+algoritmo exercicio_5;
+
+inicio
+    main();
+fim
+
+procedimento reinicia_programa()
+inicio
+    imprime("Numero invalido. Programa sera reiniciado. POR FAVOR! \n"
+            "Informe um numero natural maior que 10.");
+    main();
+    interrompa();
+fim
+
+funcao inverte(numero: literal) : literal
+variaveis
+    i : inteiro;
+    invertido : literal;
+fim-variaveis
+    
+inicio
+    invertido := "";
+    para i de tamanho(numero)-1 ate 0 passo -1 faca
+        // Gambiarra pra concatenar
+        invertido := invertido + "" + numero[i];
+    fim-para
+
+    retorna invertido;
+fim
+
+procedimento main()
+variaveis
+    numero : inteiro;
+    numero_invertido : inteiro;
+fim-variaveis
+
+inicio
+    numero := leia("Digite um numero natural maior que 10");
+
+    se numero <= 10 entao
+       reinicia_programa();
+    fim-se
+
+    numero_invertido := invertido(numero);
+
+    se numero == numero_invertido entao
+        imprime("O numero "+numero+" é palíndromo");
+    senao
+	imprime("O numero "+numero+" não é palíndromo");
+    fim-se    
+fim

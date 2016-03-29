@@ -1,0 +1,1 @@
+O exercício pede que seja informado a média aritmética de 4 notas informadas pelo usuário. Uma abordagem é solicitar que o usuário informe as 4 notas, validar se as entradas são válidas (ou seja, que são números positivos dos conjuntos dos reais), calcular a média aritmética (o somatório das notas dividido pela quantidade de notas) e informar o resultado para o usuário.

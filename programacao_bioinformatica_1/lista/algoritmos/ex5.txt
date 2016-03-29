@@ -1,0 +1,74 @@
+# Autor: Ricardo Medeiros da Costa Junior
+# Titulo: Exercicio 5
+# Data: 22/03/2016
+# Objetivo: Dado um numero natural de base binaria, transformalo para base decimal
+# Entrada: numero (inteiro)
+# Saida: O numero em base decimal
+# Obs.: Verificar se o numero e natural e se e de base binaria e depois imprimir o numero convertido em base decimal
+
+algoritmo exercicio_5;
+
+inicio
+    main();
+fim
+
+procedimento reinicia_programa()
+inicio
+    imprime("Numero invalido. Programa sera reiniciado. POR FAVOR! \n"
+            "Informe um numero natural de base binaria. Exp: 10110, 01, 10001110");
+    main();
+    interrompa();
+fim
+
+funcao is_binario(numero: literal) : logico
+variaveis
+    i : inteiro;
+fim-variaveis
+
+inicio
+    para i de 0 ate tamanho(numero)-1 passo 1 faca
+        se (numero[i] != '0') e (numero[i] != '0') entao
+	   retorna falso;
+	   interrompa();
+	fim-se
+    fim-para
+
+    retorna verdadeiro;
+fim
+
+funcao converter_decimal(numero_binario : literal) : literal
+variaveis
+    somatorio : inteiro;
+    expoentes : matriz[] de inteiros;
+    i : inteiro;
+fim-variaveis
+
+inicio
+    somatorio = 0;
+
+    para i de tamanho(numero_binario)-1 ate 0 passo -1 faca
+        expoentes[i] := i;
+    fim-para
+
+    para i de 0 ate tamanho(numero_binario)-1 passo 1 faca
+    	somatorio := (somatorio + (numero_binario[i] * (2^expoentes[i])));
+    fim-para
+
+    retorna somatorio;
+fim
+
+procedimento main()
+variaveis
+    numero : inteiro;
+fim-variaveis
+
+inicio
+    numero = leia("Digite um numero natural em base binaria: ");
+
+    se (numero < 0) ou (nao is_binario)  entao
+        reinicia_programa();
+    fim-se
+
+    imprime("O numero " + numero + " na base decimal e: " +converter_decimal(numero));
+
+fim

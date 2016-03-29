@@ -1,0 +1,64 @@
+# Autor: Ricardo Medeiros da Costa Junior
+# Titulo: Exercicio 2
+# Data: 22/03/2016
+# Objetivo: Dados 4 notas, calcular a media aritmetica
+# Entrada: nota1, nota2, nota3, nota4 (numeros reais)
+# Saida: A media aritmetica
+# Obs.: Verificar se os quatro numeros sao numeros reais e depois mostrar a media aritmetica deles
+
+algoritmo exercicio_2;
+
+inicio
+    main();
+fim
+
+procedimento reinicia_programa()
+inicio
+    imprime("Numero invalido. Programa sera reiniciado. POR FAVOR! \n"
+            "Informe um real positivo.");
+    main();
+    interrompa();
+fim
+
+funcao obter_entrada(qtd_notas: inteiro) :matriz[] de reais
+variaveis
+    notas : matriz[] de reais;
+    nota : reais;
+    i : inteiro;
+fim-variaveis
+    
+inicio
+    para i de 0 ate qtd_notas passo 1 faca
+        nota := leia("Digite a "+ (i+1) + " nota: ");
+	se nota < 0 entao
+	    reinicia_programa();
+	fim-se
+	nota[i] := nota;
+    fim-para
+
+    retorne notas;
+fim
+
+funcao calcular(notas: matriz de reais) :real
+variaveis
+    somatorio : real;
+    i : inteiro;
+fim-variaveis
+    
+inicio
+    para i de 0 ate tamanho(notas)-1 passo 1 faca
+        somatorio := (somatorio + notas[i]);	
+    fim-para
+
+    retorne (somatorio / tamanho(notas));
+fim
+
+procedimento main()
+constantes
+    QTD_NOTAS : inteiro = 4;
+fim-constantes
+
+inicio
+    imprime("A media aritmetica e:" + calcular(obter_entrada(QTD_NOTAS)));
+fim
+
