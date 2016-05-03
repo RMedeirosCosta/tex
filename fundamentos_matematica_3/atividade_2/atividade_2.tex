@@ -1,0 +1,44 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\graphicspath{{img/}}
+
+\begin{document}
+\begin{flushleft}\includegraphics{logo}\\
+\textbf{UNIVERSIDADE ESTADUAL DE PONTA GROSSA} \\
+SISTEMA UNIVERSIDADE ABERTA DO BRASIL - UAB \\
+\underline{Licenciatura em Matemática | Polo UAB em Jacarezinho}\end{flushleft} 
+\textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} 151774301 \\
+\textbf{DISCIPLINA:} Fundamentos da Matemática III \\
+\textbf{ATIVIDADE:} Atividade 2 - Tarefa: Análise Combinatória \\
+\begin{enumerate}
+\item Um grupo de amigos é formado por 4 garotas e 4 rapazes. Crie quatro problemas a partir deste grupo. Um deles deve envolver permutação simples; outro, arranjo simples; outro combinação simples e o último deve envolver, pelo menos dois dos tipos destes agrupamentos.\\
+  \begin{itemize}
+  \item Permutação Simples \\
+    Quantas possibilidades de fila podem ser formadas entre os 8 estudantes?\\
+    8! = 40320
+  \item Arranjo Simples \\
+    Foi realizado uma competição e uma garota ficou na primeira posição. Quantos resultados diferentes podem acontecer para o segundo e terceiro lugar?
+    $A_{7,2}=\frac{7!}{(7-2)!}\rightarrow
+     A_{7,2}=42$
+   \item Combinação Simples
+     Supondo que para essa competição, um grupo de 5 competidores foram selecionados para um exame \emph{antidoping}. De quantas maneiras o grupo poderá ser formado?\\
+     $C_{8,5}=\frac{8!}{5!(8-5)!}\rightarrow
+      C_{8,5}=56$
+    \item Híbrido \\
+      O regulamento do campeonato diz que 5 competidores devem ser selecionados para o exame \emph{antidoping} e estes selecionados devem fazer uma fila para o exame. Quantos competidores podem ser selecionados para o exame e quantas as possibilidades de filas?
+      \begin{enumerate}
+        \item $C_{8,5}=\frac{8!}{5!(8-5)!}\rightarrow
+          C_{8,5}=56$
+        \item $P_{5}=5!\rightarrow
+              P_{5}=120$        
+      \end{enumerate}
+  \end{itemize}
+\item Elabore um texto que sintetize os principais conceitos do Triângulo de Pascal e o Binômio de Newton, ilustrando suas explicações com exemplos.\\
+\end{enumerate}
+\end{document}
