@@ -1,0 +1,45 @@
+- Grafos estão por toda parte em bioinformática e frequentemente consiste
+em muitos vértices e arestas (ou nós e relações) para ser representado
+na RAM.
+
+- Esses grafos são armazenados em banco de dados relacionais
+tradicionais e vem sendo alvo de muitas pesquisas para otimização de consultas
+
+- Ultimamente os bancos de dados NoSQL vem chamando atenção pela escalabilidade
+
+- NoSQL é usado para se referir a bancos de dados sem schema definido
+como key/value, document store e banco de dados em grafos que não se encaixam
+no paradigma convencional.
+
+- Muitos bancos de dados NoSQL não tem uma linguagem declarativa, Neo4J
+é uma exceção pois possui Cypher que tem por objetivo expressar consultas
+em grafos e ainda está evoluindo.
+
+- Segundo (Schrim et al, 2012 PESQUISAR) bancos de dados em grafos tem
+sido pouco usados em Bioinformática.
+
+- Para a comparação foram importados a rede de interação do humano prove-
+niente da STRING, cujo possui 20140 proteínas e 2.2 milhões de interações.
+
+- Os nomes das proteínas e os valores das associações foram armazenados
+em propriedades das interações.
+
+- No Postgres foram armazenados em uma tabela indexada de nós no qual
+pode ser cruzadas com logarítima ou constante complexidade dependendo
+do índice usado.
+
+* - Foram comparados as consultas de ambos os bancos resolvendo três problemas
+da bioinformática: Encontrando o vizinho imediato e seus interações,
+encontrar o mais pontuado caminho entre duas proteínas e encontrar o
+caminho mais curto entre elas.
+
+- Essas três tarefas foram selecionadas para demonstrar as vantagens e as desvantagens de um banco de dados em grafos comparado com os bancos de dados tradicionais.
+
+* - Encontrar o caminho melhor pontuado entre duas proteínas é uma parte importante
+do NetworKIN algorithm (Linding  et al 2007). Para esse tipo de tarefa, Cypher foi 981 mais rápido que SQL.
+
+- Como Cypher tem uma função integrada para encontrar o caminho mais curto, ele
+demonstrou-se *2441x* mais rápido que Postgres para essa tarefa e o postgres só pode encontrar o caminho mais rápido quando o tamanho no caminho tem dois nós.
+
+- O autor conclui que bancos de dados em grafos estão prontos para Bioinformática
+e podem oferecer grande ganho de performance se comparado com bancos de dados relacionais para tarefas específicas. Mas nem sempre usar um banco de dados em grafos pode ser uma vantagem, depende da consulta a ser executada. Operações com conjuntos são melhores executadas por bancos de dados relacionais e problemas com caminhos são executados melhor em bancos de dados em grafos.

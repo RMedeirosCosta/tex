@@ -1,20 +1,48 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
 
-\bibitem[Boulic and Renault 1991]{boulic:91}
-Boulic, R. and Renault, O. (1991).
-\newblock 3d hierarchies for animation.
-\newblock In Magnenat-Thalmann, N. and Thalmann, D., editors, {\em New Trends
-  in Animation and Visualization}. John Wiley {\&} Sons ltd.
+\bibitem{historiaGrafos}
+{\em Teoria dos Grafos}.
+\newblock Wikimedia, 2015.
 
-\bibitem[Knuth 1984]{knuth:84}
-Knuth, D.~E. (1984).
-\newblock {\em The {\TeX} Book}.
-\newblock Addison-Wesley, 15th edition.
+\bibitem{gephi}
+Mathieu Bastian, Sebastien Heymann, Mathieu Jacomy, et~al.
+\newblock Gephi: an open source software for exploring and manipulating
+  networks.
+\newblock {\em ICWSM}, 8:361--362, 2009.
 
-\bibitem[Smith and Jones 1999]{smith:99}
-Smith, A. and Jones, B. (1999).
-\newblock On the complexity of computing.
-\newblock In Smith-Jones, A.~B., editor, {\em Advances in Computer Science},
-  pages 555--566. Publishing Press.
+\bibitem{graphml}
+Ulrik Brandes, Markus Eiglsperger, Ivan Herman, Michael Himsolt, and M~Scott
+  Marshall.
+\newblock Graphml progress report structural layer proposal.
+\newblock In {\em Graph Drawing}, pages 501--512. Springer, 2002.
+
+\bibitem{learningNeo4j}
+Rik~Van Bruggen.
+\newblock {\em Learning Neo4j}.
+\newblock Packt Publishing Ltd., 35 Livery Street Birmingham B3 2PB, UK, 2014.
+
+\bibitem{goldenberg}
+Anna Goldenberg, Alice~X Zheng, Stephen~E Fienberg, and Edoardo~M Airoldi.
+\newblock A survey of statistical network models.
+\newblock {\em Foundations and Trends{\textregistered} in Machine Learning},
+  2(2):129--233, 2010.
+
+\bibitem{herman}
+Ivan Herman, Guy Melan{\c{c}}on, and M~Scott Marshall.
+\newblock Graph visualization and navigation in information visualization: A
+  survey.
+\newblock {\em Visualization and Computer Graphics, IEEE Transactions on},
+  6(1):24--43, 2000.
+
+\bibitem{graphDatabases}
+Jim~Webber Ian~Robinson and Emil Eifrem.
+\newblock {\em Graph Databases}.
+\newblock O'Reilly Media, 1005 Gravenstein Highway North, Sebastopol, CA 95472,
+  2015.
+
+\bibitem{japoneses}
+Sorn Jarukasemratana and Tsuyoshi Murata.
+\newblock Recent large graph visualization tools: A review.
+\newblock {\em Information and Media Technologies}, 8(4):944--960, 2013.
 
 \end{thebibliography}

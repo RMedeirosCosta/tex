@@ -2,29 +2,19 @@
 
 \usepackage{sbc-template}
 \usepackage{graphicx,url}
-\usepackage[latin1]{inputenc}  
+\usepackage[latin1]{inputenc}
+\usepackage{hyperref}
+\usepackage{float}
+%\usepackage{natbib}
 
 \graphicspath{{img/}}
      
 \sloppy
 
-\title{Instructions for Authors of SBC Conferences\\ Papers and Abstracts}
-
-\author{Luciana P. Nedel\inst{1}, Rafael H. Bordini\inst{2}, Flávio Rech
-  Wagner\inst{1}, Jomi F. Hübner\inst{3} }
-
-
-\address{Instituto de Informática -- Universidade Federal do Rio Grande do Sul
-  (UFRGS)\\
-  Caixa Postal 15.064 -- 91.501-970 -- Porto Alegre -- RS -- Brazil
-\nextinstitute
-  Department of Computer Science -- University of Durham\\
-  Durham, U.K.
-\nextinstitute
-  Departamento de Sistemas e Computação\\
-  Universidade Regional de Blumenal (FURB) -- Blumenau, SC -- Brazil
-  \email{\{nedel,flavio\}@inf.ufrgs.br, R.Bordini@durham.ac.uk,
-  jomi@inf.furb.br}
+\title{Visualização de Grandes Quantidades de Dados em Grafo\\ Uma Abordagem para Limitações Conhecidas}
+\author{Ricardo Medeiros da Costa Junior\inst{1}, Carlos Nascimento Silla Junior\inst{1}}
+\address{Universidade Tecnológica Federal do Paraná - (UTFPR)\\
+\email{ricardo.medeiros.costa@gmail.com, carlosjunior@utfpr.edu.br}
 }
 
 \begin{document} 
@@ -32,52 +22,41 @@
 \maketitle
 
 \begin{abstract}
-  This meta-paper describes the style to be used in articles and short papers
-  for SBC conferences. For papers in English, you should add just an abstract
-  while for the papers in Portuguese, we also ask for an abstract in
-  Portuguese (``resumo''). In both cases, abstracts should not have more than
-  10 lines and must be in the first page of the paper.
+  Large graph visualization have been used for many knowledge areas. However, for big amount of data, there are many hardware limitations. To avoid this problems, it was showed an attempt which it was used a graph database that aims export subset of the whole of data, providing a way to show it on the visualization software. This attempt was successful for the cases which there are possibilities to show the data in smaller fragments.
 \end{abstract}
      
-\begin{resumo} 
-  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e
-  resumos de artigos para publicação nos anais das conferências organizadas
-  pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos
-  escritos em português. Artigos em inglês deverão apresentar apenas abstract.
-  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
-  não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
-  página do artigo.
+\begin{resumo}
+ Visualização de grandes quantidades de dados em grafos são utilizadas em importantes áreas do conhecimento. Todavia, quando se trata de visualização de massiva quantidade de dados, limitações de hardware podem prejudicar a exibição e o entendimento da análise. Para contornar esse problema é demonstrado uma abordagem no qual é utilizado um banco de dados em grafos que tem por objetivo gerar subconjuntos dos dados permitindo a apresentação do grafo por meio da aplicação de visualização. Essa abordagem mostrou-se eficiente para casos em que há possibilidade de visualizar os dados separadamente em fragmentos menores.
 \end{resumo}
-
 
 \section{Introdução} 
 
-A Teoria dos Grafos, desde que foi inventada no século XVIII por Leonhard Euler vem contribuindo para o desenvolvimento da humanidade (Wikipédia). De acordo com Neo4jBook, a Teoria dos Grafos é aplicada em várias áreas da Ciência da Computação, tais como: desenvolvimento de chips, gerenciamento de redes, sitemas de recomendações e modelagem UML (Unified Modeling Language) [Uma linguagem de modelagem na área da Engenharia de Software que tem por objetivo prover um padrão de visualização do design de um sistema.] Além disso, grafos são utilizados para resolver problemas de roteamento, lista de todas as rotas disponíveis entre cidades, encontrar o melhor caminho entre localizações, verificar distância, velocidade permitida entre outros problemas. Outro exemplo de aplicação da Teoria dos Grafos são os algoritimos de busca na web. Estes algoritimos verificam a importância de um site pela quantidade de links direcionados para este site. Goldeberg (ano) afirma  que redes de relacionamentos estruturadas em grafos são aplicadas em comunidades virtuais, por exemplo: Facebook, MySpace e Linkedin.
+A Teoria dos Grafos, desde que foi inventada no século XVIII por Leonhard Euler, vem contribuindo para o desenvolvimento da humanidade [Wikipedia 2015] \cite{historiaGrafos}. De acordo com Brugen (2014) \cite{learningNeo4j}, a Teoria dos Grafos é aplicada em várias áreas da Ciência da Computação, tais como: desenvolvimento de chips, gerenciamento de redes, sistemas de recomendações e modelagem UML (Unified Modeling Language) \footnote{Uma linguagem de modelagem na área da Engenharia de Software que tem por objetivo prover um padrão de visualização do design de um sistema.} Além disso, grafos são utilizados para resolver problemas de roteamento, lista de todas as rotas disponíveis entre cidades, encontrar o melhor caminho entre localizações, verificar distância, velocidade permitida entre outros problemas. Outro exemplo de aplicação da Teoria dos Grafos são os algoritimos de busca na web. Estes algoritimos verificam a importância de um site pela quantidade de links direcionados para este site. Goldenberg (2010) \cite{goldenberg} afirma  que redes de relacionamentos estruturadas em grafos são aplicadas em comunidades virtuais, por exemplo: Facebook, MySpace e Linkedin.
 
-A visualização dessas redes de relacionamento são instrumentos importantes para pesquisadores entenderem massiva quantidade de dados (Japoneses). Herman (ano) destaca algumas áres do conhecimento que a visualização de dados em grafos tem aplicabilidade. A hierarquia de um sistema de arquivos pode ser representada como uma árvore, que por sua vez é um grafo. Esse tipo de visualização de dados também é utilizado na biologia e na química, por meio de mapas moleculares, padrões de interação entre proteínas, árvores filogenéticas e mapas genéticos. Soma-se a isso, a visualização em grafos facilita o reconhecimento de padrões (Neo4jbook).
+A visualização dessas redes de relacionamento é um instrumento importante para pesquisadores entenderem massiva quantidade de dados [Jarukasemratana et al. 2013] \cite{japoneses}. Herman (2000) \cite{herman} destaca algumas áres do conhecimento que a visualização de dados em grafos tem aplicabilidade. A hierarquia de um sistema de arquivos pode ser representada como uma árvore, que por sua vez é um grafo. Esse tipo de visualização de dados também é utilizado na biologia e na química, por meio de mapas moleculares, padrões de interação entre proteínas, árvores filogenéticas e mapas genéticos. Soma-se a isso, a visualização em grafos facilita o reconhecimento de padrões [Robinson et at. 2015] \cite{graphDatabases}.
 
-No entanto, a visualização de dados em grafos enfrenta alguns obstáculos. Se a quantidade de elementos for extensa, a performance da execução pode ser comprometida e os elementos visuais podem exceder os limites do dispositivo de apresentação (Herman). Os Japoneses ressaltam essas dificuldades e complementam que a insuficiência de RAM (Random-access memory) pode ocasionar em não exibição da rede de relacionamentos. Todavia, estes pesquisadores sugerem que reduzir os dados em porções menores que são relevantes para análise pode contornar estes problemas.
+No entanto, a visualização de dados em grafos enfrenta alguns obstáculos. Se a quantidade de elementos for extensa, a performance da execução pode ser comprometida e os elementos visuais podem exceder os limites do dispositivo de apresentação [Herman 2000] \cite{herman}. Jarukasemratana et al. (2013) \cite{japoneses} ressaltam essas dificuldades e complementam que a insuficiência de RAM (Random-access memory) pode ocasionar em não exibição da rede de relacionamentos. Todavia, estes pesquisadores sugerem que reduzir os dados em porções menores, que são relevantes para análise, pode contornar estes problemas.
 
 Partindo desta hipótese, o objetivo dessa pesquisa é empregar essa abordagem para exibir volumosas quantidades de dados usando uma tecnologia de armazenamento que possa armazenar os dados estruturados em grafos e fornecer meios práticos para gerar esses fragmentos de dados que poderão ser visualizados em uma ferramenta de visualização de dados em grafos.
 
-Esse artigo está organizado da seguinte forma: na próxima seção será exibido o conjunto de dados utilizado na pesquisa, na terceira seção será demonstrado as tecnologias necessárias para alcançar o objetivo e o porquê de sua utilização, na quarta seção é descrito o desenvolvimento da pesquisa e o por fim a conclusão, com os resultados obtidos.
+Esse artigo está organizado da seguinte forma: na próxima seção será exibido o conjunto de dados utilizado na pesquisa, na terceira seção será demonstrado as tecnologias necessárias para alcançar o objetivo e o porquê de sua utilização, na quarta seção é descrito o desenvolvimento da pesquisa e por fim a conclusão, com os resultados obtidos.
 
-\section{Conjunto de Dados} \label{sec:firstpage}
+\section{Conjunto de Dados} 
 
-Para realizar este estudo de caso, utilizou-se um conjunto de dados chamado STRING (\textit{Search Tool for the Retrieval of Interacting Genes/Proteins}) \footnote{Disponível em http://string-db.org/}. STRING é um banco de dados sobre interações entre proteínas. O banco de dados atualmente possui 9.643.763 proteínas catalogadas vindas de 2.031 organismos. Para realizar o \textit{download} completo deste cojunto de dados é necessário ter uma licença de acadêmico ou efetuar o \textit{download} dos dados em formato de texto, cujo estão estruturados na forma de linhas e colunas.
+Para realizar este trabalho, utilizou-se um conjunto de dados chamado STRING (\textit{Search Tool for the Retrieval of Interacting Genes/Proteins}) \footnote{Disponível em http://string-db.org/}. STRING é um banco de dados sobre interações entre proteínas. O banco de dados atualmente possui 9.643.763 proteínas catalogadas vindas de 2.031 organismos. Para realizar o \textit{download} completo deste cojunto de dados é necessário ter uma licença de acadêmico ou efetuar o \textit{download} dos dados em formato de texto, cujo estão estruturados na forma de linhas e colunas.
 
-O STRING foi escolhido pelos seguintes fatores: primeiramente a sua natureza de interações entre proteínas assemelha-se com a teoria dos grafos em que as proteínas são os vértices e as interações nomeadas com determinados valores são arestas ponderadas; outro fator importante foi que os dados baixados estão sob a \textit{ Creative Commons Attribution-Noncommercial-Share Alike 3.0 License}\footnote{Disponível para visualização em http://creativecommons.org/licenses/by-nc-sa/3.0/} no qual permite compartilhamento e adaptação do produto, contanto que não seja usado para fins comerciais; e por último, como foi supracitado, os dados estão estruturados em matrizes dentro do arquivo texto, facilitando a integração com tecnologias de armazenamento de dados.
+O STRING foi escolhido pelos seguintes fatores: primeiramente a sua natureza de interações entre proteínas assemelha-se com a teoria dos grafos em que as proteínas são os vértices e as interações nomeadas com determinados valores são arestas ponderadas; outro fator importante, foi que os dados baixados estão sob a \textit{ Creative Commons Attribution-Noncommercial-Share Alike 3.0 License}\footnote{Disponível para visualização em http://creativecommons.org/licenses/by-nc-sa/3.0/} no qual permite compartilhamento e adaptação do produto, contanto que não seja usado para fins comerciais; e por último, como foi supracitado, os dados estão estruturados em matrizes dentro do arquivo texto, facilitando a integração com tecnologias de armazenamento de dados.
         
-Não foi o utilizado o banco de dados completo, apenas os dados de um organismo chamado \textit{Macaca Mulatta}. Não obstante, a quantidade de interações entre proteínas desse organismo satisfaz a condição para este estudo de caso, pois são mais de 9.000.000 de interações catalogadas nesse arquivo. O arquivo é similar ao da Figura 1, porém na Figura 1 é mostrado apenas as primeiras 20 linhas do arquivo com objetivo de familiarizar o leitor com a estrutura do arquivo.
+Não foi o utilizado o banco de dados completo, apenas os dados de um organismo chamado \textit{Macaca Mulatta}. Não obstante, a quantidade de interações entre proteínas desse organismo satisfaz a condição para esta pesquisa, pois são mais de 9.000.000 de interações catalogadas nesse arquivo. O arquivo é similar ao da Figura \ref{fig:figure1}, porém na Figura \ref{fig:figure1} é mostrado apenas as primeiras 20 linhas do arquivo com objetivo de familiarizar o leitor com a estrutura do arquivo.
 	
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{1}
 \caption{Estrutura do Arquivo Texto}
 \label{fig:figure1}
 \end{figure}
 
-Nota-se que as duas primeiras colunas são referentes as duas proteínas que interagem entre si e as demais representam a associação entre essas proteínas, que são mensuráveis de acordo com o valor informado em cada célula. Caso o valor da célula seja zero, as proteínas não possuem a relação daquela coluna. É possível obter a lista detalhada de cada uma das colunas em http://string-db.org/newstring_cgi/show_info_page.pl?UserId=PP0x_BdRDgY6&sessionId=3AoJ_NBYmbPT .
+Nota-se que as duas primeiras colunas são referentes as duas proteínas que interagem entre si e as demais representam a associação entre essas proteínas, que são mensuráveis de acordo com o valor informado em cada célula. Caso o valor da célula seja zero, as proteínas não possuem a relação daquela coluna. É possível obter a lista detalhada de cada uma das colunas no \href{http://string-db.org/newstring_cgi/show_info_page.pl?UserId=PP0x_BdRDgY6&sessionId=3AoJ_NBYmbPT}{site} oficial do banco de dados.
 	
 \section{Tecnologias}
 
@@ -85,19 +64,19 @@ As tecnologias utilizadas para alcançar o objetivo da pesquisa são: um banco de 
 
 \subsection{Banco de dados: Neo4j}
 
-A ferramenta selecionada para armazenar os dados em grafos é o Neo4j.\footnote{Disponível em http://neo4j.com/}. O Neo4j é um projeto de código aberto que é mantido pela empresa Neo Technology. Esta ferramenta possui duas versões: a \textif{Community} e a \textit{Enterprise}. A versão \textit{Enterprise} possui alguns recursos que a versão \textit{Community} não possui, contudo para o propósito desse trabalho os recursos da versão \textit{Community} são suficientes.
+A ferramenta selecionada para armazenar os dados em grafos é o Neo4j\footnote{Disponível em http://neo4j.com/}. O Neo4j é um projeto de código aberto que é mantido pela empresa Neo Technology. Esta ferramenta possui duas versões: a \textit{Community} e a \textit{Enterprise}. A versão \textit{Enterprise} possui alguns recursos que a versão \textit{Community} não possui, contudo para o propósito desse trabalho os recursos da versão \textit{Community} são suficientes.
 
-O Neo4j possui uma funcionalidade para importar determinados tipos de dados, incluindo CSV (\textit{Comma Separated Value}) \footnote{Um arquivo no qual os dados são estruturados em formato de tabela e os valores são separados por vírgulas ou qualquer outro caracter de separação} satisfazendo a primeira necessidade para a tecnologia de armazenamento dos dados. Para se realizar consultas no Neo4j é utilizado a linguagem descritiva Cypher, cuja é parecida com o SQL. Essa linguagem será responsável por filtrar os resultados, reduzindo o conjunto de dados em uma porção menor que será exibida na ferramenta de visualização. Entretanto, o Neo4j \footnote{Pelo menos até a versão 2.3 utilizada nessa pesquisa} não possui a funcionalidade de exportação dos dados em um formato conhecido pelas ferramentas de visualização de forma nativa. Para contornar esse problema, foi utilizado o programa Neo4j-Shell, disponível em https://github.com/jexp/neo4j-shell-tools. Com essa ferramenta é possível exportar dados realizados por meio de consultas Cypher em vários tipos de formatos, inclusive Graphml, um padrão de arquivos de grafos que é lido por vários \textit{softwares} de visualização de grafos.
+O Neo4j possui uma funcionalidade para importar determinados tipos de dados, incluindo CSV (\textit{Comma Separated Value}) \footnote{Um arquivo no qual os dados são estruturados em formato de tabela e os valores são separados por vírgulas ou qualquer outro caracter de separação} satisfazendo a primeira necessidade para a tecnologia de armazenamento dos dados. Para se realizar consultas no Neo4j é utilizado a linguagem descritiva Cypher, cuja é parecida com o SQL. Essa linguagem será responsável por filtrar os resultados, reduzindo o conjunto de dados em uma porção menor que será exibida na ferramenta de visualização. Entretanto, o Neo4j \footnote{Pelo menos até a versão 2.3 utilizada nessa pesquisa} não possui a funcionalidade de exportação dos dados em um formato conhecido pelas ferramentas de visualização de forma nativa. Para contornar esse problema, foi utilizado o programa Neo4j-Shell, disponível no \href{https://github.com/jexp/neo4j-shell-tools}{Github.} Com essa ferramenta é possível exportar dados realizando consultas Cypher em vários tipos de formatos, inclusive Graphml. Graphml é um padrão de arquivos de grafos que é lido por vários \textit{softwares} de visualização de grafos, possui informações adicionais para visualização dos dados e contém dois principais objetivos: Simplicidade e Generalização [Brandes 2002] \cite{graphml}.
 
 Além das três necessidades para atingir o objetivo da pesquisa, o Neo4j possui outros atrativos, tais como: sua versão \textit{Community} está sob a licença GPL (\textit{General Public License}) v3.0 que visa a liberdade para uso do software para qualquer propósito; tem uma comunidade ativa, o que facilita a busca por suporte ou documentação na internet; é multiplataforma, pois foi desenvolvido para rodar sobre a máquina virtual do Java; é escalável, sua performance é otimizada para lidar com muito relacionamentos e é flexível se comparado com outras arquiteturas de banco de dados, porque não é necessário criar um esquema rígido para modelar o banco de dados.
           
 \subsection{Ferramenta de Visualização: Gephi}
          
-Gephi é um dos softwares de código aberto mais populares na área de análise e visualização de grandes redes de relacionamento (Japoneses). Assim como o Neo4j foi desenvolvido em Java, portanto também é multiplataforma. Os três conceitos principais são usabilidade, performance e modularidade. O desenvolvimento do Gephi continua ativo e o código fonte do projeto encontra-se em: https://github.com/gephi/gephi .
+Gephi é um dos softwares de código aberto mais populares na área de análise e visualização de grandes redes de relacionamentos [Jarukasemratana et al. 2013] \cite{japoneses}. Assim como o Neo4j, também foi desenvolvido em Java, portanto também é multiplataforma. Os três conceitos principais são usabilidade, performance e modularidade. O desenvolvimento do Gephi continua ativo e o código fonte do projeto também encontra-se no \href{https://github.com/gephi/gephi}{Github.}
 
-Como o Gephi está sob as licenças CDDL-1.0 (\textit{Common Development and Distribution License}) e a GPL v3.0 que permitem a utilização do software de forma gratuita, o emprego do software na pesquisa pode ser realizado sem nenhuma restrição legal. Outra vantagem do Gephi, é que este software usa OpenGL como motor de visualização cujo provê uma performance considerável na exibição do grafo (Japoneses).
+Como o Gephi está sob as licenças CDDL-1.0 (\textit{Common Development and Distribution License}) e a GPL v3.0 que permitem a utilização do software de forma gratuita, o emprego do software na pesquisa pode ser realizado sem nenhuma restrição legal. Outra vantagem do Gephi, é que este software usa OpenGL como motor de visualização cujo provê uma performance considerável na exibição do grafo [Jarukasemratana et al. 2013] \cite{japoneses}.
 
-Além do mais, são características do Gephi o emprego de algoritimos que estão no estado da arte em desenho de grafos; métricas para mensuração tais como média para caminho mais curto, coeficiente de agrupamento, proximidade, entre outras; soma-se a isso, a customização que é possível ser feita por esta ferramenta, no qual pode-se alterar cores, rótulos, tamanhos baseado em \textif{rankings} de graus, por exemplo. É possível aplicar um algoritimo chamado de \empth{Modularidade} que detecta agrupamentos e aplica cores distintas para esses agrupamentos.
+Além do mais, são características do Gephi o emprego de algoritimos que estão no estado da arte em desenho de grafos; métricas para mensuração tais como: média para caminho mais curto, coeficiente de agrupamento, proximidade, entre outras; soma-se a isso, a customização que é possível ser feita por esta ferramenta, no qual pode-se alterar cores, rótulos e tamanhos baseado em \textit{rankings} de graus, por exemplo. É possível aplicar um algoritimo chamado de \emph{Modularidade} que detecta agrupamentos e aplica cores distintas para esses agrupamentos (gephi).
 
 \section{Desenvolvimento}
 
@@ -105,97 +84,113 @@ Após feito o \textit{download} do arquivo contendo as interações entre as proteí
 
 O banco de dados Neo4j possui algumas peculiaridades. Cada nó pode ter um ou mais rótulos, que tem por objetivo classificar o nó. Nesta perspectiva, as relações (arestas, na Teoria dos Grafos) possuem os tipos. Tanto os nós, quanto as relações podem ter zero ou várias propriedades, estas que por sua vez tem um nome e um valor. O modelo do banco de dados criado para esse trabalho é simples. Os nós tem um rótulo \emph{Protein} e as relações são do tipo \emph{INTERACTS\_WITH}. Todos os nós tem apenas uma propriedade \emph{name}, cujo consta o nome da proteína que pode ser da coluna \emph{protein1} ou \emph{protein2} do arquivo. As demais colunas do arquivo serão propriedades de cada relação. Para esse banco de dados foi adotado a seguinte convenção: rótulos com a letra inicial em maiúscula e as demais minúsculas, sem espaços entre palavras, prática conhecida como \textit{CamelCase}\footnote{Veja mais em: https://pt.wikipedia.org/wiki/CamelCase}; nome dos tipos das relações com letras em maiúsculas separadas e caso seja necessário um \textit{underline} para separar palavras; e as propriedades todas em minúsculas sem espaços.
 
-Antes de realizar a importação, foi criado um índice para o rótulo \emph{Protein} na propriedade \emph{name}, abordagem recomendada pela documentação oficial do banco de dados caso haja grande quantidade de dados. Após isso, foi feito a importação. Isso foi realizado em dois passos, primeiro foram importados os nós e em seguida foram importados as relações. Na figura 2 é demonstrado as senteças \emph{Cypher}.
+Antes de realizar a importação, foi criado um índice para o rótulo \emph{Protein} na propriedade \emph{name}, abordagem recomendada pela documentação oficial do banco de dados caso haja grande quantidade de dados. Após isso, foi feito a importação. Isso foi realizado em dois passos, primeiro foram importados os nós e em seguida foram importados as relações. Na Figura \ref{fig:figure2} é demonstrado as senteças Cypher.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{2}
 \caption{Senteças Cypher}
 \label{fig:figure2}
 \end{figure}
 
-A primeira sentença é a criação do índice. A cláusula \emph{using periodic commit 5000} quer dizer que é necessário realizar o commit a cada 5000 objetos carregados na memória, assim como a criação do índice, isso é um prática recomendada pela documentação oficial do Neo4j. Logo em seguida, nota-se \emph{load csv with headers from} que em uma tradução literal significa: "carregar csv com cabecalhos vindo do arquivo". Ao lado consta a localização do arquivo. A cláusula \emph{as} aponta um "apelido" para a linha atual do arquivo, que no caso é a letra \emph{l}. A cláusula \emph{fieldterminator} especifica o separador do arquivo csv, o que no caso é um espaço. A palavra reservada merge age da seguinte forma, caso não tenha uma relação ou nó que atende as condições destacadas na sentença, então esse objeto é criado. Para simplificar, é procurado o nós do tipo \emph{Protein} com a propriedade \emph{name} com valor da célula corrente da coluna \emph{protein1}. Caso encontre, nada é realizado. Se esse nó não for encontrado, então ele é criado com essas características.
+A primeira sentença é a criação do índice. A cláusula \emph{using periodic commit 5000} quer dizer que é necessário realizar o commit a cada 5000 objetos carregados na memória, assim como a criação do índice, é um prática recomendada pela documentação oficial do Neo4j. Logo em seguida, nota-se \emph{load csv with headers from} que em uma tradução literal significa: "carregar csv com cabeçalhos vindo do arquivo". Ao lado consta a localização do arquivo. A cláusula \emph{as} aponta um "apelido" para a linha atual do arquivo, que no caso é a letra \emph{l}. A cláusula \emph{fieldterminator} especifica o separador do arquivo csv, que é um espaço. A palavra reservada \emph{merge} age da seguinte forma, caso não tenha uma relação ou nó que atende as condições destacadas na sentença, então esse objeto é criado. Para simplificar, é procurado o nós do tipo \emph{Protein} com a propriedade \emph{name} com valor da célula corrente da coluna \emph{protein1}. Caso encontre, nada é realizado. Se esse nó não for encontrado, então ele é criado com essas características.
 
-A cláusula \emph{match} da terceira senteça tenta combinar o objeto de acordo com as características informadas na sentença. Nesse caso, dois nós, p1 e p2, que possuem rótulo \emph{Protein} com \emph{name} de acordo com a célula da coluna \emph{protein1} e \emph{protein2}, respectivamente. O formato ()-[]-() server para especificar a relação de um nó, com outro nós. Os parênteses representam os nós e os colchetes a relação. A letra \empth{r} é utilizada com um "apelido" assim com a letra \emph{l} foi usada anteriormente. \empth{on create set} nessa sentença, age de forma similar que ao \emph{merge}, mas ao contrário do \emph{merge} estas cláusulas são para proriedades. O resto da sentença especifica que é criado uma propriedade na relação para cada coluna remanescente na linha, com o valor de cada célula convertida para elementos do conjunto dos reais. Após execução da última sentença, é possível vizualizar os dados físicos do banco de dados, como: tamanho total do banco, quantidade de nós, propriedades, relaçoes e tipos de relações inseridas e outras informações. Essas informações podem ser vistas na Figura 3.
+A cláusula \emph{match} da terceira senteça tenta combinar o objeto de acordo com as características informadas na sentença. Nesse caso, dois nós, p1 e p2, que possuem rótulo \emph{Protein} com \emph{name} de acordo com a célula da coluna \emph{protein1} e \emph{protein2}, respectivamente. O formato ()-[]-() serve para especificar a relação de um nó, com outro nó. Os parênteses representam os nós e os colchetes a relação. A letra \emph{r} é utilizada com um "apelido" assim com a letra \emph{l} foi usada anteriormente. O \emph{set} nessa sentença, age de forma similar que ao \emph{merge}, mas ao contrário do \emph{merge} esta cláusula é para proriedades. O resto da sentença especifica que é criado uma propriedade na relação para cada coluna remanescente na linha, com o valor de cada célula convertida para elementos do conjunto dos reais. Após execução da última sentença, é possível vizualizar os dados físicos do banco de dados, como: tamanho total do banco, quantidade de nós, propriedades, relaçoes, tipos de relações inseridas e outras informações. Essas informações podem ser vistas na Figura \ref{fig:figure3}.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{3}
 \caption{Informações sobre o banco de dados}
 \label{fig:figure3}
 \end{figure}
 
-\subsection{Subsections}
+Nota-se que o banco de dados possui 19.643 nós e 9.075.028 relações.
 
-The subsection titles must be in boldface, 12pt, flush left.
+Após importar o banco e constatar que os dados foram importados com sucesso, exportou-se todos os dados para o formato Graphml. Para executar essa ação, foi necessário executar o comando que consta na Figura \ref{fig:figure4}.
 
-\section{Figures and Captions}\label{sec:figs}
-
-
-Figure and table captions should be centered if less than one line
-(Figure~\ref{fig:exampleFig1}), otherwise justified and indented by 0.8cm on
-both margins, as shown in Figure~\ref{fig:exampleFig2}. The caption font must
-be Helvetica, 10 point, boldface, with 6 points of space before and after each
-caption.
-
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{fig1.jpg}
-\caption{A typical figure}
-\label{fig:exampleFig1}
+\includegraphics[width=1\textwidth]{4}
+\caption{Exportação completa do banco de dados}
+\label{fig:figure4}
 \end{figure}
 
-\begin{figure}[ht]
+Tentou-se abrir o arquivo Graphml recém exportado no Gephi, porém surge o problema de visualização de dados com quantidade limitada de memória RAM e a tentativa fracassa. Na Figura \ref{fig:figure5} é demonstrada o alerta de falta de memória enviado pelo \emph{software}.
+
+\begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{fig2.jpg}
-\caption{This figure is an example of a figure caption taking more than one
-  line and justified considering margins mentioned in Section~\ref{sec:figs}.}
-\label{fig:exampleFig2}
+\includegraphics[width=1\textwidth]{5}
+\caption{Alerta de falta de RAM do Gephi}
+\label{fig:figure5}
 \end{figure}
 
-In tables, try to avoid the use of colored or shaded backgrounds, and avoid
-thick, doubled, or unnecessary framing lines. When reporting empirical data,
-do not use more decimal digits than warranted by their precision and
-reproducibility. Table caption must be placed before the table (see Table 1)
-and the font used must also be Helvetica, 10 point, boldface, with 6 points of
-space before and after each caption.
+Mesmo acatando a sugestão de aumento de memória mostrado no alerta e reiniciando a aplicação, não foi possível visualizar o grafo. Esta tentiva foi realizada em um computador que possui aproximadamente 8 \emph{Gigabytes} de RAM. Não obstante, outros testes foram realizados em computadores com aproximadamente 16 e 32 \emph{Gigabytes}, ambos com insucesso. Nas poucas vezes em que foram possíveis abrir o arquivo no computador de 16 GB, a performance da exibição demonstrou-se absurdamente instatisfatória acarretando em uma péssima experiência do usuário. No outro computador, a importação foi realizada com ligeira facilidade e fez-se possível a visualização sem pormenores, contudo, dependendo do operação que fosse realizada, tal como aplicar o algoritimo de modularização, a aplicação encerrava inesperadamente.
 
-\begin{table}[ht]
+Como a visualização completa do banco de dados ou não foi possível, ou fez-se com desempenho insatisfatório, partiu-se para abordagem de visualização com porções menores.
+
+\subsection{Visualizando Porções Menores}
+
+A exportação do conjunto de dados em porções menores é semelhante a exportação do banco completo que foi demonstrado na Figura \ref{fig:figure5}, a única diferença é a inclusão da sentença Cypher no final do comando. O(s) resultado(s) da consulta serão exportados para o arquivo Graphml. Como não é possível determinar quais tipos de porções de dados serão relevantes para análise sem um especialista do domínio dos dados, pressupõe-se que uma amostra de 10\% do conjunto universo seria de interesse para análise. Desta forma, a consulta Cypher no final do comando foi: \emph{match(p1)-[r]-(p2) return p1, r, p2 limit 907503;}.
+
+Depois de exportado a amostra, abriu-se o arquivo no Gephi. Ao contrário do que aconteceu com o conjunto universo do dados, a amostra foi exibida como foi demonstrada na Figura \ref{fig:figure6}
+
+\begin{figure}[H]
 \centering
-\caption{Variables to be considered on the evaluation of interaction
-  techniques}
-\label{tab:exTable1}
-\includegraphics[width=1\textwidth]{table.jpg}
-\end{table}
+\includegraphics[width=1\textwidth]{6}
+\caption{Visualização dos dados no Gephi}
+\label{fig:figure6}
+\end{figure}
 
-\section{Images}
+Devido a massiva quantidade de dados e a falta de aplicação de algum algoritimo de espacialização, os nós e arestas aparecem todos aglomerados. Para facilitar a visualização, aplica-se algum algoritimo de espacialização do grafo. Nessa pesquisa foi utilizado o \emph{Force Atlas 2}. O \emph{Force Atlas 2} é o algoritimo de espacialização padrão da versão utilizada nesse artigo (0.8.2). O foco desse algoritimo é transformar a rede em um mapa e possui uma variedade de técnicas para espacialização [Jacomy et al. 2014] \cite{forceAtlas}. O resultado pode ser conferido na Figura \ref{fig:figure7}.
 
-All images and illustrations should be in black-and-white, or gray tones,
-excepting for the papers that will be electronically available (on CD-ROMs,
-internet, etc.). The image resolution on paper should be about 600 dpi for
-black-and-white images, and 150-300 dpi for grayscale images.  Do not include
-images with excessive resolution, as they may take hours to print, without any
-visible difference in the result. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{7}
+\caption{Grafo com \textit{Force Atlas 2} aplicado}
+\label{fig:figure7}
+\end{figure}
 
-\section{References}
+Além do mais, a aplicação possui outras ferramentas que auxiliam a análise e busca por padrões. Neste artigo será destacado apenas duas dessas funcionalidades: a classificação por grau dos nós e a partição por modularide.
 
-Bibliographic references must be unambiguous and uniform.  We recommend giving
-the author names references in brackets, e.g. \cite{knuth:84},
-\cite{boulic:91}, and \cite{smith:99}.
+A classificação por grau funciona da seguinte forma, o software analisa qual o grau de cada nós e aplica o redimensionamento nos nós de acordo com os parâmetros informados. Desta forma é possível identificar quais são os nós que mais interagem com os demais. Por meio da Figura \ref{fig:figure8} é demonstrado o resutado desse algoritimo na amostra importada.
 
-The references must be listed using 12 point font size, with 6 points of space
-before each reference. The first line of each reference should not be
-indented, while the subsequent should be indented by 0.5 cm.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{8}
+\caption{Grafo com classificação por grau}
+\label{fig:figure8}
+\end{figure}
 
-\bibliographystyle{sbc}
+A partição por modularidade é semelhante a clusterização em mineração de dados. Na prática essa funcionalidade agrupa os nós semelhantes em cores distintas. Desta forma, o especialista no domínio dos dados consegue visualizar comunidades em seus dados e isso pode ocasionar na identificação de padrões. Na Figura \ref{fig:figure9} é exibido a amostra após aplicado o recurso de modularidade.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{9}
+\caption{Grafo com partição por modularidade}
+\label{fig:figure9}
+\end{figure}
+
+Para finalizar como a análise dos dados em grafos auxilia na identificação de padrões, é demonstrado na Figura \ref{fig:figure10} a funcionalidade de pré-visualização. Recurso que tem opções de exportação da imagem em PDF, SVG e outros formatos.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{10}
+\caption{Recurso de visualização do Gephi}
+\label{fig:figure10}
+\end{figure}
+
+\section{Conclusões}
+
+O problema de visualização de grandes quantidades de dados em grafos descrito na seção introdutória foi resolvido conforme apresentado na seção de desenvolvimento. Primeiramente foi realizado a importação dos dados para um banco de dados em grafos cujo provê meios necessários para exportação dos dados de forma prática, apenas informando a consulta Cypher que gerará subconjuntos com amostras do conjunto universo, para um formato que pode ser lido pelo \emph{software} de visualização. No entanto, antes de gerar um subconjunto, realizou-se a exportação do banco de dados completo afim de verificar a limitação na exibição dos dados. Após constatar que não foi possível visualizar o conjunto de dados completos, exportou-se um fragmento do banco de dados no qual foi visualizado com sucesso pela aplicação de análise.
+
+Vale salientar que esse tipo de abordagem possui algumas limitações. Se for necessário analisar todos os dados como um todo, sem poder dividí-los, essa abordagem é ineficaz. Outra possível falha é gerar uma amostra insuficiente, que pode afetar a análise dos dados.
+
+Foi demonstrado no final da seção de desenvolvimento como algumas funcionalidades de uma aplicação de visualização de dados em grafos pode auxiliar na classificação e clusterização dos dados. Uma sugestão para um trabalho futuro seria conciliar essa abordagem com um especialista no domínio dos dados que possa validar se os padrões encontrados na visualização é relevante para área de conhecimento dos dados.
+
+%\bibliographystyle{sbc}
+\nocite{*}
 \bibliography{sbc-template}
+\bibliographystyle{plain}
 
 \end{document}
-
-
-
-
-
-
-
-

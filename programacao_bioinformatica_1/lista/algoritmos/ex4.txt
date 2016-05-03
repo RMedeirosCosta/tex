@@ -1,0 +1,55 @@
+# Autor: Ricardo Medeiros da Costa Junior
+# Titulo: Exercicio 4
+# Data: 22/03/2016
+# Objetivo: Dado um numero natural, imprimir os n primeiros naturais impares
+# Entrada: numero (inteiro)
+# Saida: Os numeros impares ate numero digitado
+# Obs.: Verificar se o numero e natural e depois imprimir naturais impares [1,N]
+
+algoritmo exercicio_4;
+
+inicio
+    main();
+fim
+
+procedimento reinicia_programa()
+inicio
+    imprime("Numero invalido. Programa sera reiniciado. POR FAVOR! \n"
+            "Informe um natural.");
+    main();
+    interrompa();
+fim
+
+funcao obter_numeros(numero_maximo: inteiro) : matriz[] de inteiros
+variaveis
+    i : inteiro;
+    numeros_impares : matriz[] de inteiros;
+fim-variaveis
+
+inicio
+    para i de 0 ate numero_maximo passo 1 faca
+        se (i mod 2) != 0 entao
+	   numeros_impares[i] := i;
+    fim-para
+
+    retorne numeros_impares;
+fim
+
+procedimento main()
+variaveis
+    numero : inteiro;
+    i : inteiro;
+fim-variaveis
+
+inicio
+    numero := leia("Digite um numero natural:");
+
+    se numero < 0 entao
+        reinicia_programa();
+    fim-se
+
+    imprime("Os numeros impares de 1 a " + numero + "sao: ");
+
+    para i de 0 ate numero passo 1 faca
+        imprime(i);
+fim

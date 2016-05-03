@@ -1,0 +1,49 @@
+# Autor: Ricardo Medeiros da Costa Junior
+# Titulo: Exercicio 1
+# Data: 22/03/2016
+# Objetivo: Dados dois numeros naturais verificar quem e o maior
+# Entrada: numero1, numero2 (inteiros)
+# Saida: O numero maior
+# Obs.: Verificar se a entrada e valida e depois retornar qual o maior numero
+
+algoritmo exercicio_1;
+
+inicio
+    main()
+fim
+
+procedimento main()
+variaveis
+    numero1 : inteiro;
+    numero2 : inteiro;
+    CORPO_SAIDA : literal;
+fim-variaveis
+    numero1 := leia("Digite o primeiro numero:"));
+
+    se numero1 < 0 entao
+       reinicia_aplicacao();
+
+    # Foram verificado separado pois ficava mais intuitivo
+    numero2 := leia("Digite o segundo numero:"))
+
+    se numero2 < 0 entao
+       reinicia_aplicacao();
+
+    CORPO_SAIDA := "O numero maior e: ";
+
+    se numero1 > numero2 entao
+       imprime(CORPO_SAIDA + numero1);
+    se numero2 > numero1 entao    
+       imprime(CORPO_SAIDA + numero2);
+    senao
+       imprime("Os numeros sao iguais.");
+    fim-se
+fim
+
+procedimento reinicia_aplicacao()
+inicio
+    imprime("Numero invalido. Programa sera reiniciado. POR FAVOR! \n"
+          "Informe um numero natural");
+    main();
+    interrompa();
+fim
