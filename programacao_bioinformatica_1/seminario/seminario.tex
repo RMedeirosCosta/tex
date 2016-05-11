@@ -1,0 +1,101 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\begin{document}
+\textbf{UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ}\\
+\centerline{\underline{Biologia Computacional e Sistêmica | PPGBIOINFO}}\\\\
+\textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} a1598996 \\
+\textbf{DISCIPLINA:} Programação para Bioinformática 1 \\
+\begin{enumerate} 
+\item A visão baixo nível\\
+  Quando um usuário entra em um site, seu navegador faz uma conexão com site no servidor web. Isso é chamado requisição. O servidor procura o arquivo no seu sistema de arquivos e envia de volta pro navegador do usuário, no qual exibe-o. Isso é chamado de resposta. A grosso modo, é assim que o HTTP funciona.
+  Sites dinânmicos não são baseados em arquivos, mas em programas que recebem uma requisição do usuário, processam a informação e devolvem a resposta. Esse programas são escritos em alguma linguagem de programação, que podem ser Python.
+  Os servidores web não executam o python diretamente, é necessário uma interface de comunicação entre eles.
+  [IMAGEM] OK
+
+  Common Gateway Interface é suportada por praticamente qualquer servidor web atual. Programas usando CGI para se comunicar com servidor web precisam ser iniciados a cada requisição web. Então cada requisição inicia um interpretador Python.
+  O ponto forte do CGI é que ele é bem simples, no entanto não ha muitas ferramentas para facilitar a vida do desenvolvedor.
+  Apesar de possível, nao é recomendável escrever programas usando CGI.
+  CGI: Prós: Simples de usar
+  Contras: Possui poucas ferramentas que facilitam a vida do desenvolvedor;
+           Lento
+  Exemplo de CGI:
+  EXEMPLO
+  Você pode perceber que cgitb está ativado. Por meio dessa linha é possível visualizar e rastrear possíveis erros. Isso é útil para depuração mas não é recomendável em produção, pois assim não é exposto nenhuma informação confidencial para o usuário. O desenvolvedor deve sempre tratar as exceções e mostrar mensagens amigáveis para o usuário.
+
+  [IMAGE] OK
+  mod_python é um módulo do Apache que integra o interpretador python no servidor.
+  Prós: Mais rápido que o CGI tradicional; Provê comportamentos avançados no servidor apache
+  Contras: Como o interpretador python usa caching ao executar arquivos, então ao mudar algo nos arquivos é necessário reiniciar o servidor web. Outro problema é que o Apache inicia processos filhos para gerenciar as requisições e infelizmente cada processo filho precisa ser carregar todo o interpretador python, até mesmo se não estiver usando. Isso faz o servidor web ficar lento. Outro contra é mod_python é acoplado com específica versão da biblioteca libpython, então ao atualizar a versão é necessário recompilar mod_python. Além de que mod_python faz parte do servidor Apache, então aplicações com mod_python podem não rodar me oturos servidor.
+
+  FastCGI e SCGI
+  FastCGI e SCGI tentam resolver o problema de perfomance de outra maneira. Eles criam um processos em segundo plano. Há um modulo no servidor web no qual é possível para o webservice se comunicar com os processos em segundo plano. Como estes processos são independentes do servidor, eles podem ser escritos em qualquer linguagem, incluindo python. As diferenças entre os dois são pequenas, sendo que SCGI é um FastCGI simplificado, simpler em inglês. Por existir mais servidores que suportam SCGI, ele é mais utilizado.
+
+  [IMAGE] OK
+  mod_wsgi
+  Este módulo facilita a publicação de aplicações WSGI.
+
+  [IMAGE] OK
+  WSGI
+  Web Server Gateway Interface.
+  O maior benefício de WSGI é a integração entre os servidores. Se o seu programa é compatível com WSGI você não precisa se preocupar com as interfaces de comunicação (mod_python, FastCGI e etc). Outra vantagem do WSGI é a camada de middleware. Por exemplo, ao invés de implementar seu próprio gerencimento de sessão,v ocê pode baixar um middleware que faz isso e se preocupar apenas com as regras de negócio. O mesmo vale para compressão, autenticação e etc.
+  Um desvantagem é que WSGI pode aparentar ser um pouco complexo.
+  [IMAGEM] OK
+
+  [IMAGEM] OK
+  Model-View_Controller
+  MVC se trata de como vai organizar o código. MVC é composto de três componentes:
+  Modelo (Model):  São os dados que vão ser mostrados e modificados. Nos frameworks Python, esse componente é frequentemente representado por classes usando ORM.
+  Visão (View): A tarefa desse componente é exibir os dados do modelo para o usuário. Geralmente esse componente é implementado por Templates.
+  Controlador (Controller): Essa é a camada entre o usuário e o modelo. O controlador reage uma interação do usuário avisando o modelo para modificar os dados se necessário e notifica a visão para o que mostrar.
+
+  Templates
+  Misturar HTML com código python é possível. Mas assim como qualquer outra linguagem, misturar HTML com linguagem de programação deixa a manutenção inviável. Para corrigir esse problema foram criado os templates.
+  O HTML é enviado para o navegador do usuário preenchendo os espaços reservados, como é feito no printf da linguagem C.
+  [IMAGEM] PEGAR DO SITE
+  Alguns frameworks utilizam sua prória template engine, ou recomendam alguma.
+  As template engines mais populares:
+  - Mako
+  - Genshi
+  - Jinja
+
+  Persistência de Dados
+  Pode-se realizar a persistência de dados em python com qualquer SGBD relacional, como PostgreSQL e MySQL. No entanto o Python possui uma biblioteca integrada para SQLite, chamada sqlite3. Para banco de dados pequenos SQLite é suficiente.
+  [IMAGEM] OK
+  [IMAGEM] PEGAR DO SITE
+  ORM
+  Se for utilizar o paradigma de programação orientada a objetos, recomenda-se utilizar um framework ORM. Um framework provê uma abstração das tabelas dos banco de dados para classes que vão ser instanciadas em objetos.
+  SQLAlchemy é exemplo de OR-Mapper [IMAGEM]
+
+  Outra alternativa é utilizar banco de dados orientado a objetos. Estes não necessitam de mapeamento ORM, pois os dados são persistidos em formas de objetos.
+  Exemplos de banco de dados orientado a objetos:
+  - ZODB [IMAGEM] PEGAR DO SITE OFICIAL
+  - DURUS  [IMAGEM] PEGAR DO GITHUB
+
+  Frameworks
+  O processo de desenvolvimento de web sites envolve desenvolver código para fornecer vários serviços. Alguns desses serviços podem ser reaproveitados. A abstração dessas soluções comuns para ser reusadas em outros projetos são chamados de frameworks. Python possui alguns frameworks chamados ``full stack''. São grande conjunto de ferramentas que fornecem subsídios para facilitar a criação de um sistema web com maior facilidade, além de geralmente possuir vasta documentação.
+  
+  - Django é um web framework de alto nível que facilita um desenvolvimento rápido, limpo e pragmático. Django auxilia o desenvolvedor a evitar possíveis erros de segurança e é altamente escalável. Este framework também fornece ORM e possui vasta documentação.
+  CONTRA: Se a aplicação for pequena, pode incluir uma complexidade desnecessária. [IMAGEM] 
+
+  - TurboGears é um framework full stack que integra outros frameworks. Ele utiliza SQLAlchemy ou Ming para o modelo, Genshi, Repoze ou Tosca Widgets para a visão. Assim como o Django ele possui algumas características que facilitam a vida do desenvolvedor e também provê uma ferramenta de ORM.
+  CONTRA: A mesma do Django
+  [IMAGEM]] http://code.runnable.com/Unq2c2CaTc52AAAm/basic-turbogears-example-for-python
+
+    Referências
+    https://docs.python.org/2/howto/webservers.html
+    https://wiki.python.org/moin/WebFrameworks
+    http://www.turbogears.org/features.html
+    https://docs.python.org/2/library/sqlite3.html
+    http://pt.slideshare.net/spjuliano/postgresql-python-power
+    http://www.highteck.net/EN/Application/Application_Layer_Functionality_and_Protocols.html
+    https://www.djangoproject.com/
+    http://www.zodb.org/en/latest/
+    https://github.com/nascheme/durus
+    http://modpython.org/
+\end{enumerate}
+\end{document}
+
+
