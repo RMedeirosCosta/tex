@@ -1,0 +1,89 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{cancel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\graphicspath{{img/}}
+
+\begin{document}
+\begin{flushleft}\includegraphics{logo}\\
+\textbf{UNIVERSIDADE ESTADUAL DE PONTA GROSSA} \\
+SISTEMA UNIVERSIDADE ABERTA DO BRASIL - UAB \\
+\underline{Licenciatura em Matemática | Polo UAB em Jacarezinho}\end{flushleft} 
+\textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} 151774301 \\
+\textbf{DISCIPLINA:} Fundamentos da Matemática III \\
+\textbf{ATIVIDADE:} Atividade 6 - Tarefa: Polinômios\\
+\textbf{TUTOR(A)}: Julio Cezar de Souza\\
+\textbf{PERÍODO:} Terceiro\\
+\begin{enumerate}
+\item As dimensões em centímetros de uma caixa retangular fechada são $(x+1)$, $(2x-3)$ e $(x+2)$.
+  \begin{enumerate}
+  \item Escreva os polinômios que $A(x)$, que expressa a área da superfície, e $V(x)$, que expressa o volume da caixa. \\\\
+    Legenda: \\
+    \begin{itemize}
+    \item $A_l = $ Área lateral
+    \item $A_b = $ Área da base
+    \item $A_t = $ Área total
+    \item $l = $ Largura
+    \item $c = $ Comprimento
+    \item $h = $ Altura
+    \end{itemize} \\
+    Como o exercício não especifica qual polinômio é de cada medida é assumido, por hipótese, que:\\
+    \begin{itemize}
+    \item $l = (x+1) $
+    \item $c = (x+2) $
+    \item $h = (2x-3) $
+    \item $A_b = 2lc \Rightarrow A_b = [(x+1)(x+2)] $
+    \item $A_l = 2lh + 2ch \Rightarrow  2[(x+1)(2x-3)] + 2[(x+2)(2x-3)] $
+    \item $A_b =  A_b + A_l $    
+    \end{itemize}
+    $$ A(x) = A_t \Rightarrow $$
+    $$ A(x) = A_l + 2A_b \Rightarrow $$
+    $$ A(x) =  2[(x+1)(2x-3)] + 2[(x+2)(2x-3)] + 2 [(x+1)(x+2)] \Rightarrow $$
+    $$ A(x) = 2(x^2+\cancel{2x}+\cancel{x}+2) + 2(2x^2-\cancel{3x}+2x-3) + 2(2x^2-3x+4x-6) \Rightarrow $$
+    $$ A(x) = 2(5x^2+3x-7) \Rightarrow $$
+    $$ \boxed{A(x) = 10x^2+6x-14} $$ \\ \\ \\
+    $$ V(x) = clh \Rightarrow $$
+    $$ V(x) = (x+1)(2x-3)(x+2) \Rightarrow $$
+    $$ V(x) = 2x^2-x-3(x+2) \Rightarrow $$
+    $$ V(x) = 2x^3+4x^2-x^2-2x-3x-6 \Rightarrow $$
+    $$ \boxed{ V(x) = 2x^3+3x^2-5x-6} $$
+  \item  Encontre o volume da caixa, quando a área da superfície é $94 cm²$.
+    $$ A(x) = 10x^2+6x-14 \Rightarrow $$
+    $$ 94 = 10x^2+6x-14 \Rightarrow $$
+    $$ 10x^2+6x-14 = 0 \Rightarrow $$ \\\\
+    $$ \Delta = b^2-4ac \Rightarrow $$
+    $$ \Delta = (6)^2-4\cdot10\cdot(-108) \Rightarrow $$
+    $$ \Delta = 4356 $$ \\\\
+    $$ \frac{-b \pm \sqrt{\Delta}}{2a} \Rightarrow $$
+    $$ \frac{-6 \pm 66}{2\cdot10} \Rightarrow $$
+    $$ - \frac{72}{20} \Rightarrow $$         
+    $$ - \frac{18}{5} $$ \\\\
+    $$ \frac{-6 \pm 66}{2\cdot10} \Rightarrow $$
+    $$ \frac{\cancel{60}}{2\cdot\cancel{10}} \Rightarrow $$
+    $$ \frac{6}{2} \Rightarrow $$
+    $$ 3 $$ \\\\
+    $$ V(3) = 2\cdot(3)^3 + 3\cdot(3)^2 - 5\cdot(3) - 6 \Rightarrow $$
+    $$ V(3) = 2\cdot27 + 3\cdot9 - 15 - 6 \Rightarrow $$
+    $$ \boxed{ V(3) = 60 cm^3} $$    
+  \end{enumerate}
+\item  Elabore um problema que envolva divisão de polinômios e explique a resolução pelo método da chave e pelo método de Briot-Ruffini.\\\\
+  A área de uma folha é igual a $x^3-1 $ u.a. Quantas figuras de área $x-1$ u.a. pode-se desenhar nessa folha?\\
+  $$ x^3-1 | \underline{x-1} $$ 
+  $$ -\cancel{x^3}+x^2\ \ x^2+x+1 $$
+  $$ x^2 - 1 $$ 
+  $$ \cancel{-x^2} + x $$
+  $$ x - 1 $$
+  $$ \cancel{-x + 1} $$ 
+  $$ \boxed{x^2+x+1} $$ \\\\ 
+  $$ 1\ |\ 1\ 0\ 0\ -1 $$
+  $$ \ \  1\ 1\ 1\ \ \ 0 $$
+  $$ \boxed{x^2 + x + 1} $$ \\
+  O polinômio referente a quantidade de desenhos é:  $ x^2+x+1 $ u.a.
+  
+\end{enumerate}
+\end{document}
