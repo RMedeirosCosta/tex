@@ -1,0 +1,101 @@
+% http://latexbr.blogspot.com.br
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{amssymb,amsfonts,indentfirst}
+\usepackage[centertags]{amsmath}
+\usepackage{algpseudocode,algorithm}	% pseudo-codigo
+
+% Declaracoes
+%\algrenewcommand\algorithmicend{\textbf{fim}}
+%\algrenewcommand\algorithmicdo{\textbf{faça}}
+%\algrenewcommand\algorithmicwhile{\textbf{enquanto}}
+%\algrenewcommand\algorithmicfor{\textbf{para}}
+%\algrenewcommand\algorithmicif{\textbf{se}}
+%\algrenewcommand\algorithmicthen{\textbf{então}}
+%\algrenewcommand\algorithmicelse{\textbf{senão}}
+%\algrenewcommand\algorithmicreturn{\textbf{devolve}}
+%\algrenewcommand\algorithmicfunction{\textbf{função}}
+
+%\algrenewtext{EndWhile}{\algorithmicend\ \algorithmicwhile}
+%\algrenewtext{EndFor}{\algorithmicend\ \algorithmicfor}
+%\algrenewtext{EndIf}{\algorithmicend\ \algorithmicif}
+%\algrenewtext{EndFunction}{\algorithmicend\ \algorithmicfunction}
+
+%\algnewcommand\algorithmicto{\textbf{até}}
+%\algrenewtext{For}[3]%
+%{\algorithmicfor\ #1 $\gets$ #2 \algorithmicto\ #3 \algorithmicdo}
+
+% Novos comandos
+\newcommand{\mei}{\leqslant} 		% menor ou igual
+
+\title{Algoritmo}
+\author{}
+\date{\the\year}
+\makeindex
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{algorithm}
+\caption{Identificação da ORF}
+\begin{algorithmic}[1]
+\Function{GetSequence}
+$OrfSlideWindow \gets 1 
+$CurrentPosition \gets 0 
+\If {$OrfSlideWindow != 3} 
+   \If {LocateStartCodon} 
+     \State $initial \gets $CurrentPosition 
+      \If {LocateStopCodon} 
+         \State $final \gets $CurrentPosition 
+          \If {LocatePromoterRegion \and $RegionIndex < $initial} 
+              \State $PromoterRegion \gets $CurrentPosition 
+              \State $CurrentPosition \gets $CurrentPosition+1 
+              \If {LocateTataBox \and $TataBoxIndex < $initial} 
+                 \State \print ORF: GetOrf[$initial, $final] 
+              \Else 
+                 \State $OrfSlideWindow \gets $OrdSlideWindow + 1 
+                 
+\Else 
+    \State \print ORF não encontrada 
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+\caption{Identificação para identificação do Operon}
+\begin{algorithmic}[1]
+\Function{ReceiveORF}
+$OrfSlideWindow \gets 1
+$GroupExons \gets 0
+$OP \gets 1
+$J \gets 1
+\If {$OrfSlideWindow != 3} 
+   \If {LocateStartCodon[$CurrentPosition++]} 
+     \State $initial[op] \gets $CurrentPosition 
+      \If {LocateStopCodon[CurrentPosition+1]} 
+         \State $final \gets $Position 
+          \If {$OpStopCodon}
+              \State $Final[op] \gets $CurrentPosition
+              \State $GetSequence[op] \gets ($initial[op], $final[op])
+              \State $GroupExons \gets $GroupExons + $J
+              \State $OP++
+              \State $CurrentPosition++
+              \State $OpSlideWindow \gets $OpSlideWindow + 1
+          \Else
+              \State $OpSlideWindow \gets $OpSlideWindow + 1
+              \Else
+                 \If {$GroupExons > 1}
+                     \State \Print GetSequence[op]
+                 \Else
+                 \State Print Não há operon
+    \Else
+       \State \Print não há operon        
+                
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+
+\end{document}
