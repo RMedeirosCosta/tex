@@ -1,0 +1,67 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+\graphicspath{{img/}}
+
+\begin{document}
+\begin{flushleft}\includegraphics{logo}\\
+\textbf{UNIVERSIDADE ESTADUAL DE PONTA GROSSA} \\
+SISTEMA UNIVERSIDADE ABERTA DO BRASIL - UAB \\
+\underline{Licenciatura em Matemática | Polo UAB em Jacarezinho}\end{flushleft} 
+\textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} 151774301 \\
+\textbf{DISCIPLINA:} Matemática Financeira \\
+\textbf{ATIVIDADE:} Atividade 2 - Tarefa: Capitalização simples (Valor: 5,0) \\ 
+\textbf{TUTOR(A):} Edilane Cristine Budasz \\
+\textbf{PERÍODO:} Quarto \\
+
+\begin{itemize}
+\item  Felizberto aplicou R\$ 10.000,00, a juros simples de 2\% ao mês, por 60 dias. Quanto rendeu sua aplicação? E quanto ele resgatou? \\
+  Convertendo os dias para meses:
+  $$ n = \frac{\bcancel{60}}{\bcancel{30}} \Rightarrow $$
+  $$ n = 2 $$
+  $$ PV = 10.000, i = 0,02, FV=? $$ \\
+  Aplicando a fórmula: \\
+  $$ J = 10000 \cdot 0.02 \cdot 2 \Rightarrow $$
+  $$ \boxed{J = R\$400,00} $$ \\
+  E resgatou:
+  $$ FV = 10000+400 \Rightarrow $$
+  $$ \boxed{FV = R\$10.400,00} $$  
+\item Genebardis emprestou  hoje  do  banco  R\$  5000,00 para pagar daqui a 12 meses com taxa de juros simples de 10\% a.m. Qual o montante?
+  $$ PV = 5.000, i = 0,10, n = 12, M=? $$ \\
+  $$ M = PV + J \Rightarrow $$
+  $$ M = 5000 + (5000 \cdot 0,1 \cdot 12) \Rightarrow $$
+  $$ \boxed{M = R\$11.000,00} $$ 
+\item Calcular o valor dos juros correspondentes a uma aplicação de R\$ 2.200,00, pelo prazo de 50 dias, à taxa de 1,4\% a.d.\\
+  Basta aplicar a fórmula:
+  $$ J = PV \cdot i \cdot n \Rightarrow $$
+  $$ J = 2200 \cdot 0.014 \cdot 50 \Rightarrow $$
+  $$ \boxed{J = R\$1.540,00} $$
+\item Sr. Poor Worker leva um título de valor nominal de R\$ 2.000,00 que vence daqui a 30 dias ao banco Gangsters S.A. para desconto. Este banco opera com desconto racional simples e cobra juros de 2\% a.m. Qual o valor do desconto e qual o valor recebido pelo detentor do título? \\
+  $$ N = 2000, n =\frac{\bcancel{30}}{\bcancel{30}}, i_r = 0,02 $$ \\
+  Basta aplicar a fórmula:
+  $$ d_r = \frac{N \cdot i_r \cdot n}{1+i_r \cdot n} \Rightarrow $$
+  $$ d_r = \frac{2000 \cdot 0,02}{1+0,02} \Rightarrow $$
+  $$ \boxed{d_r = R\$39,22} $$ \\
+  Para calcular o valor recebido basta descontar do valor nominal \\
+  $$ A = 2000 - 39,22 \Rightarrow $$
+  $$ \boxed{A = R\$1960,78} $$
+\item Sr. Frugal levou um título para desconto que vence daqui a 90 dias. Este título foi descontado em um banco e o  valor  do  desconto  foi  R\$  300,00.  O  banco  opera  em  desconto  racional simples e cobra juros de 2\% a.m. Qual o valor nominal e o valor atual desse título?\\
+  $$ N = ?, A = ?, d_r = 300, n = 90 dias \Rightarrow 3 meses, i_r = 0,02 $$ \\
+  Basta aplicar a fórmula:
+  $$ d_r = A \cdot i_r \cdot n \Rightarrow $$
+  $$ 300 = A \cdot 0,02 \cdot 3 \Rightarrow $$
+  $$ 300 = A0,06 \Rightarrow $$
+  $$ A = \frac{300}{0,06} \Rightarrow $$
+  $$ \boxed{A = R\$5.000,00} $$ \\
+  Adicionando o desconto ao valor nominal obtido: \\
+  $$ N = 5000 + 300 \Rightarrow $$
+  $$ \boxed{ N = R\$5.300,00}$$  
+  
+\end{itemize}
+
+\end{document}
