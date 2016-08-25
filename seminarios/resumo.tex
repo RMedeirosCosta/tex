@@ -1,0 +1,22 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\graphicspath{{img/}}
+
+\begin{document}
+\textbf{UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ}\\
+\centerline{\underline{Biologia Computacional e Sistêmica | PPGBIOINFO}}\\\\
+\textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} a1598996 \\
+\textbf{DISCIPLINA:} Seminários \\
+\textbf{ATIVIDADE:} Esboço resumo do projeto \\
+\\
+\indent AS (\emph{Alternative splicing}) é um processo regulado que ocorre durante a expressão de gene no qual resulta em um gene codificando para múltiplas proteínas. Nesse processo, alguns \emph{exons} podem ser incluídos ou excluídos do final do RNA mensageiro (mRNA), que foi produzido por esse gene. Por consequência disso, proteínas traduzidas de AS mRNA contém diferenças em suas sequências de amino ácido e, frequentemente, em suas funções biológicas. Nota-se, que o processo AS permite o genome humano sintetizar diretamente muitas proteínas que poderiam ser esperadas proveniente do seus 20.000 genes codificantes de proteínas. Estudos recentes relacionam abnormally spliced mRNAs com células canceríginas. AS foram observados pela primeira vez em 1977. Em 1981, o primeiro exemplo de AS foi caracterizado. Desde então, AS vem sendo comumente encontrado em eucariontes. \\
+\indent Em 2012, é proposto um algoritmo para identificação e quantificação de polimorfismos para dados provenientes de RNA-seq quando o genoma de referência não está disponível, sem realizar a montagem de todos os transcritos. Apesar desse algoritmo identificar tanto \emph{approximate tandem repeats}, SNPs (\emph{single nucleotide polymorphism}) e AS, ele é focado em quantificar apenas AS. Por meio desse método, foi possível identificar que anotação de eventos AS tem sido subestimada, pois 56\% dos AS identificados no conjunto de dados testados não estavam presente nas anotações atuais. No entanto, o algoritmo tem algumas limitações. Assim como a maioria de montadores \emph{de novo} baseados em \emph{De Bruijn Graphs} - DBG, a construção do grafo requer um custo de memória muito alto e deve ser executado em um \emph{cluster}. \\
+\indent Em 2016 foi publicado um artigo cujo propõe uma melhoria para um montador baseado em DBG. Foi retirado o \emph{message-passing system} - MPI e implementado o \emph{Bloom Filter}, uma estrutura de dados probabilística na construção do DBG. Foi possível realizar a montagem em um computador pessoal ao invés de um cluster. \\
+\indent Bloom filter é uma estrutura de dados probabilística criada por Burton Howard Bloom em 1970, que é usada para testar se um elemento é membro de um conjunto. Combinações falso positiva são possíveis, mas falso negativas não são, devido a isso Bloom filter é considerado com 100\% de taxa de \emph{recall}. Ou seja, é retornado 100\% dos resultados relevantes.\\
+\indent Como a construção do DBG desse montador é muito semelhante ao do algoritmo de identificador e quantificador de AS, a proposta desse trabalho é implementação do Bloom Filter no algoritmo de identificação e quantificação de AS, reduzindo o custo de memória para criação do DBG, permitindo que esse seja executado de maneira eficiente em um computador pessoal.
+\end{document}
