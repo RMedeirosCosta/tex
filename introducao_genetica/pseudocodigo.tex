@@ -1,0 +1,72 @@
+% http://latexbr.blogspot.com.br
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{amssymb,amsfonts,indentfirst}
+\usepackage[centertags]{amsmath}
+\usepackage{algpseudocode,algorithm}	% pseudo-codigo
+
+% Declaracoes
+\algrenewcommand\algorithmicend{\textbf{fim}}
+\algrenewcommand\algorithmicdo{\textbf{faça}}
+\algrenewcommand\algorithmicwhile{\textbf{enquanto}}
+\algrenewcommand\algorithmicfor{\textbf{para}}
+\algrenewcommand\algorithmicif{\textbf{se}}
+\algrenewcommand\algorithmicthen{\textbf{então}}
+\algrenewcommand\algorithmicelse{\textbf{senão}}
+\algrenewcommand\algorithmicreturn{\textbf{devolve}}
+\algrenewcommand\algorithmicfunction{\textbf{função}}
+
+\algrenewtext{EndWhile}{\algorithmicend\ \algorithmicwhile}
+\algrenewtext{EndFor}{\algorithmicend\ \algorithmicfor}
+\algrenewtext{EndIf}{\algorithmicend\ \algorithmicif}
+\algrenewtext{EndFunction}{\algorithmicend\ \algorithmicfunction}
+
+\algnewcommand\algorithmicto{\textbf{até}}
+\algrenewtext{For}[3]%
+{\algorithmicfor\ #1 $\gets$ #2 \algorithmicto\ #3 \algorithmicdo}
+
+% Novos comandos
+\newcommand{\mei}{\leqslant} 		% menor ou igual
+
+\title{Pseudo-código em Português}
+\author{}
+\date{\the\year}
+\makeindex
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{algorithm}
+\caption{Valor Absoluto}
+\begin{algorithmic}[1]
+\Function{Absoluto}{x}
+\If {$x < 0$}
+    \State \Return $-x$
+\Else
+    \State \Return $x$
+\EndIf
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+\caption{Exemplo do \texttt{for}}
+\begin{algorithmic}[1]
+\For{i}{1}{n}
+  \State {$A[i] \gets i + 1$} \Comment{Preenche o vetor}
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+\caption{Exemplo do \texttt{while}}
+\begin{algorithmic}[1]
+\While {$i \mei n$}
+  \State $i \gets i + 1$
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}

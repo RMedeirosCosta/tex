@@ -1,0 +1,155 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+\graphicspath{{img/}}
+
+\begin{document}
+\begin{flushleft}\includegraphics{logo}\\
+\textbf{UNIVERSIDADE ESTADUAL DE PONTA GROSSA} \\
+SISTEMA UNIVERSIDADE ABERTA DO BRASIL - UAB \\
+\underline{Licenciatura em Matemática | Polo UAB em Jacarezinho}\end{flushleft} 
+\textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} 151774301 \\
+\textbf{DISCIPLINA:} Matemática Financeira \\
+\textbf{ATIVIDADE:} Atividade 4 - Tarefa: Juro Composto (Valor: 5,0) \\ 
+\textbf{TUTOR(A):} Edilane Cristine Budasz \\
+\textbf{PERÍODO:} Quarto \\
+
+\textbf{Resolva os problemas 3 ao 7 da página 52 do livro didático de forma detalhada utilizando as fórmulas e com os passos da HP-12C.}
+
+\begin{itemize}
+
+\item Uma empresa pretende comprar um equipamento de R\$ 100.000,00 daqui
+a 4 anos com o montante de uma aplicação financeira. Quanto essa empresa
+deve aplicar hoje em uma financeira que paga juros de 2 \% a.m?
+$$ FV = R\$100.000,00 $$
+$$ n = 4 \cdot 12 \Rightarrow n = 48 $$
+$$ i = 2 a.m. \Rightarrow i = 0,02 $$
+$$ PV = ? $$
+\\
+$$ FV = PV(1+i)^n $$
+$$ 100000 = PV(1+0,02)^{48} \Rightarrow $$
+$$ 100000 = PV(1,02)^{48}  \Rightarrow $$
+$$ 100000 = PV2,587  \Rightarrow $$
+$$ PV = \frac{100000}{2,587}  \Rightarrow $$
+$$ \boxed{PV = R\$38.653,760} $$
+\\
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{100000 CHS FV}\\
+\emph{2 i}\\
+\emph{4 ENTER 12 $ \times$ n}\\
+\emph{PV R\$ 38.653,76}
+
+\item Um  capital  de  R\$  51.879,31  aplicado  por  6  meses  resultou  em  R\$ 120.000,00. Qual a taxa mensal da transação?
+  
+$$ PV = R\$51.879,31 $$
+$$ n = 6 $$
+$$ i = ? $$
+$$ FV = R\$120.000,00 $$
+\\
+$$ FV = PV(1+i)^6 $$
+$$ 120000 = 51879,31(1+i)^6 \Rightarrow $$
+$$ \frac{120000}{51879,31} = (1+i)^6 \Rightarrow $$
+$$ \sqrt[6]{2,313} = \sqrt[6]{(1+i)^6} \Rightarrow $$
+$$ 1,15 = 1+i \Rightarrow $$
+$$ 0,15 = i \Rightarrow $$
+$$ \boxed{i = 15\% a.m.} $$
+\\
+
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{51879,31 CHS PV}\\
+\emph{6 n}\\
+\emph{120000 FV}\\
+\emph{i 15\%}
+  
+\item Em quantos meses triplica um capital que cresce à taxa de 3\% a.m?
+
+$$ FV = 3PV $$
+$$ n = ? $$
+$$ i = 3 \Rightarrow i = 0,03 $$
+$$ PV = PV $$
+\\
+$$ FV = PV(1+i)^n $$
+$$ 3 \bcancel{PV} = \bcancel{PV}(1+0,03)^{n} \Rightarrow $$
+$$ 3 = 1,03^{n}  \Rightarrow $$
+$$ \log(3) =  \log(1,03^{n})  \Rightarrow $$
+$$ \log(3) = n \cdot \log(1,03)  \Rightarrow $$
+$$ n = \frac{\log(3)}{ \log(1,03)}  \Rightarrow $$
+$$ \boxed{n = 37,167} $$
+\\
+Como a quantidade de meses é um número natural, então deve ser arredondado para 38. \\\\
+
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{1 CHS PV}\\
+\emph{3 FV}\\
+\emph{3 i}\\
+\emph{n 38}  
+
+\item  A rentabilidade efetiva de um investimento é de 10\% a.a. Se os juros 
+ganhos forem de R\$ 27.473,00, sobre um capital investido de R\$ 83.000,00, 
+quanto tempo o capital ficará aplicado?
+
+$$ FV = R\$83.000,00 +  R\$27.473,00 \Rightarrow FV = R\$110.473,00  $$
+$$ n = ? $$
+$$ i = 10 \Rightarrow i = 0,10 $$
+$$ J = R\$27.473,00 $$
+$$ PV = R\$83.000,00 $$
+\\
+$$ FV = PV(1+i)^n $$
+$$ 110473 = 83000(1+0,1)^{n} \Rightarrow $$
+$$ \frac{110473}{83000} = 1,1^N \Rightarrow $$
+$$ 1,331 = 1,1^{n} \Rightarrow $$
+$$ \log(1,331) = \log(1,1)^{n} \Rightarrow $$
+$$ \log(1,331) = n \log(1,1) \Rightarrow $$
+$$ n  = \frac{\log(1,331)}{\log(1,1)} \Rightarrow $$
+$$ n  = \frac{0,124}{4,139} \Rightarrow $$
+$$ \boxed{n  \approx 3} $$
+\\
+
+3 anos. \\
+
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{83000 CHS PV}\\
+\emph{CHS ENTER 27473 $+$ FV}\\
+\emph{10 i}\\
+\emph{n 3}  
+
+\item Em quanto tempo os juros gerados por um capital igualam-se ao próprio 
+capital, aplicando-se uma taxa efetiva de 3\% a.m?
+  
+$$ PV = PV  $$
+$$ n = ? $$
+$$ i = 3 \% \Rightarrow i = 0,03 $$
+$$ FV = PV $$
+\\
+$$ FV = PV(1+i)^n $$
+$$ PV = PV(1+0,03)^n - PV \Rightarrow $$
+$$ 2 \bcancel{PV} = \bcancel{PV}(1,03)^{n} \Rightarrow $$
+$$ 2 = 1,03^N \Rightarrow $$
+$$ \ln(2) = \ln(1,03^N) \Rightarrow $$
+$$ \ln(2) = n \ln(1,03) \Rightarrow $$
+$$ n = \frac{\ln(2)}{\ln(1,03)} \Rightarrow $$
+$$ \boxed{n = 23,449} $$
+
+\\
+
+Como a taxa mensal é a quantidade de meses, então o resultado tem que ser um número natural, portanto será arredondado para 24 meses. \\
+
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{3 i}\\
+\emph{1 CHS PV CHS ENTER 2 $ \times $ }\\
+\emph{n 24}
+
+\end{itemize}
+
+\end{document}
+

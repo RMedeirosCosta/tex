@@ -1,0 +1,144 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+\graphicspath{{img/}}
+
+\begin{document}
+\begin{flushleft}\includegraphics{logo}\\
+\textbf{UNIVERSIDADE ESTADUAL DE PONTA GROSSA} \\
+SISTEMA UNIVERSIDADE ABERTA DO BRASIL - UAB \\
+\underline{Licenciatura em Matemática | Polo UAB em Jacarezinho}\end{flushleft} 
+\textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} 151774301 \\
+\textbf{DISCIPLINA:} Matemática Financeira \\
+\textbf{ATIVIDADE:} Atividade 5 - Tarefa: Taxas e descontos (Valor 5,0) \\
+\textbf{TUTOR(A):} Edilane Cristine Budasz \\
+\textbf{PERÍODO:} Quarto \\
+
+\textbf{Agora que já estudou a seção 2 e 3 da unidade 2, resolva os problemas do livro didático das páginas 62 e 63 e anexe aqui as resoluções dos seguintes exercícios:  \\\\
+  Problemas 4 e 7 da página 63. \\\\
+  Problemas 3 da página 67.}
+
+\begin{itemize}
+
+\item Calcular a taxa de desconto racional composto de um título de R\$ 20.000,00, descontado  4  meses  antes  do  vencimento,  recebendo  líquido  o  valor  de  R\$16.290,13.
+  
+$$ A = R\$16.290,00 $$
+$$ N = R\$20.000,00 $$
+$$ i = ? $$
+$$ n = 4 $$
+\\
+$$ N = A(1+i)^n $$
+$$ 20000 = 16290(1+i)^{4} \Rightarrow $$
+$$ \frac{20000}{16290} = (1+i)^{4}  \Rightarrow $$
+$$ 1,22 = (1+i)^4  \Rightarrow $$
+$$ \sqrt[4]{1,22} = \sqrt[4]{(1+i)^4}  \Rightarrow $$
+$$ 1,052 = 1+i  \Rightarrow $$
+$$ 0,052 = i  \Rightarrow $$
+$$ \boxed{i = 5,26 \% } $$
+\\
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{16290 CHS PV}\\
+\emph{20000 FV}\\
+\emph{4 n}\\
+\emph{i 5,26}
+
+\item Um  título  de  R\$  20.000,00  foi  descontado  num  banco,  pelo  desconto comercial composto, à taxa de 5\%a.m., sendo creditada, na conta do cliente, a importância  de  R\$  16.290,13.  Quanto  tempo  antes  do  vencimento  foi descontado esse título?
+  
+$$ A = R\$16.290,00 $$
+$$ N = R\$20.000,00 $$
+$$ i = 0,05 $$
+$$ n = ? $$
+\\
+$$ N = A(1+i)^n $$
+$$ 20000 = 16290(1+0,05)^{n} \Rightarrow $$
+$$ \frac{20000}{16290} = 1,05^{n}  \Rightarrow $$
+$$ 1,22 = 1,05^4  \Rightarrow $$
+$$ \ln(1,22) = \ln(1,05^n)  \Rightarrow $$
+$$ \ln(1,22) = n\ln(1,05) \Rightarrow $$
+$$ n = \frac{\ln(1,22)}{\ln(1,05)} \Rightarrow $$
+$$ \boxed{n \approx 4 } $$
+\\
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{16290 CHS PV}\\
+\emph{20000 FV}\\
+\emph{5 CHS i}\\
+\emph{n 4 CHS}  
+
+\item Se o valor nominal de um título é de R\$ 28.800,00 e será descontado antecipadamente no prazo de 4 meses com uma taxa de 2,5\% ao mês, calcule o valor do desconto composto comercial.
+
+$$ N = R\$28.800,00 $$
+$$ i = 0,025 $$
+$$ n = 4 $$
+$$ d_c = ? $$  
+\\
+$$ d_c = N(1-(1-i)^n) $$
+$$ d_c = 28800(1-(1-0,025)^4) \Rightarrow $$
+$$ d_c = 28800(1-0,9036) \Rightarrow $$
+$$ d_c = 28800 \cdot 0,0963 \Rightarrow $$
+$$ \boxed{d_c \approx 2773,79} $$
+\\
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{28800 CHS PV}\\
+\emph{4 n}\\
+\emph{2,5 CHS i}\\
+\emph{FV 26026,21}\\
+\emph{RCL PV + CHS 2773,79}
+
+\item Resgatei um título por R\$ 1.645,41, com 120 dias antes do vencimento. Qual o valor nominal do título, sendo a taxa de desconto racional de 60\% a.a. com capitalização mensal?
+  
+$$ A = R\$1.645,41 $$
+$$ i = \frac{60}{12} \Rightarrow i = 0,05 $$
+$$ n = \frac{120}{30} \Rightarrow n = 4 $$
+$$ N = ? $$  
+\\
+$$ A = \frac{N}{(1+i)^N} $$
+$$ 1645,41 = \frac{N}{(1+0,05)^4} $$
+$$ 1645,41 = \frac{N}{(1,05)^4} $$
+$$ 1645,41 = \frac{N}{1,2155} $$
+$$ \boxed{N = R\$2.000,00} $$
+\\
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{1645,41 CHS PV}\\
+\emph{120 ENTER 30 $ \div $ n}\\
+\emph{60 ENTER 12 $ \div $ i}\\
+\emph{FV 2000}  
+
+\item Paulo tem um compromisso representado por duas promissórias: uma de R\$ 200.000,00 e outra de R\$ 250.000,00, vencíveis em quatro e seis meses, respectivamente. Prevendo que não terá esses valores nas datas estipuladas, solicita ao banco credor a substituição dos dois títulos por um único a vencer em  10  meses.  Sabendo-se  que  o  banco  adota  em  juros  compostos  de  5\% a.m.,  com  desconto  racional,  calcule  o  valor  da  nota  promissória.
+
+$$ N = R\$200.000,00 $$
+$$ N' = R\$250.000,00 $$
+$$ n  = 4 $$
+$$ n' = 6 $$
+$$ n'' = 10 $$  
+$$ i = 0,05 $$
+$$ N'' = ? $$  
+\\
+$$ \frac{N''}{(1+i)^{n''}} = \frac{N}{(1+i)^{n}} + \frac{N'}{(1+i)^{n'}} \Rightarrow $$
+$$ \frac{N''}{(1+0,05)^{10}} = \frac{200000}{(1+0,05)^{4}} + \frac{250000}{(1+0,05)^{6}} \Rightarrow $$
+$$ \frac{N''}{(1,05)^{10}} = \frac{200000}{(1,05)^{4}} + \frac{250000}{(1,05)^{6}} \Rightarrow $$
+$$ \frac{N''}{1,628} = 164540,494 + 186553,84 \Rightarrow $$
+$$ \boxed{N'' = R\$ 571.895,69} $$
+\\
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{200000 ENTER}\\
+\emph{1,05 ENTER 4 $ Y^x  \div $}\\
+\emph{250000 ENTER}\\
+\emph{1,05 ENTER 6 $ Y^x  \div $}\\
+\emph{+}\\
+\emph{1,05 ENTER 10 $Y^x  \div $}\\
+\emph{$ \times $ 571895,69}\\
+
+\end{itemize}
+
+\end{document}
+
