@@ -1,0 +1,45 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: template-relatorio-tecnico.aux
+The style file: amsplain.bst
+Database file #1: bibliografia.bib
+You've used 4 entries,
+            2213 wiz_defined-function locations,
+            530 strings with 4595 characters,
+and the built_in function-call counts, 1440 in all, are:
+= -- 133
+> -- 56
+< -- 0
++ -- 24
+- -- 18
+* -- 112
+:= -- 224
+add.period$ -- 4
+call.type$ -- 4
+change.case$ -- 21
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 58
+empty$ -- 124
+format.name$ -- 18
+if$ -- 303
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 9
+newline$ -- 22
+num.names$ -- 8
+pop$ -- 27
+preamble$ -- 1
+purify$ -- 17
+quote$ -- 0
+skip$ -- 44
+stack$ -- 0
+substring$ -- 112
+swap$ -- 14
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 14
+warning$ -- 0
+while$ -- 15
+width$ -- 5
+write$ -- 45

@@ -1,0 +1,146 @@
+\documentclass[10pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{epsf, graphics, pifont}
+\usepackage{subfigure}             % uso de várias figuras numa só.
+\usepackage{amsmath}
+\usepackage{amsfonts}              % if you want the fonts
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage[pdftex]{graphicx}
+\usepackage[pagebackref,colorlinks=true,urlcolor=red,citecolor=green,linkcolor=blue]{hyperref}
+\graphicspath{{./figuras/}} 
+
+\title{\Large UTFPR -- Universidade Tecnológica Federal do Paraná -- Câmpus Cornélio Procópio\\
+          Programa de Mestrado em Informática - PPGI\\
+          Disciplina de Reconhecimento de Padrões\\
+    \vspace*{5mm}{Título do Trabalho...}}
+
+\author{Autor 1, Autor 2, ..., AutorN \\
+ {\texttt \small{ \{autor1@utfpr.edu.br, autor2@utfpr.edu.br}}}
+%\date{21 de Setembro de 2006}
+
+%% ------------------------------------------------------------------- %%
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{.5pc}
+\setlength{\paperwidth}{216mm}
+\setlength{\paperheight}{279mm}
+%\setlength{\pdfpagewidth}{216mm}
+%\setlength{\pdfpageheight}{279mm}
+\setlength{\topmargin}{-1.3cm}          % deslocamento do topo do texto 
+\setlength{\textwidth}{17.0cm}          % largura do texto
+\setlength{\textheight}{23.0cm}
+\setlength\oddsidemargin{0cm}           % juntamente com a linha seg. dá impr.frente.
+\setlength\evensidemargin{0cm}
+
+
+%% ------------------------------------------------------------------- %%
+%% ------------------------------------------------------------------- %%
+
+\begin{document}
+\thispagestyle{empty}
+\maketitle
+
+%%%\newpage
+\tableofcontents
+\newpage
+
+%% ------------------------------------------------------------------- %%
+\section{Introdução}
+\label{sec:introducao}
+
+O objetivo deste trabalho....
+
+Como descrito em \cite{Cas96, CC01}, sugerem o uso de etapas como....
+
+A seguir é descrito os responsáveis por cada uma das etapas:
+
+\begin{itemize}
+  \item Pré-processamento, Autor 1...;
+  \item Extração de caracteres, Autor 2...;
+  \item Extração de características, Autor 3...;
+  \item Classificação e Validação, realizado de forma coletiva.
+\end{itemize}
+
+Na Seção~\ref{sec:material_metodos} são apresentadas...
+
+% ------------------------------------------------------------------- %%
+\section {Material e métodos}
+\label{sec:material_metodos}
+
+O reconhecimento de caracteres....\cite{TRSG}. 
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{processo_ocr.jpg}
+    \caption{\small{Diagrama...}}
+    \label{fig:metodo}
+\end{figure}
+
+% ------------------------------------------------------------------- %%
+\subsection {Conjunto de dados...}
+\label{ssec:conjunto}
+
+Para a primeira parte do trabalho...
+
+% ------------------------------------------------------------------- %%
+\subsection {Pré-processamento}
+\label{ssec:preprocessamento}
+
+Nesta etapa....
+
+O operador ...é definido pela seguinte equação:
+\begin{equation}
+f \hat{\circ} b = f - (f \circ b)
+\end{equation}
+
+\noindent{na qual $f \circ b$ é ....}.
+
+% ------------------------------------------------------------------- %%
+\subsection {Extração de características}
+\label{ssec:caracteristicas}
+
+A extração de características foi baseada no artigo~\cite{TRSG}.
+
+Neste projeto, esta parte foi implementada em ...
+
+
+% ------------------------------------------------------------------- %%
+\subsection {Treinamento}
+\label{ssec:treinamento}
+
+Nesta etapa usa-se o algoritmo....
+
+% ------------------------------------------------------------------- %%
+\subsection{Processo de validação}
+\label{ssec:validacao}
+
+As técnicas usadas no processo de validação do nosso sistema foram...
+
+% ------------------------------------------------------------------- %%
+\subsubsection{Validação cruzada generalizada}
+A validação cruzada generalizada conhecida também como k-validação cruzada, 
+é uma das técnicas mais aplicadas na verificação da estabilidade de 
+modelos \cite{Koh95}. 
+
+Seu funcionamento consiste em....
+
+% ------------------------------------------------------------------- %%
+\section{Resultados}
+\label{sec:resultados}
+
+Neste trabalho....
+
+% ------------------------------------------------------------------- %%
+\section{Conclusões}
+\label{sec:conclusoes}
+
+O objetivo deste trabalho foi aplicar...
+
+%% ------------------------------------------------------------------- %%
+\bibliographystyle{amsplain}
+%%\bibliographystyle{amsalpha}
+\bibliography{bibliografia}
+%% ------------------------------------------------------------------- %%
+\end{document}
