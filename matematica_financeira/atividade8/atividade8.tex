@@ -1,0 +1,152 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage[normalem]{ulem}
+
+\graphicspath{{img/}}
+
+\begin{document}
+\begin{flushleft}\includegraphics{logo}\\
+\textbf{UNIVERSIDADE ESTADUAL DE PONTA GROSSA} \\
+SISTEMA UNIVERSIDADE ABERTA DO BRASIL - UAB \\
+\underline{Licenciatura em Matemática | Polo UAB em Jacarezinho}\end{flushleft} 
+\textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} 151774301 \\
+\textbf{DISCIPLINA:} Matemática Financeira \\
+\textbf{ATIVIDADE:} Atividade 8 - Tarefa: Rendas imediatas e diferidas (Valor 5,0) \\
+\textbf{TUTOR(A):} Edilane Cristine Budasz \\
+\textbf{PERÍODO:} Quarto \\
+
+\textbf{Resolva os problemas a seguir de forma detalhada utilizando as fórmulas e com os passos da HP-12C.}
+\\
+\textbf{Digite em um editor de texto.} \\
+\textbf{Não esqueça do cabeçalho padrão!} \\
+\textbf{Depois anexe o arquivo nesta atividade.} \\
+\textbf{Estes exercícios constam no livro didático.} \\
+\textbf{Pag 85 - exercício 3, 5 e 7}\\
+\textbf{Pag 91 - exercício 3 e 5}\\
+
+\begin{itemize}
+
+\item Determine  o  valor  futuro  de  12  depósitos  de  R\$  350,00,  realizados  no início de cada mês, sendo que a taxa de rendimento é de 1,4\% ao mês
+$$ PMT = R\$350 $$
+$$ FV = ? $$
+$$ i = 1,4\% \Rightarrow i = 0,014 $$
+$$ n = 12 $$
+\\
+$$ FV = PMT\frac{(1+i)^{n}-1}{i}\cdot(1+i) \Rightarrow $$
+$$ FV = 350\frac{(1+0,014)^{12}-1}{0,014}\cdot(1+0,014) \Rightarrow $$
+$$ FV = 350\frac{(1,014)^{12}-1}{0,014}\cdot(1,014) \Rightarrow $$
+$$ FV = 350\frac{0,1815}{0,014}\cdot(1,014) \Rightarrow $$
+$$ FV = 350\frac{0,1815}{0,014}\cdot(1,014) \Rightarrow $$
+$$ \boxed{FV = R\$4602,52} $$
+
+\\
+
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{g BEG}\\
+\emph{350 CHS PMT}\\
+\emph{1,4 i}\\
+\emph{12 n}\\
+\emph{FV 4602,52}
+
+\item Quanto se deve depositar no início de cada mês, numa instituição financeira que paga 1,5\% ao mês, para constituir o montante de R\$ 30.000,00 no fim de 14 meses?\\
+  
+$$ FV = R\$30.000,00 $$
+$$ PMT = ? $$  
+$$ i = 1,5\% \Rightarrow i = 0,015 $$
+$$ n = 14 $$
+
+\\
+$$ PMT = \frac{FV\cdot i}{(1+i)((1+i)^{n}-1)} \Rightarrow $$
+$$ PMT = \frac{30000\cdot 0,015}{(1+0,015)((1+0,015)^{14}-1)} \Rightarrow $$
+$$ PMT = \frac{450}{(1,015)((1,015)^{14}-1)} \Rightarrow $$
+$$ PMT = \frac{450}{0,2352} \Rightarrow $$
+$$ \boxed{PMT = R\$1913,00} $$
+\\
+Pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{g BEG}\\
+\emph{30000 CHS FV}\\
+\emph{14 n}\\
+\emph{1,5 i}\\
+\emph{PMT 1913,00}  
+
+\item Determine a taxa que se aplica em uma instituição financeira, no início de cada trimestre, sabendo que a importância de R\$ 10.524,68 no final de 1 ano, resulta em um montante de R\$ 50.000,00? \\
+  
+$$ FV = R\$50.000,00 $$
+$$ PMT = R\$10.524,68 $$  
+$$ i = ? $$
+$$ n = 1\%aa \Rightarrow n = 4 $$
+
+\\
+$$ FV = PMT\frac{(1+i)^{n}-1}{i}\cdot(1+i) \Rightarrow $$
+$$ 50000 = 10524,68\frac{(1+i)^{4}-1}{i}\cdot(1+i) $$
+\\
+(Para não utilizar o método \sout{porco} de tentativas, vou fazer pela calculadora HP-12C\\\\
+\emph{f REG}\\
+\emph{g BEG}\\
+\emph{50000 CHS FV}\\
+\emph{10524,68 PMT}\\
+\emph{4 n} \\
+\emph{i 7,00} \\
+\textbf{Acredito que a calculadora tenha arredondado, pois no livro aparece 6,99\%}
+
+\item Que dívida pode ser amortizada com 8 prestações mensais de R\$ 1.000,00, sendo de 7\% a.m. a taxa de juro e devendo ser paga a primeira prestação 3 meses depois de realizado o empréstimo?
+
+$$ PV = ? $$
+$$ PMT = R\$1.000,00 $$  
+$$ i = 7\% \Rightarrow i = 0,07 $$
+$$ n = 8 $$
+$$ m = 3 $$  \\
+  
+$$ PV = PMT\frac{1-(1+i)^{-n}}{i}(1+i)^{-m} $$
+$$ PV = 1000\frac{1-(1+0,07)^{-8}}{0,07}(1+0,07)^{-3} $$
+$$ PV = 1000\frac{1-(1,07)^{-8}}{0,07}(1,07)^{-3} $$
+$$ PV = 1000 \cdot 5,9712 \cdot 0,8162 $$
+$$ PV = 1000 \cdot 4,8736 $$
+$$ \boxed{PV = 4874,35} $$  
+
+%Pela calculadora HP-12C\\\\
+%\emph{f REG}\\
+%\emph{g END}\\
+%\emph{15000 CHS PV}\\
+%\emph{36 n}\\
+%\emph{400 PMT}\\
+%\emph{i 0,22}  
+
+\item Qual o valor da prestação mensal referente a um financiamento de um imóvel de R\$ 120.000,00, a ser liquidado em 12 meses, à taxa de 3\% ao mês, sendo que a primeira prestação vence a 90 dias da data do contrato?
+
+$$ PV = R\$120.000,00 $$
+$$ PMT = ? $$  
+$$ i = 3\% \Rightarrow i = 0,03 $$
+$$ n = 12 $$
+$$ m = 3 $$  
+
+$$ PV = PMT\frac{1-(1+i)^{-n}}{i}(1+i)^{-m} $$
+$$ 120000 = PMT\frac{1-(1+0,03)^{-12}}{0,03}(1+0,03)^{-3} $$
+$$ 120000 = PMT\frac{1-(1,03)^{-12}}{0,03}(1,03)^{-3} $$
+$$ 120000 = PMT \cdot 9,954 \cdot 0,915 $$
+$$ 120000 = PMT \cdot 9,1093 $$
+$$ PMT = \frac{120000}{9,1093} $$
+$$ \boxed{PMT = 13173,35} $$        
+
+
+%Pela calculadora HP-12C\\\\
+%\emph{f REG}\\
+%\emph{g END}\\
+%\emph{5000 ENTER}\\
+%\emph{5000 ENTER}\\
+%\emph{10 \times 100 - 4500 CHS PV} \\
+%\emph{10 n}\\
+%\emph{3 i}\\
+%\emph{PMT 527,54}\\
+
+\end{itemize}
+
+\end{document}
+
