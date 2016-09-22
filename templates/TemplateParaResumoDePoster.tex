@@ -1,0 +1,56 @@
+% ------------------------------------------------------------
+% Workshop de Bioinformática da UTFPR 2016 - WB2016
+% Template para submissão de resumo de pôster.
+% ------------------------------------------------------------
+%
+% Para facilitar a formatação do texto, utilize os comandos
+%
+% \titulo{Título do trabalho}
+% \autor{Nome do autor}{Número para índice da instituição}
+% \instituicao{Número de índice}{Nome da instituição}{e-mail do autor correspondente, opcional}
+% \palavraschave{palavra1, palavra2, palavra3, palavraN}
+% \agradecimento{Agência, Fundação, etc.}
+% 
+% Conforme o exemplo do template. 
+%
+% ------------------------------------------------------------
+
+\documentclass[12pt,a4paper,oneside]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[left=2cm,right=2cm,top=1.5cm,bottom=1cm]{geometry}
+\usepackage{setspace}
+\newcommand{\titulo}[1]{\textbf{\Large{#1}}}
+\newcommand{\autor}[2]{\large{#1}$^{#2}$}
+\newcommand{\instituicao}[3]{$^{#1}$\small{#2}\\\texttt{#3}}
+\newcommand{\palavraschave}[1]{\noindent\textbf{{Palavras-chave: #1}}}
+\newcommand{\agradecimento}[1]{\noindent\textbf{{Agradecimentos:}} #1}
+
+
+
+\begin{document}
+\onehalfspacing
+\thispagestyle{empty}
+\begin{center}
+	\titulo{Título do trabalho para o Workshop de Bioinformática da UTFPR: Modelo para submissão}\\
+	\vspace{0.5cm}
+	\autor{Primeiro Autor}{1,2}, \autor{Segundo Autor}{1} e \autor{Terceiro Autor}{2}\\
+	\instituicao{1}{Departamento, Laboratório, Instituição, Cidade}{autor1@instituicao.br}\\
+	\instituicao{2}{Centro, Nome da Instituição, Cidade}\\
+\end{center}
+\singlespacing
+%
+% Texto do resumo até 200 palavras.
+%
+\textit{Texto do resumo de 200 a 400 palavras. O resumo deve ser feito em português; todos os autores, afiliações e agências financiadores devem ser declaradas. O resumo não deve conter figuras, tabelas ou referências. Não divida o resumo em seções. Sugerimos a presença da descrição de resultados preliminares. Material de propaganda não serão aceitos.} Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit. Duis aute irure dolor in reprehenderit in voluptate velit. Duis aute irure dolor in reprehenderit in voluptate velit. Duis aute irure dolor in reprehenderit in voluptate velit. Duis aute irure dolor in reprehenderit in voluptate velit. Lorem ipsum dolor sit amet ipsum ipsum.
+\\
+\\
+\palavraschave{Modelo, abstract, bioinformática.}
+\\
+\\
+% Agradecimento é opcional. No entanto, afiliações e agências financiadores devem ser declaradas. 
+\agradecimento{AGÊNCIA, Fundação, etc.}	
+	
+	
+\end{document}
