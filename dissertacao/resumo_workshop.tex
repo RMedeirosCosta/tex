@@ -1,0 +1,62 @@
+% ------------------------------------------------------------
+% Workshop de Bioinformática da UTFPR 2016 - WB2016
+% Template para submissão de resumo de pôster.
+% ------------------------------------------------------------
+%
+% Para facilitar a formatação do texto, utilize os comandos
+%
+% \titulo{Título do trabalho}
+% \autor{Nome do autor}{Número para índice da instituição}
+% \instituicao{Número de índice}{Nome da instituição}{e-mail do autor correspondente, opcional}
+% \palavraschave{palavra1, palavra2, palavra3, palavraN}
+% \agradecimento{Agência, Fundação, etc.}
+% 
+% Conforme o exemplo do template. 
+%
+% ------------------------------------------------------------
+
+\documentclass[12pt,a4paper,oneside]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[left=2cm,right=2cm,top=1.5cm,bottom=1cm]{geometry}
+\usepackage{setspace}
+\newcommand{\titulo}[1]{\textbf{\Large{#1}}}
+\newcommand{\autor}[2]{\large{#1}$^{#2}$}
+\newcommand{\instituicao}[3]{$^{#1}$\small{#2}\\\texttt{#3}}
+\newcommand{\palavraschave}[1]{\noindent\textbf{{Palavras-chave: #1}}}
+\newcommand{\agradecimento}[1]{\noindent\textbf{{Agradecimentos:}} #1}
+
+\begin{document}
+\onehalfspacing
+\thispagestyle{empty}
+\begin{center}
+	\titulo{A DEFINIR}\\
+	\vspace{0.5cm}
+	\autor{Ricardo Medeiros da Costa Junior}{1} e \autor{André Yoshiaki Kashiwabara}{1} \\
+	\instituicao{1}{Universidade Tecnológica Federal do Paraná - Campus Cornélio Procópio, Departamento de Computação, Programa de Pós-Graduação em Bioinformática - PPGBIOINFO}\\
+%	\instituicao{2}{Centro, Nome da Instituição, Cidade}\\
+\end{center}
+\singlespacing
+%
+% Texto do resumo até 200 palavras.
+%
+AS (Alternative splicing) é um processo regulado que ocorre durante a expressão de gene no qual resulta em um gene codificando para múltiplas proteínas. Nesse processo, alguns exons podem ser incluídos ou excluídos do final do RNA mensageiro (mRNA), que foi produzido por esse gene. Por consequência disso, proteínas traduzidas de AS mRNA contém diferenças em suas sequências de amino ácido e, frequentemente, em suas funções biológicas. Nota-se, que o processo AS permite o genome humano sintetizar diretamente muitas proteínas que poderiam ser esperadas proveniente do seus 20.000 genes codificantes de proteínas. Estudos recentes relacionam abnormally spliced mRNAs com células canceríginas. 
+
+Em 2012, é proposto um algoritmo para identificação e quantificação de polimorfismos para dados provenientes de RNA-seq quando o genoma de referência não está disponível, sem realizar a montagem de todos os transcritos. Apesar desse algoritmo identificar tanto approximate tandem repeats, SNPs (single nucleotide polymorphism) e AS, ele é focado em quantificar apenas AS. Por meio desse método, foi possível identificar que anotação de eventos AS tem sido subestimada, pois 56\% dos AS identificados no conjunto de dados testados não estavam presente nas anotações atuais. No entanto, o algoritmo tem algumas limitações. Assim como a maioria de montadores de novo baseados em DBG,(De Bruijn Graphs) a construção do grafo requer um custo de memória muito alto e deve ser executado em um cluster.
+
+Em 2016 foi publicado um artigo cujo propõe uma melhoria para um montador baseado em DBG. Foi retirado o  MPI (message-passing system) e implementado o Bloom Filter, uma estrutura de dados probabilística na construção do DBG. Foi possível realizar a montagem em um computador pessoal ao invés de um cluster.
+Bloom filter é uma estrutura de dados probabilística criada por Burton Howard Bloom em 1970, que é usada para testar se um elemento é membro de um conjunto. Combinações falso positiva são possíveis, mas falso negativas não são, devido a isso Bloom filter é considerado com 100\% de taxa de recall. Ou seja, é retornado 100\% dos resultados relevantes.
+
+Como a construção do DBG desse montador é muito semelhante ao do algoritmo de identificador e quantificador de AS, a proposta desse trabalho é implementação do Bloom Filter no algoritmo de identificação e quantificação de AS, reduzindo o custo de memória para criação do DBG, permitindo que esse seja executado de maneira eficiente em um computador pessoal. \\\\
+
+%\\
+%\\
+\palavraschave{Splice Alternativo, Bloom Filter, De Bruijn Graph}
+%\\
+%\\
+% Agradecimento é opcional. No entanto, afiliações e agências financiadores devem ser declaradas. 
+%\agradecimento{AGÊNCIA, Fundação, etc.}	
+	
+	
+\end{document}
