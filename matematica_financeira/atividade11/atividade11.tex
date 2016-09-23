@@ -1,0 +1,83 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+\graphicspath{{img/}}
+
+\begin{document}
+\begin{flushleft}\includegraphics{logo}\\
+\textbf{UNIVERSIDADE ESTADUAL DE PONTA GROSSA} \\
+SISTEMA UNIVERSIDADE ABERTA DO BRASIL - UAB \\
+\underline{Licenciatura em Matemática | Polo UAB em Jacarezinho}\end{flushleft} 
+\textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} 151774301 \\
+\textbf{DISCIPLINA:} 101531 - Matemática Financeira \\
+\textbf{ATIVIDADE:} Atividade 11 - Tarefa: Price(Valor: 5,0) \\ 
+\textbf{TUTOR(A):} Edilane Cristine Budasz \\
+\textbf{PERÍODO:} Quarto \\\\
+Prezado(a) Acadêmico(a)\\
+
+Nesta tarefa você deverá elaborar um problema de financiamento ou empréstimo com 10 parcelas.\\
+
+O sistema de amortizaçao deve ser o sistema Price.\\
+
+Você deverá calcular todos os dados da tabela e explicar detalhadamente os cálculos realizados.\\\\\\
+
+Um empréstimo de R\$ 10.000,00 deverá ser pago, dentro de um prazo de 10 meses, em 10 prestações mensais, à taxa de 5\% ao mês. Construa uma planilha deste empréstimo.\\\\
+\textbf{Resolução}
+O valor do financiamento é de R\$10.000,00, à taxa de 5\% a.m., para ser pago em 10 parcelas. Para elaborar a planilha de pagamento, adotaremos os seguines cálculos:\\
+\begin{itemize}
+\item Calcular a prestação pela fórmula:\\
+  $$ PMT = PV\frac{i}{1-(1+i)^{-n}} $$
+  $$ PMT = 10000\frac{0,05}{1-(1+0,05)^{-10}} $$
+  $$ \boxed{PMT = 1.295,04} $$    
+\item Calcular a parcela de juros: a taxa deverá ser aplicada sobre o saldo devedor no período anterior.
+\item Calcular a amortização: este valor será obtido pela diferença entre a prestação e os juros do período.
+\item Apurar o saldo devedor do período: resultado da subtração do valor da amortização pelo saldo devedor do período anterior. Na data do empréstimo não houve pagamento algum.\\
+
+  Então é feito a segunda linha da tabela a seguir:
+  \begin{enumerate}
+    \item Para o valor da prestação teremos: 1.295,04
+    \item Para os juros devemos aplicar 5\% sobre 10000, ou seja, 500.
+    \item Portanto, a amortização será obtida subtraindo o valor da prestação com o juro calculado, assim: amortização = 1.295,04 - 500 = 795,04.
+    \item Já o saldo devedor será a diferença 10.000 - 795,04 = 9.204,95
+  \end{enumerate}  
+
+  \begin{tabular}{ | c | c | c | c | c |}
+  \hline
+  Período & Saldo Devedor (R\$) & Amortização (R\$) & Juros (R\$) & Prestação (R\$) \\ \hline
+  0 & 10.000 & - & - & - \\ \hline
+  1 & 9.204,95 & 795,04 & 500 & 1.295,04 \\ \hline
+  \end{tabular} \\\\
+  
+  Para a terceira linha da tabela devemos fazer:\\
+  \begin{enumerate}
+  \item Para o valor da prestação teremos: 1.295,04
+  \item Para os juros devemos aplicar 5\% sobre 9.204,95, ou seja, 460,24.
+  \item Portanto, a amortização será obtida subtraindo o valor da prestação com o juro calculado, assim: amortização = 1.295,04 - 460,24 = 834,79
+  \item Já o saldo devedor será a diferença 9.204,95 - 834,79 = 8.370,16
+  \end{enumerate}
+  Ao repetir esta sequência de cálculos em cada período obteremos a seguinte tabela:\\
+  \begin{tabular}{ | c | c | c | c | c |}
+  \hline
+  Período & Saldo Devedor (R\$) & Amortização (R\$) & Juros (R\$) & Prestação (R\$) \\ \hline
+  0 & 10.000 & - & - & - \\ \hline
+  1 & 9.204,95 & 795,04 & 500 & 1.295,04 \\ \hline  
+  2 & 8.370,16 & 834,79 & 460,24 & 1.295,04 \\ \hline  
+  3 & 7.493,63 & 876,53 & 418,50 & 1.295,04 \\ \hline  
+  4 & 6.573,27 & 920,35 & 374,68 & 1.295,04 \\ \hline  
+  5 & 5.606,89 & 966,37 & 328,66 & 1.295,04 \\ \hline  
+  6 & 4.592,19 & 1.014,69 & 280,34 & 1.295,04 \\ \hline  
+  7 & 3.526,76 & 1.065,43 & 229,60 & 1.295,04 \\ \hline  
+  8 & 2.408,06 & 1.118,70 & 176,33 & 1.295,04 \\ \hline  
+  9 & 1.233,43 & 1.174,63 & 120,40 & 1.295,04 \\ \hline  
+  10 & 0 & 1.233,43 & 61,67 & 1.295,04 \\ \hline  
+  \end{tabular} \\\\
+  
+\end{itemize}
+
+\end{document}

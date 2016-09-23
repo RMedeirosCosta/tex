@@ -1,0 +1,77 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+\graphicspath{{img/}}
+
+\begin{document}
+\begin{flushleft}\includegraphics{logo}\\
+\textbf{UNIVERSIDADE ESTADUAL DE PONTA GROSSA} \\
+SISTEMA UNIVERSIDADE ABERTA DO BRASIL - UAB \\
+\underline{Licenciatura em Matemática | Polo UAB em Jacarezinho}\end{flushleft} 
+\textbf{ALUNO:} Ricardo Medeiros da Costa Junior   \textbf{RA:} 151774301 \\
+\textbf{DISCIPLINA:} 101531 - Matemática Financeira \\
+\textbf{ATIVIDADE:} Atividade 10 - Tarefa: SAC(Valor: 5,0) \\ 
+\textbf{TUTOR(A):} Edilane Cristine Budasz \\
+\textbf{PERÍODO:} Quarto \\\\
+Prezado(a) Acadêmico(a)\\
+
+Nesta tarefa você deverá elaborar um problema de financiamento ou empréstimo com 10 parcelas.\\
+
+O sistema de amortizaçao deve ser o sistema SAC.\\
+
+Você deverá calcular todos os dados da tabela e explicar detalhadamente os cálculos realizados.\\\\\\
+
+Um empréstimo de R\$ 1.000.000,00 deverá ser pago, dentro de um prazo de 10 meses, em 10 prestações mensais, à taxa de 5\% ao mês. Construa uma planilha deste empréstimo.\\\\
+\textbf{Resolução}
+O valor do financiamento é de R\$1.000.000,00, à taxa de 5\% a.m., para ser pago em 10 parcelas. Para elaborar a planilha de pagamento, adotaremos os seguines cálculos:\\
+\begin{itemize}
+\item calcular a parcela de amortização:\\
+  $$ A = \frac{100000\bcancel{0}}{1\bcancel{0}}=100000$$
+\item calcular a parcela de juros: a taxa deverá ser aplicada sobre o saldo devedor no período anterior.\\
+  $$ J = 1000000 \cdot 0,05 = 50000$$
+\item o valor da primeira prestação é obtido pela soma da amortização e o juro.\\
+  $$ PMT = 100000 + 50000 = 150000 $$
+\item o saldo devedor do período: resultado da subtração do valor da amortização pelo saldo devedor do período anterior.\\
+  $$ 1000000 - 100000 = 900000 $$\\\\
+  \begin{tabular}{ | c | c | c | c | c |}
+  \hline
+  Período & Saldo Devedor (R\$) & Amorização (R\$) & Juros (R\$) & Prestação (R\$) \\ \hline
+  0 & 1.000.000 & - & - & - \\ \hline
+  1 &   900.000 & 100.000 & 50.000 & 150.000 \\ \hline
+  \end{tabular} \\\\
+  Para a terceira coluna da tabela devemos fazer:\\
+  \begin{enumerate}
+  \item Juros, 5\% sobre 900000:\\
+    $$ 900.000 \cdot 0,05 = 45000 $$
+  \item Amorização 100000
+  \item Prestação: $ 100000 + 45000 = 145000 $
+  \item Saldo devedor: $ 900000 - 100000 = 800000 $    
+  \end{enumerate}
+  Ao repetir esta sequência de cálculos em cada período obteremos a seguinte tabela:\\
+  \begin{tabular}{ | c | c | c | c | c |}
+  \hline
+  Período & Saldo Devedor (R\$) & Amorização (R\$) & Juros (R\$) & Prestação (R\$) \\ \hline
+  0 & 1.000.000 & - & - & - \\ \hline
+  1 &   900.000 & 100.000 & 50.000 & 150.000 \\ \hline
+  2 &   800.000 & 100.000 & 45.000 & 145.000 \\ \hline
+  3 &   700.000 & 100.000 & 40.000 & 140.000 \\ \hline
+  4 &   600.000 & 100.000 & 35.000 & 135.000 \\ \hline
+  5 &   500.000 & 100.000 & 30.000 & 130.000 \\ \hline
+  6 &   400.000 & 100.000 & 25.000 & 125.000 \\ \hline
+  7 &   300.000 & 100.000 & 20.000 & 120.000 \\ \hline
+  8 &   200.000 & 100.000 & 15.000 & 115.000 \\ \hline
+  9 &   100.000 & 100.000 & 10.000 & 110.000 \\ \hline
+  10 &   0 & 100.000 & 5.000 & 105.000 \\ \hline  
+  \end{tabular} \\\\
+  
+
+  
+\end{itemize}
+
+\end{document}

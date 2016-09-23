@@ -87,7 +87,24 @@ $$ n = 1\%aa \Rightarrow n = 4 $$
 $$ FV = PMT\frac{(1+i)^{n}-1}{i}\cdot(1+i) \Rightarrow $$
 $$ 50000 = 10524,68\frac{(1+i)^{4}-1}{i}\cdot(1+i) $$
 \\
-(Para não utilizar o método \sout{porco} de tentativas, vou fazer pela calculadora HP-12C\\\\
+
+  \begin{tabular}{ | c | c | c |}
+  \hline
+    7,2 & 50.242,01 & \\ \hline
+    i & 50.000,00 & 242,01 \\ \hline
+    6,6 & 49.518,79 & 723,22 \\ \hline  
+  \end{tabular} \\\\
+
+  \begin{tabular}{ c c }
+    0,6 & 723,22 \\ 
+    i & 242,01 \\ 
+  \end{tabular} 
+  
+$$ 145,206 = 723,22i \Rightarrow $$
+$$ i = \frac{145,206}{723,22} $$
+$$ \boxed{i = 0,20077708...}
+
+
 \emph{f REG}\\
 \emph{g BEG}\\
 \emph{50000 CHS FV}\\
@@ -102,14 +119,14 @@ $$ PV = ? $$
 $$ PMT = R\$1.000,00 $$  
 $$ i = 7\% \Rightarrow i = 0,07 $$
 $$ n = 8 $$
-$$ m = 3 $$  \\
+$$ m = 2 $$  \\
   
 $$ PV = PMT\frac{1-(1+i)^{-n}}{i}(1+i)^{-m} $$
-$$ PV = 1000\frac{1-(1+0,07)^{-8}}{0,07}(1+0,07)^{-3} $$
-$$ PV = 1000\frac{1-(1,07)^{-8}}{0,07}(1,07)^{-3} $$
-$$ PV = 1000 \cdot 5,9712 \cdot 0,8162 $$
-$$ PV = 1000 \cdot 4,8736 $$
-$$ \boxed{PV = 4874,35} $$  
+$$ PV = 1000\frac{1-(1+0,07)^{-8}}{0,07}(1+0,07)^{-2} $$
+$$ PV = 1000\frac{1-(1,07)^{-8}}{0,07}(1,07)^{-2} $$
+$$ PV = 1000 \cdot 5,9712 \cdot 0,8734 $$
+$$ PV = 1000 \cdot 5,215563 $$
+$$ \boxed{PV = 5.215,56} $$  
 
 %Pela calculadora HP-12C\\\\
 %\emph{f REG}\\
@@ -131,9 +148,9 @@ $$ PV = PMT\frac{1-(1+i)^{-n}}{i}(1+i)^{-m} $$
 $$ 120000 = PMT\frac{1-(1+0,03)^{-12}}{0,03}(1+0,03)^{-3} $$
 $$ 120000 = PMT\frac{1-(1,03)^{-12}}{0,03}(1,03)^{-3} $$
 $$ 120000 = PMT \cdot 9,954 \cdot 0,915 $$
-$$ 120000 = PMT \cdot 9,1093 $$
-$$ PMT = \frac{120000}{9,1093} $$
-$$ \boxed{PMT = 13173,35} $$        
+$$ 120000 = PMT \cdot 9,382603 $$
+$$ PMT = \frac{120000}{9,382603} $$
+$$ \boxed{PMT = 12789,627} $$        
 
 
 %Pela calculadora HP-12C\\\\

@@ -54,27 +54,25 @@ Pela calculadora HP-12C\\\\
 \emph{10 n}\\
 \emph{PMT 106,13}
 
-\item Fiz um empréstimo a ser pago em 36 prestações mensais postecipadas de 
-R\$ 200,00. Se a taxa cobrada pela financeira é de 2,5\% ao mês, qual é o valor 
-do empréstimo
+\item  Uma loja vende um televisor por R\$ 850,00 à vista ou em 5 pagamentos postecipados, à taxa de 1,9\% ao mês. Qual o valor de cada prestação?
   
-$$ PMT = R\$200,00 $$
-$$ i = 2,5\% \Rightarrow i = 0,025 $$
-$$ n = 36 $$
-
+$$ PV = R\$850,00 $$
+$$ i = 1,9\% \Rightarrow i = 0,019 $$
+$$ n = 5 $$
+$$ PMT = ? $$  
 \\
 $$ PV = PMT\frac{1-(1+i)^{-n}}{i} \Rightarrow $$
-$$ PV = 200\frac{1-(1+0,025)^{-36}}{0,025} \Rightarrow $$
-$$ PV = 200 \cdot 23,55625 \Rightarrow $$
-$$ \boxed{PV = 4711,2502} $$
+$$ 850 = PMT\frac{1-(1+0,019)^{-5}}{0,019} \Rightarrow $$
+$$ 850 = PMT \cdot 4,7271 \Rightarrow $$
+$$ \boxed{PMT = 179,81} $$
 \\
 Pela calculadora HP-12C\\\\
 \emph{f REG}\\
 \emph{g END}\\
-\emph{200 CHS PMT}\\
-\emph{36 n}\\
-\emph{2,5 i}\\
-\emph{PV 4711,25}  
+\emph{850 CHS PV}\\
+\emph{5 n}\\
+\emph{1,9 i}\\
+\emph{PV 179,81}  
 
 \item Um veículo cujo preço à vista é R\$ 35.000,00 é vendido com 30\% de 
 entrada mais 36 prestações postecipadas à taxa de 1,5\% am. Qual o valor de 
@@ -104,11 +102,27 @@ Pela calculadora HP-12C\\\\
 mensais em uma caderneta de poupança, ao final de cada mês. Que taxa devo 
 procurar para que eu possa obter esse montante? \\\\
 
-Como nem no livro didático é feito o cálculo pela forma algébrica, foi feito apenas pela calculadora HP-12C \\
+%Como nem no livro didático é feito o cálculo pela forma algébrica, foi feito apenas pela calculadora HP-12C \\
 
 $$ PV = R\$15000,00 $$
 $$ PMT = R\$400,00 $$
 $$ n = 36 $$
+
+  \begin{tabular}{ | c | c | c |}
+  \hline
+    -0,24 & 15.059,26 & \\ \hline
+    i & 15.000,00 & 59,26 \\ \hline
+    -0,20 & 14.946,57 & 112,69 \\ \hline  
+  \end{tabular} \\\\
+
+  \begin{tabular}{ c c }
+    -0,24 & 112,69 \\ 
+    i & 59,26 \\ 
+  \end{tabular} 
+  
+$$ 2,3704 = 112,69i \Rightarrow $$
+$$ i = \frac{2,3704}{112,69} $$
+$$ \boxed{i = 2,1034... \cdot 10^{-2}}
 
 Pela calculadora HP-12C\\\\
 \emph{f REG}\\
