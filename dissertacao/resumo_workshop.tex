@@ -31,7 +31,7 @@
 \onehalfspacing
 \thispagestyle{empty}
 \begin{center}
-	\titulo{A DEFINIR}\\
+	\titulo{Identificando Eventos de Splicing Alternativos em Dados de RNAseq Utilizando Grafos de De Bruijn e Bloom Filters}\\
 	\vspace{0.5cm}
 	\autor{Ricardo Medeiros da Costa Junior}{1} e \autor{André Yoshiaki Kashiwabara}{1} \\
 	\instituicao{1}{Universidade Tecnológica Federal do Paraná - Campus Cornélio Procópio, Departamento de Computação, Programa de Pós-Graduação em Bioinformática - PPGBIOINFO}\\
@@ -41,7 +41,7 @@
 %
 % Texto do resumo até 200 palavras.
 %
-AS (Alternative splicing) é um processo regulado que ocorre durante a expressão de gene no qual resulta em um gene codificando para múltiplas proteínas. Nesse processo, alguns exons podem ser incluídos ou excluídos do final do RNA mensageiro (mRNA), que foi produzido por esse gene. Por consequência disso, proteínas traduzidas de AS mRNA contém diferenças em suas sequências de amino ácido e, frequentemente, em suas funções biológicas. Nota-se, que o processo AS permite o genome humano sintetizar diretamente muitas proteínas que poderiam ser esperadas proveniente do seus 20.000 genes codificantes de proteínas. Estudos recentes relacionam abnormally spliced mRNAs com células canceríginas. 
+Alternative Splicing (AS) é um mecanismo pós-transcricional em que múltiplos transcritos funcionais podem ser produzidos a partir um único gene. Em particular, um gene que codifica proteína pode produzir diferentes proteínas através de eventos de AS do pre-mRNA. Nesse processo, alguns exons podem ser incluídos ou excluídos do final do RNA mensageiro (mRNA). Por consequência disso, proteínas traduzidas de AS mRNA contém diferenças em suas sequências de amino ácido e, frequentemente, em suas funções biológicas. Nota-se, que o processo AS permite o genome humano sintetizar diretamente muitas proteínas que poderiam ser esperadas proveniente do seus 20.000 genes codificantes de proteínas. Estudos recentes relacionam abnormally spliced mRNAs com células canceríginas.
 
 Em 2012, é proposto um algoritmo para identificação e quantificação de polimorfismos para dados provenientes de RNA-seq quando o genoma de referência não está disponível, sem realizar a montagem de todos os transcritos. Apesar desse algoritmo identificar tanto approximate tandem repeats, SNPs (single nucleotide polymorphism) e AS, ele é focado em quantificar apenas AS. Por meio desse método, foi possível identificar que anotação de eventos AS tem sido subestimada, pois 56\% dos AS identificados no conjunto de dados testados não estavam presente nas anotações atuais. No entanto, o algoritmo tem algumas limitações. Assim como a maioria de montadores de novo baseados em DBG,(De Bruijn Graphs) a construção do grafo requer um custo de memória muito alto e deve ser executado em um cluster.
 
@@ -53,10 +53,10 @@ Como a construção do DBG desse montador é muito semelhante ao do algoritmo de id
 %\\
 %\\
 \palavraschave{Splice Alternativo, Bloom Filter, De Bruijn Graph}
-%\\
-%\\
+\\
+\\
 % Agradecimento é opcional. No entanto, afiliações e agências financiadores devem ser declaradas. 
-%\agradecimento{AGÊNCIA, Fundação, etc.}	
+\agradecimento{CNPq 476689/2013-9}	
 	
 	
 \end{document}
