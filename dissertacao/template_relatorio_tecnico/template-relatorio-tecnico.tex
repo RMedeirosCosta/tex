@@ -1,0 +1,161 @@
+\documentclass[10pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{epsf, graphics, pifont}
+\usepackage{subfigure}             % uso de várias figuras numa só.
+\usepackage{amsmath}
+\usepackage{amsfonts}              % if you want the fonts
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage[pdftex]{graphicx}
+\usepackage[pagebackref,colorlinks=true,urlcolor=red,citecolor=green,linkcolor=blue]{hyperref}
+\graphicspath{{./figuras/}} 
+
+\title{\Large UTFPR -- Universidade Tecnológica Federal do Paraná -- Câmpus Cornélio Procópio\\
+          Programa de Pós-Graduação em Bioinformática - PPGBIOINFO\\          
+    \vspace*{5mm}{Identificando Eventos de Splicing Alternativos em Dados de RNAseq Utilizando Grafos de De Bruijn e Bloom Filters}}
+
+\author{Ricardo Medeiros da Costa Junior, André Yoshiaki Kashiwabara, \\
+%\texttt{\small\{ricardo.medeiros.costa@gmail.com, kashiwabara@utfpr.edu.br}}
+\texttt{\small{ricardo.medeiros.costa@gmail.com, kashiwabara@utfpr.edu.br}}}
+%\date{21 de Setembro de 2006}
+
+%% ------------------------------------------------------------------- %%
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{.5pc}
+\setlength{\paperwidth}{216mm}
+\setlength{\paperheight}{279mm}
+%\setlength{\pdfpagewidth}{216mm}
+%\setlength{\pdfpageheight}{279mm}
+\setlength{\topmargin}{-1.3cm}          % deslocamento do topo do texto 
+\setlength{\textwidth}{17.0cm}          % largura do texto
+\setlength{\textheight}{23.0cm}
+\setlength\oddsidemargin{0cm}           % juntamente com a linha seg. dá impr.frente.
+\setlength\evensidemargin{0cm}
+
+
+%% ------------------------------------------------------------------- %%
+%% ------------------------------------------------------------------- %%
+
+\begin{document}
+\thispagestyle{empty}
+\maketitle
+
+%\newpage
+\tableofcontents
+\newpage
+
+%% ------------------------------------------------------------------- %%
+\section{Introdução}
+\label{sec:introducao}
+
+Alternative Splicing (AS) é um mecanismo pós-transcricional em que múltiplos transcritos funcionais podem ser produzidos a partir um único gene. Em particular, um gene que codifica proteína pode produzir diferentes proteínas através de eventos de AS do pre-mRNA. Nesse processo, alguns exons podem ser incluídos ou excluídos do final do RNA mensageiro (mRNA). Por consequência disso, proteínas traduzidas de AS mRNA contém diferenças em suas sequências de amino ácido e, frequentemente, em suas funções biológicas. Nota-se, que o processo AS permite o genome humano sintetizar diretamente muitas proteínas que poderiam ser esperadas proveniente do seus 20.000 genes codificantes de proteínas \cite{black2003}. Estudos recentes relacionam abnormally spliced mRNAs com células canceríginas \cite{skotheim2007} \cite{he2009} \cite{sveen2015}.
+
+Em 2012, é proposto um algoritmo para identificação e quantificação de polimorfismos para dados provenientes de RNA-seq quando o genoma de referência não está disponível, sem realizar a montagem de todos os transcritos. Apesar desse algoritmo identificar tanto approximate tandem repeats, SNPs (single nucleotide polymorphism) e AS, ele é focado em quantificar apenas AS. Por meio desse método, foi possível identificar que anotação de eventos AS tem sido subestimada, pois 56\% dos AS identificados no conjunto de dados testados não estavam presente nas anotações atuais. No entanto, o algoritmo tem algumas limitações. Assim como a maioria de montadores de novo baseados em DBG,(De Bruijn Graphs) a construção do grafo requer um custo de memória muito alto e deve ser executado em um cluster.
+
+Em 2016 foi publicado um artigo cujo propõe uma melhoria para um montador baseado em DBG. Foi retirado o  MPI (message-passing system) e implementado o Bloom Filter, uma estrutura de dados probabilística na construção do DBG. Foi possível realizar a montagem em um computador pessoal ao invés de um cluster.
+Bloom filter é uma estrutura de dados probabilística criada por Burton Howard Bloom em 1970, que é usada para testar se um elemento é membro de um conjunto. Combinações falso positiva são possíveis, mas falso negativas não são, devido a isso Bloom filter é considerado com 100\% de taxa de recall. Ou seja, é retornado 100\% dos resultados relevantes.
+
+Como a construção do DBG desse montador é muito semelhante ao do algoritmo de identificador e quantificador de AS, a proposta desse trabalho é implementação do Bloom Filter no algoritmo de identificação e quantificação de AS, reduzindo o custo de memória para criação do DBG, permitindo que esse seja executado de maneira eficiente em um computador pessoal. \\\\
+
+Na Seção~\ref{sec:material_metodos} são apresentadas...
+
+% ------------------------------------------------------------------- %%
+\subsection {Problema}
+\label{ssec:problema}
+
+Para a primeira parte do trabalho...
+% ----------------------------------------------------
+
+% ------------------------------------------------------------------- %%
+\subsection {Justificativa}
+\label{ssec:justificativa}
+
+Para a primeira parte do trabalho...
+% ------------------------------------------------------------------- %%
+
+% ------------------------------------------------------------------- %%
+\section {Material e métodos}
+\label{sec:material_metodos}
+
+O reconhecimento de caracteres...
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{processo_ocr.jpg}
+    \caption{\small{Diagrama...}}
+    \label{fig:metodo}
+\end{figure}
+
+% ------------------------------------------------------------------- %%
+\subsection {Conjunto de dados...}
+\label{ssec:conjunto}
+
+Para a primeira parte do trabalho...
+
+% ------------------------------------------------------------------- %%
+\subsection {Pré-processamento}
+\label{ssec:preprocessamento}
+
+Nesta etapa....
+
+O operador ...é definido pela seguinte equação:
+\begin{equation}
+f \hat{\circ} b = f - (f \circ b)
+\end{equation}
+
+\noindent{na qual $f \circ b$ é ....}.
+
+% ------------------------------------------------------------------- %%
+\subsection {Extração de características}
+\label{ssec:caracteristicas}
+
+A extração de características foi baseada no artigo
+
+Neste projeto, esta parte foi implementada em ...
+
+
+% ------------------------------------------------------------------- %%
+\subsection {Treinamento}
+\label{ssec:treinamento}
+
+Nesta etapa usa-se o algoritmo....
+
+% ------------------------------------------------------------------- %%
+\subsection{Processo de validação}
+\label{ssec:validacao}
+
+As técnicas usadas no processo de validação do nosso sistema foram...
+
+% ------------------------------------------------------------------- %%
+\subsubsection{Validação cruzada generalizada}
+A validação cruzada generalizada conhecida também como k-validação cruzada, 
+é uma das técnicas mais aplicadas na verificação da estabilidade de 
+modelos
+
+Seu funcionamento consiste em....
+
+% ------------------------------------------------------------------- %%
+\section{Resultados}
+\label{sec:resultados}
+
+Neste trabalho....
+
+% ------------------------------------------------------------------- %%
+\section{Conclusões}
+\label{sec:conclusoes}
+
+O objetivo deste trabalho foi aplicar...
+
+%% ------------------------------------------------------------------- %%
+%\bibliographystyle{amsplain}
+\bibliographystyle{alpha}
+%\bibliographystyle{amsalpha}
+\bibliography{bibliografia}
+%% ------------------------------------------------------------------- %%
+\end{document}
+
+
+
+

@@ -1,0 +1,28 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{SKR{\etalchar{+}}15}
+
+\bibitem[Bla03]{black2003}
+Douglas~L. Black.
+\newblock Mechanisms of alternative pre-messenger rna splicing.
+\newblock {\em Annual Review of Biochemistry}, 72(1):291--336, 2003.
+\newblock PMID: 12626338.
+
+\bibitem[HZZ{\etalchar{+}}09]{he2009}
+Chunjiang He, Fang Zhou, Zhixiang Zuo, Hanhua Cheng, and Rongjia Zhou.
+\newblock A global view of cancer-specific transcript variants by subtractive
+  transcriptome-wide analysis.
+\newblock {\em PloS one}, 4(3):e4732, 2009.
+
+\bibitem[SKR{\etalchar{+}}15]{sveen2015}
+A~Sveen, S~Kilpinen, A~Ruusulehto, RA~Lothe, and RI~Skotheim.
+\newblock Aberrant rna splicing in cancer; expression changes and driver
+  mutations of splicing factor genes.
+\newblock {\em Oncogene}, 2015.
+
+\bibitem[SN07]{skotheim2007}
+Rolf~I Skotheim and Matthias Nees.
+\newblock Alternative splicing in cancer: noise, functional, or systematic?
+\newblock {\em The international journal of biochemistry \& cell biology},
+  39(7):1432--1449, 2007.
+
+\end{thebibliography}
