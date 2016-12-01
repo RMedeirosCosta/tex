@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{SKR{\etalchar{+}}15}
+\begin{thebibliography}{JVM{\etalchar{+}}16}
 
 \bibitem[Bla03]{black2003}
 Douglas~L. Black.
@@ -7,11 +7,31 @@ Douglas~L. Black.
 \newblock {\em Annual Review of Biochemistry}, 72(1):291--336, 2003.
 \newblock PMID: 12626338.
 
+\bibitem[Blo70]{bloom1970}
+Burton~H. Bloom.
+\newblock Space/time trade-offs in hash coding with allowable errors.
+\newblock {\em Commun. ACM}, 13(7):422--426, July 1970.
+
 \bibitem[HZZ{\etalchar{+}}09]{he2009}
 Chunjiang He, Fang Zhou, Zhixiang Zuo, Hanhua Cheng, and Rongjia Zhou.
 \newblock A global view of cancer-specific transcript variants by subtractive
   transcriptome-wide analysis.
 \newblock {\em PloS one}, 4(3):e4732, 2009.
+
+\bibitem[JVM{\etalchar{+}}16]{jackman2016}
+Shaun~D Jackman, Benjamin~P Vandervalk, Hamid Mohamadi, Justin Chu, Sarah Yeo,
+  S~Austin Hammond, Golnaz Jahesh, Hamza Khan, Lauren Coombe, Rene~L Warren,
+  and Inanc Birol.
+\newblock Abyss 2.0: Resource-efficient assembly of large genomes using a bloom
+  filter.
+\newblock {\em bioRxiv}, 2016.
+
+\bibitem[SKC{\etalchar{+}}12]{sacomoto2012}
+Gustavo~AT Sacomoto, Janice Kielbassa, Rayan Chikhi, Raluca Uricaru, Pavlos
+  Antoniou, Marie-France Sagot, Pierre Peterlongo, and Vincent Lacroix.
+\newblock K is s plice: de-novo calling alternative splicing events from
+  rna-seq data.
+\newblock {\em BMC bioinformatics}, 13(6):1, 2012.
 
 \bibitem[SKR{\etalchar{+}}15]{sveen2015}
 A~Sveen, S~Kilpinen, A~Ruusulehto, RA~Lothe, and RI~Skotheim.

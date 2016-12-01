@@ -1,12 +1,13 @@
+\select@language {brazilian}
 \contentsline {section}{\numberline {1}Introdu\c c\~ao}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Problema}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.1}Objetivos}{2}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Justificativa}{2}{subsection.1.2}
-\contentsline {section}{\numberline {2}Material e m\'etodos}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Conjunto de dados...}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Pr\'e-processamento}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Extra\c c\~ao de caracter\IeC {\'\i }sticas}{3}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Treinamento}{4}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Processo de valida\c c\~ao}{4}{subsection.2.5}
-\contentsline {subsubsection}{\numberline {2.5.1}Valida\c c\~ao cruzada generalizada}{4}{subsubsection.2.5.1}
+\contentsline {section}{\numberline {2}Materiais e M\'etodos}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Conjunto de dados...}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Pr\~A\IeC {\copyright }-processamento}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Extra\~A\IeC {\S }\~A\IeC {\pounds }o de caracter\~A\discretionary {-}{}{}sticas}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Treinamento}{3}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Processo de valida\~A\IeC {\S }\~A\IeC {\pounds }o}{3}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Valida\~A\IeC {\S }\~A\IeC {\pounds }o cruzada generalizada}{3}{subsubsection.2.5.1}
 \contentsline {section}{\numberline {3}Resultados}{4}{section.3}
-\contentsline {section}{\numberline {4}Conclus\~oes}{4}{section.4}
+\contentsline {section}{\numberline {4}Conclus\~A\mu es}{4}{section.4}

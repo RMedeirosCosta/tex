@@ -3,7 +3,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[latin1]{inputenc}
 \usepackage{epsf, graphics, pifont}
-\usepackage{subfigure}             % uso de várias figuras numa só.
+\usepackage{subfigure}             % uso de várias figurar em uma só.
 \usepackage{amsmath}
 \usepackage{amsfonts}              % if you want the fonts
 \usepackage{amssymb}
@@ -12,7 +12,7 @@
 \usepackage[pagebackref,colorlinks=true,urlcolor=red,citecolor=green,linkcolor=blue]{hyperref}
 \graphicspath{{./figuras/}} 
 
-\title{\Large UTFPR -- Universidade Tecnológica Federal do Paraná -- Câmpus Cornélio Procópio\\
+\title{\Large UTFPR -- Universidade Tecnológica Federal do Paraná-- Campus Cornélio Procópio\\
           Programa de Pós-Graduação em Bioinformática - PPGBIOINFO\\          
     \vspace*{5mm}{Identificando Eventos de Splicing Alternativos em Dados de RNAseq Utilizando Grafos de De Bruijn e Bloom Filters}}
 
@@ -31,7 +31,7 @@
 \setlength{\topmargin}{-1.3cm}          % deslocamento do topo do texto 
 \setlength{\textwidth}{17.0cm}          % largura do texto
 \setlength{\textheight}{23.0cm}
-\setlength\oddsidemargin{0cm}           % juntamente com a linha seg. dá impr.frente.
+\setlength\oddsidemargin{0cm}           % juntamente com a linha seg. dÃ¡ impr.frente.
 \setlength\evensidemargin{0cm}
 
 
@@ -50,33 +50,36 @@
 \section{Introdução}
 \label{sec:introducao}
 
-Alternative Splicing (AS) é um mecanismo pós-transcricional em que múltiplos transcritos funcionais podem ser produzidos a partir um único gene. Em particular, um gene que codifica proteína pode produzir diferentes proteínas através de eventos de AS do pre-mRNA. Nesse processo, alguns exons podem ser incluídos ou excluídos do final do RNA mensageiro (mRNA). Por consequência disso, proteínas traduzidas de AS mRNA contém diferenças em suas sequências de amino ácido e, frequentemente, em suas funções biológicas. Nota-se, que o processo AS permite o genome humano sintetizar diretamente muitas proteínas que poderiam ser esperadas proveniente do seus 20.000 genes codificantes de proteínas \cite{black2003}. Estudos recentes relacionam abnormally spliced mRNAs com células canceríginas \cite{skotheim2007} \cite{he2009} \cite{sveen2015}.
+Alternative Splicing (AS) é um mecanismo pós-transcricional em que múltiplos transcritos funcionais podem ser produzidos a partir um único gene. Em particular, um gene que codifica proteína pode produzir diferentes proteínas através de eventos de splicing alternativo do pré-mRNA. Nesse processo, alguns exons podem ser incluídos ou excluídos do final do RNA mensageiro (mRNA). Por consequência disso, proteínas traduzidas de AS mRNA contém diferenças em suas sequências de amino ácidos e, frequentemente, em suas funções biológicas. Nota-se, que o processo splicing alternativo permite o genome humano sintetizar diretamente muitas proteínas que poderiam ser esperadas proveniente do seus 20.000 genes codificantes de proteínas \cite{black2003}. Estudos recentes relacionam \emph{abnormally spliced mRNAs} com células canceríginas \cite{skotheim2007} \cite{he2009} \cite{sveen2015}.
 
-Em 2012, é proposto um algoritmo para identificação e quantificação de polimorfismos para dados provenientes de RNA-seq quando o genoma de referência não está disponível, sem realizar a montagem de todos os transcritos. Apesar desse algoritmo identificar tanto approximate tandem repeats, SNPs (single nucleotide polymorphism) e AS, ele é focado em quantificar apenas AS. Por meio desse método, foi possível identificar que anotação de eventos AS tem sido subestimada, pois 56\% dos AS identificados no conjunto de dados testados não estavam presente nas anotações atuais. No entanto, o algoritmo tem algumas limitações. Assim como a maioria de montadores de novo baseados em DBG,(De Bruijn Graphs) a construção do grafo requer um custo de memória muito alto e deve ser executado em um cluster.
+Em 2012, foi proposto um algoritmo para identificação e quantificação de polimorfismos para dados provenientes de RNA-seq quando o genoma de referênci não está disponível, sem realizar a montagem de todos os transcritos \cite{sacomoto2012}. Apesar desse algoritmo identificar tanto \emph{approximate tandem repeats}, SNPs (\emph{Single Nucleotide Polymorphism}) e splicing alternativo, ele é focado em quantificar apenas eventos de splicing alternativo. Por meio desse método, foi possível identificar que anotação de eventos de splicing alternativo tem sido subestimada, pois 56\% dos splicing alternativos identificados no conjunto de dados testados não estavam presente nas anotações atuais. No entanto, o algoritmo tem algumas limitações. Assim como a maioria de montadores de novo baseados em DBG,(De Bruijn Graphs) a construção do grafo requer um custo de memória muito alto e deve ser executado em um cluster.
 
-Em 2016 foi publicado um artigo cujo propõe uma melhoria para um montador baseado em DBG. Foi retirado o  MPI (message-passing system) e implementado o Bloom Filter, uma estrutura de dados probabilística na construção do DBG. Foi possível realizar a montagem em um computador pessoal ao invés de um cluster.
-Bloom filter é uma estrutura de dados probabilística criada por Burton Howard Bloom em 1970, que é usada para testar se um elemento é membro de um conjunto. Combinações falso positiva são possíveis, mas falso negativas não são, devido a isso Bloom filter é considerado com 100\% de taxa de recall. Ou seja, é retornado 100\% dos resultados relevantes.
+Em 2016 foi publicado um artigo cujo propõe uma melhoria para um montador baseado em DBG \cite{jackman2016}. Foi retirado o  MPI (message-passing system) e implementado o Bloom Filter, uma estrutura de dados probabilística na construção do DBG. Foi possível realizar a montagem em um computador pessoal ao invés de um cluster.
+Bloom filter é uma estrutura de dados probabilística criada por Burton Howard Bloom em 1970, que é usada para testar se um elemento é membro de um conjunto. Combinações falso positiva são possíveis, mas falso negativas não são, devido a isso Bloom filter é considerado com 100\% de taxa de recall. Ou seja, é retornado 100\% dos resultados relevantes \cite{bloom1970}.
 
-Como a construção do DBG desse montador é muito semelhante ao do algoritmo de identificador e quantificador de AS, a proposta desse trabalho é implementação do Bloom Filter no algoritmo de identificação e quantificação de AS, reduzindo o custo de memória para criação do DBG, permitindo que esse seja executado de maneira eficiente em um computador pessoal. \\\\
+Como a construção do DBG desse montador é muito semelhante ao do algoritmo de identificador e quantificador de splicing alternativo, a proposta desse trabalho é a implementação do Bloom Filter no algoritmo de identificação e quantificação de polimorfismos, reduzindo o custo de memória para criação do DBG, permitindo que esse seja executado de maneira eficiente em um computador pessoal. \\\\
 
-Na Seção~\ref{sec:material_metodos} são apresentadas...
+% Na Seção \ref{sec:material_metodos} são apresentadas...
 
 % ------------------------------------------------------------------- %%
-\subsection {Problema}
-\label{ssec:problema}
+\subsection {Objetivos}
+\label{ssec:objetivos}
 
-Para a primeira parte do trabalho...
+     O objetivo principal desse trabalho será desenvolver uma abordagem para identificação e quantificação de eventos de splicing alternativos sem o genoma de referência, de maneira eficiente - utilizando menos memória na execução do método e rodando mais rápido que os métodos utilizados atualmente - e eficaz - identificando os eventos de splicing alternativo de maneira correta -. 
+     Para atingir o objetivo principal devem ser realizados os três objetivos específicos: implementar um algoritmo utilizando os conceitos que estão no estado da arte na literatura; compará-lo com as abordagens mais utilizadas atualmente, utilizando um banco de dados sintéticos que serãoo simulados por ferramentas computacionais, visando verificar se o método tem melhor eficiência com a mesma ou melhor eficácia; e realizar a comparação do método criado com as abordagens que sãoo utilizados atualmente, no entanto utilizando dados reais.
+
 % ----------------------------------------------------
 
 % ------------------------------------------------------------------- %%
 \subsection {Justificativa}
 \label{ssec:justificativa}
 
-Para a primeira parte do trabalho...
+A justificativa para realização desse trabalho se dá por meio de duas perspectivas: A primeira, do ponto de vista biológico, no qual a identificação e classificação de eventos de splicing alternativo tem papel fundamental na sintetização de proteínas de organismos eucariotos. Várias proteínas podem ser codificadas provenientes de um único gene, ao invés de utilizar um gene para cada proteína, dessa forma proporcionando um proteoma variado de um genoma de tamanho limitado \cite{black2003}. Estudos comparativos indicam que splicing alternativo precedeu multicelularidade na evolução e sugerem que este mecanismo pode ter auxiliado no desenvolvimento de organismos multicelulares \cite{irimia2007}. Soma-se a isso, estudos baseados no Projeto do Genoma Humano e outros sequenciamentos de genoma que humanos tem por volta de apenas 30\% mais genes que a lombriga \emph{Caenorhabditis elegans} e apenas duas vezes mais que a mosca \emph{Drosophila melanogaster}. Este estudo leva a especulação que a complexidade de humanos ou vertebrados no geral, é devido as altas taxas de splicing alternativo que são bem maiores em vertebrados do que invertebrados \cite{ewing2000} \cite{crollius2000}. Splicing Alternativo também podem ter relação com doenças. Um estudo realizado em 2005 indicou que mais de 60\% das mutações causadora de doenças em humanos afetam splicing invés de afetar diretamente as sequências codificantes \cite{lopez2005}. Outro estudo mais recente indicou que uma entre três de todas as doenças hereditárias provavelmente tem um componente de splicing \cite{lim2011}. De fato há doenças relacionadas com splicing \cite{ward2010}
+
 % ------------------------------------------------------------------- %%
 
 % ------------------------------------------------------------------- %%
-\section {Material e métodos}
+\section {Materiais e Métodos}
 \label{sec:material_metodos}
 
 O reconhecimento de caracteres...
@@ -95,23 +98,23 @@ O reconhecimento de caracteres...
 Para a primeira parte do trabalho...
 
 % ------------------------------------------------------------------- %%
-\subsection {Pré-processamento}
+\subsection {PrÃ©-processamento}
 \label{ssec:preprocessamento}
 
 Nesta etapa....
 
-O operador ...é definido pela seguinte equação:
+O operador ...Ã© definido pela seguinte equaÃ§Ã£o:
 \begin{equation}
 f \hat{\circ} b = f - (f \circ b)
 \end{equation}
 
-\noindent{na qual $f \circ b$ é ....}.
+\noindent{na qual $f \circ b$ Ã© ....}.
 
 % ------------------------------------------------------------------- %%
-\subsection {Extração de características}
+\subsection {ExtraÃ§Ã£o de caracterÃ­sticas}
 \label{ssec:caracteristicas}
 
-A extração de características foi baseada no artigo
+A extraÃ§Ã£o de caracterÃ­sticas foi baseada no artigo
 
 Neste projeto, esta parte foi implementada em ...
 
@@ -123,15 +126,15 @@ Neste projeto, esta parte foi implementada em ...
 Nesta etapa usa-se o algoritmo....
 
 % ------------------------------------------------------------------- %%
-\subsection{Processo de validação}
+\subsection{Processo de validaÃ§Ã£o}
 \label{ssec:validacao}
 
-As técnicas usadas no processo de validação do nosso sistema foram...
+As tÃ©cnicas usadas no processo de validaÃ§Ã£o do nosso sistema foram...
 
 % ------------------------------------------------------------------- %%
-\subsubsection{Validação cruzada generalizada}
-A validação cruzada generalizada conhecida também como k-validação cruzada, 
-é uma das técnicas mais aplicadas na verificação da estabilidade de 
+\subsubsection{ValidaÃ§Ã£o cruzada generalizada}
+A validaÃ§Ã£o cruzada generalizada conhecida tambÃ©m como k-validaÃ§Ã£o cruzada, 
+Ã© uma das tÃ©cnicas mais aplicadas na verificaÃ§Ã£o da estabilidade de 
 modelos
 
 Seu funcionamento consiste em....
@@ -143,7 +146,7 @@ Seu funcionamento consiste em....
 Neste trabalho....
 
 % ------------------------------------------------------------------- %%
-\section{Conclusões}
+\section{ConclusÃµes}
 \label{sec:conclusoes}
 
 O objetivo deste trabalho foi aplicar...
