@@ -8,6 +8,6 @@
 \contentsline {subsection}{\numberline {2.3}Extra\~A\IeC {\S }\~A\IeC {\pounds }o de caracter\~A\discretionary {-}{}{}sticas}{3}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Treinamento}{3}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Processo de valida\~A\IeC {\S }\~A\IeC {\pounds }o}{3}{subsection.2.5}
-\contentsline {subsubsection}{\numberline {2.5.1}Valida\~A\IeC {\S }\~A\IeC {\pounds }o cruzada generalizada}{3}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.1}Valida\~A\IeC {\S }\~A\IeC {\pounds }o cruzada generalizada}{4}{subsubsection.2.5.1}
 \contentsline {section}{\numberline {3}Resultados}{4}{section.3}
-\contentsline {section}{\numberline {4}Conclus\~A\mu es}{4}{section.4}
+\contentsline {section}{\numberline {4}Conclus\~A\mu es}{5}{section.4}
