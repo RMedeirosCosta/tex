@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{JVM{\etalchar{+}}16}
+\begin{thebibliography}{LBAO{\etalchar{+}}05}
 
 \bibitem[Bla03]{black2003}
 Douglas~L. Black.
@@ -12,11 +12,45 @@ Burton~H. Bloom.
 \newblock Space/time trade-offs in hash coding with allowable errors.
 \newblock {\em Commun. ACM}, 13(7):422--426, July 1970.
 
+\bibitem[CJB{\etalchar{+}}00]{crollius2000}
+Hugues~Roest Crollius, Olivier Jaillon, Alain Bernot, Corinne Dasilva, Laurence
+  Bouneau, C{\'e}cile Fischer, C{\'e}cile Fizames, Patrick Wincker, Philippe
+  Brottier, Francis Qu{\'e}tier, et~al.
+\newblock Estimate of human gene number provided by genome-wide analysis using
+  tetraodon nigroviridis dna sequence.
+\newblock {\em Nature genetics}, 25(2):235--238, 2000.
+
+\bibitem[CR12]{chikhi2012}
+Rayan Chikhi and Guillaume Rizk.
+\newblock Space-efficient and exact de bruijn graph representation based on a
+  bloom filter.
+\newblock In {\em International Workshop on Algorithms in Bioinformatics},
+  pages 236--248. Springer, 2012.
+
+\bibitem[EG00]{ewing2000}
+Brent Ewing and Phil Green.
+\newblock Analysis of expressed sequence tags indicates 35,000 human genes.
+\newblock {\em Nature genetics}, 25(2):232--234, 2000.
+
+\bibitem[GHY{\etalchar{+}}11]{grabherr2011}
+Manfred~G Grabherr, Brian~J Haas, Moran Yassour, Joshua~Z Levin, Dawn~A
+  Thompson, Ido Amit, Xian Adiconis, Lin Fan, Raktima Raychowdhury, Qiandong
+  Zeng, et~al.
+\newblock Full-length transcriptome assembly from rna-seq data without a
+  reference genome.
+\newblock {\em Nature biotechnology}, 29(7):644--652, 2011.
+
 \bibitem[HZZ{\etalchar{+}}09]{he2009}
 Chunjiang He, Fang Zhou, Zhixiang Zuo, Hanhua Cheng, and Rongjia Zhou.
 \newblock A global view of cancer-specific transcript variants by subtractive
   transcriptome-wide analysis.
 \newblock {\em PloS one}, 4(3):e4732, 2009.
+
+\bibitem[IRPR07]{irimia2007}
+Manuel Irimia, Jakob~L Rukov, David Penny, and Scott~W Roy.
+\newblock Functional and evolutionary analysis of alternatively spliced genes
+  is consistent with an early eukaryotic origin of alternative splicing.
+\newblock {\em BMC Evolutionary Biology}, 7(1):188, 2007.
 
 \bibitem[JVM{\etalchar{+}}16]{jackman2016}
 Shaun~D Jackman, Benjamin~P Vandervalk, Hamid Mohamadi, Justin Chu, Sarah Yeo,
@@ -25,6 +59,20 @@ Shaun~D Jackman, Benjamin~P Vandervalk, Hamid Mohamadi, Justin Chu, Sarah Yeo,
 \newblock Abyss 2.0: Resource-efficient assembly of large genomes using a bloom
   filter.
 \newblock {\em bioRxiv}, 2016.
+
+\bibitem[LBAO{\etalchar{+}}05]{lopez2005}
+N{\'u}ria L{\'o}pez-Bigas, Benjamin Audit, Christos Ouzounis, Gen{\'\i}s Parra,
+  and Roderic Guig{\'o}.
+\newblock Are splicing mutations the most frequent cause of hereditary disease?
+\newblock {\em FEBS letters}, 579(9):1900--1903, 2005.
+
+\bibitem[LFF{\etalchar{+}}11]{lim2011}
+Kian~Huat Lim, Luciana Ferraris, Madeleine~E Filloux, Benjamin~J Raphael, and
+  William~G Fairbrother.
+\newblock Using positional distribution to identify splicing elements and
+  predict pre-mrna processing defects in human genes.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  108(27):11093--11098, 2011.
 
 \bibitem[SKC{\etalchar{+}}12]{sacomoto2012}
 Gustavo~AT Sacomoto, Janice Kielbassa, Rayan Chikhi, Raluca Uricaru, Pavlos
@@ -44,5 +92,10 @@ Rolf~I Skotheim and Matthias Nees.
 \newblock Alternative splicing in cancer: noise, functional, or systematic?
 \newblock {\em The international journal of biochemistry \& cell biology},
   39(7):1432--1449, 2007.
+
+\bibitem[WC10]{ward2010}
+Amanda~J Ward and Thomas~A Cooper.
+\newblock The pathobiology of splicing.
+\newblock {\em The Journal of pathology}, 220(2):152--163, 2010.
 
 \end{thebibliography}

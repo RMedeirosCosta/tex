@@ -2,12 +2,18 @@
 \contentsline {section}{\numberline {1}Introdu\c c\~ao}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Objetivos}{2}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Justificativa}{2}{subsection.1.2}
-\contentsline {section}{\numberline {2}Materiais e M\'etodos}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Conjunto de dados...}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Pr\~A\IeC {\copyright }-processamento}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Extra\~A\IeC {\S }\~A\IeC {\pounds }o de caracter\~A\discretionary {-}{}{}sticas}{3}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Treinamento}{3}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Processo de valida\~A\IeC {\S }\~A\IeC {\pounds }o}{3}{subsection.2.5}
-\contentsline {subsubsection}{\numberline {2.5.1}Valida\~A\IeC {\S }\~A\IeC {\pounds }o cruzada generalizada}{4}{subsubsection.2.5.1}
-\contentsline {section}{\numberline {3}Resultados}{4}{section.3}
-\contentsline {section}{\numberline {4}Conclus\~A\mu es}{5}{section.4}
+\contentsline {section}{\numberline {2}Revis\~ao Bibliogr\'afica}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Splicing Alternativo}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}De Bruijn graph}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Bloom Filter}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Trabalhos Anteriores}{3}{subsection.2.4}
+\contentsline {section}{\numberline {3}Materiais e M\'etodos}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Conjunto de dados...}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Pr\~A\IeC {\copyright }-processamento}{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Extra\~A\IeC {\S }\~A\IeC {\pounds }o de caracter\~A\discretionary {-}{}{}sticas}{4}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Treinamento}{5}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Processo de valida\~A\IeC {\S }\~A\IeC {\pounds }o}{5}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Valida\~A\IeC {\S }\~A\IeC {\pounds }o cruzada generalizada}{5}{subsubsection.3.5.1}
+\contentsline {section}{\numberline {4}Resultados}{5}{section.4}
+\contentsline {section}{\numberline {5}Cronograma}{5}{section.5}
+\contentsline {section}{\numberline {6}Conclus\~oes}{5}{section.6}

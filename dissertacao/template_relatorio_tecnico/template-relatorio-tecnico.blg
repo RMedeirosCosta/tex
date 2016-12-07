@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: template-relatorio-tecnico.aux
 The style file: alpha.bst
 Database file #1: bibliografia.bib
-You've used 7 entries,
+You've used 15 entries,
             2543 wiz_defined-function locations,
-            610 strings with 6006 characters,
-and the built_in function-call counts, 3229 in all, are:
-= -- 299
-> -- 220
-< -- 2
-+ -- 81
-- -- 80
-* -- 282
-:= -- 579
-add.period$ -- 22
-call.type$ -- 7
-change.case$ -- 61
-chr.to.int$ -- 7
-cite$ -- 7
-duplicate$ -- 98
-empty$ -- 185
-format.name$ -- 85
-if$ -- 612
+            664 strings with 7939 characters,
+and the built_in function-call counts, 7526 in all, are:
+= -- 720
+> -- 508
+< -- 3
++ -- 188
+- -- 186
+* -- 663
+:= -- 1305
+add.period$ -- 47
+call.type$ -- 15
+change.case$ -- 133
+chr.to.int$ -- 15
+cite$ -- 15
+duplicate$ -- 222
+empty$ -- 441
+format.name$ -- 195
+if$ -- 1453
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 7
-newline$ -- 40
-num.names$ -- 21
-pop$ -- 45
+missing$ -- 15
+newline$ -- 80
+num.names$ -- 45
+pop$ -- 98
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 148
 quote$ -- 0
-skip$ -- 77
+skip$ -- 185
 stack$ -- 0
-substring$ -- 145
-swap$ -- 7
-text.length$ -- 2
+substring$ -- 411
+swap$ -- 25
+text.length$ -- 3
 text.prefix$ -- 2
 top$ -- 0
-type$ -- 56
+type$ -- 120
 warning$ -- 0
-while$ -- 26
-width$ -- 10
-write$ -- 94
+while$ -- 66
+width$ -- 18
+write$ -- 199
