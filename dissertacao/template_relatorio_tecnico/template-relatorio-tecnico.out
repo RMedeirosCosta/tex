@@ -3,16 +3,19 @@
 \BOOKMARK [2][-]{subsection.1.2}{Justificativa}{section.1}% 3
 \BOOKMARK [1][-]{section.2}{Revis\343o Bibliogr\341fica}{}% 4
 \BOOKMARK [2][-]{subsection.2.1}{Splicing Alternativo}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.2}{De Bruijn graph}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.3}{Bloom Filter}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.4}{Trabalhos Anteriores}{section.2}% 8
-\BOOKMARK [1][-]{section.3}{Materiais e M\351todos}{}% 9
-\BOOKMARK [2][-]{subsection.3.1}{Conjunto de dados...}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.2}{Pr\303\251-processamento}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.3}{Extra\303\247\303\243o de caracter\303sticas}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.4}{Treinamento}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.5}{Processo de valida\303\247\303\243o}{section.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Valida\303\247\303\243o cruzada generalizada}{subsection.3.5}% 15
-\BOOKMARK [1][-]{section.4}{Resultados}{}% 16
-\BOOKMARK [1][-]{section.5}{Cronograma}{}% 17
-\BOOKMARK [1][-]{section.6}{Conclus\365es}{}% 18
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Formas de Splicing Alternativo}{subsection.2.1}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Mecanismo geral de splicing}{subsection.2.1}% 7
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Elementos regulat\363rios e prote\355nas}{subsection.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.2}{De Bruijn graph}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{Bloom Filter}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.4}{Trabalhos Anteriores}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{Materiais e M\351todos}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{Conjunto de dados...}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.2}{Pr\303\251-processamento}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.3}{Extra\303\247\303\243o de caracter\303sticas}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.4}{Treinamento}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.5}{Processo de valida\303\247\303\243o}{section.3}% 17
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Valida\303\247\303\243o cruzada generalizada}{subsection.3.5}% 18
+\BOOKMARK [1][-]{section.4}{Resultados}{}% 19
+\BOOKMARK [1][-]{section.5}{Cronograma}{}% 20
+\BOOKMARK [1][-]{section.6}{Conclus\365es}{}% 21

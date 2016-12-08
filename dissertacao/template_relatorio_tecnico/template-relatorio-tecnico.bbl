@@ -12,6 +12,24 @@ Burton~H. Bloom.
 \newblock Space/time trade-offs in hash coding with allowable errors.
 \newblock {\em Commun. ACM}, 13(7):422--426, July 1970.
 
+\bibitem[BMS77]{berget1977}
+Susan~M Berget, Claire Moore, and Phillip~A Sharp.
+\newblock Spliced segments at the 5′ terminus of adenovirus 2 late mrna.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  74(8):3171--3175, 1977.
+
+\bibitem[CB78]{chow1978}
+Louise~T Chow and Thomas~R Broker.
+\newblock The spliced structures of adenovirus 2 fiber message and the other
+  late mrnas.
+\newblock {\em Cell}, 15(2):497--510, 1978.
+
+\bibitem[CGBR77]{chow1977}
+Louise~T Chow, Richard~E Gelinas, Thomas~R Broker, and Richard~J Roberts.
+\newblock An amazing sequence arrangement at the 5′ ends of adenovirus 2
+  messenger rna.
+\newblock {\em Cell}, 12(1):1--8, 1977.
+
 \bibitem[CJB{\etalchar{+}}00]{crollius2000}
 Hugues~Roest Crollius, Olivier Jaillon, Alain Bernot, Corinne Dasilva, Laurence
   Bouneau, C{\'e}cile Fischer, C{\'e}cile Fizames, Patrick Wincker, Philippe
@@ -73,6 +91,57 @@ Kian~Huat Lim, Luciana Ferraris, Madeleine~E Filloux, Benjamin~J Raphael, and
   predict pre-mrna processing defects in human genes.
 \newblock {\em Proceedings of the National Academy of Sciences},
   108(27):11093--11098, 2011.
+
+\bibitem[LR86]{leff1986}
+Stuart~E Leff and Michael~G Rosenfeld.
+\newblock Complex transcriptional units: diversity in gene expression by
+  alternative rna processing.
+\newblock {\em Annual review of biochemistry}, 55(1):1091--1117, 1986.
+
+\bibitem[MCS05]{matlin2005}
+Arianne~J Matlin, Francis Clark, and Christopher~WJ Smith.
+\newblock Understanding alternative splicing: towards a cellular code.
+\newblock {\em Nature reviews Molecular cell biology}, 6(5):386--398, 2005.
+
+\bibitem[MRT{\etalchar{+}}81]{maki1981}
+Richard Maki, William Roeder, Andre Traunecker, Charles Sidman, Matthias Wabl,
+  William Raschke, and Susumu Tonegawa.
+\newblock The role of dna rearrangement and alternative rna processing in the
+  expression of immunoglobulin delta genes.
+\newblock {\em Cell}, 24(2):353--365, 1981.
+
+\bibitem[ND78]{nevins1978}
+Joseph~R Nevins and James~E Darnell.
+\newblock Steps in the processing of ad2 mrna: poly (a)+ nuclear sequences are
+  conserved and poly (a) addition precedes splicing.
+\newblock {\em Cell}, 15(4):1477--1493, 1978.
+
+\bibitem[PSL{\etalchar{+}}08]{pan2008}
+Qun Pan, Ofer Shai, Leo~J Lee, Brendan~J Frey, and Benjamin~J Blencowe.
+\newblock Deep surveying of alternative splicing complexity in the human
+  transcriptome by high-throughput sequencing.
+\newblock {\em Nature genetics}, 40(12):1413--1415, 2008.
+
+\bibitem[RAR{\etalchar{+}}81]{rosenfeld1981}
+Michael~G Rosenfeld, Susan~G Amara, Bernard~A Roos, Estelita~S Ong, and
+  Ronald~M Evans.
+\newblock Altered expression of the calcitonin gene associated with rna
+  polymorphism.
+\newblock 1981.
+
+\bibitem[RLA{\etalchar{+}}82]{rosenfeld1982}
+Michael~G Rosenfeld, Chijen~R Lin, Susan~G Amara, Lana Stolarsky, Bernard~A
+  Roos, Estelita~S Ong, and Ronald~M Evans.
+\newblock Calcitonin mrna polymorphism: peptide switching associated with
+  alternative rna splicing events.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  79(6):1717--1721, 1982.
+
+\bibitem[SFG08]{sammeth2008}
+Michael Sammeth, Sylvain Foissac, and Roderic Guig{\'o}.
+\newblock A general definition and nomenclature for alternative splicing
+  events.
+\newblock {\em PLoS Comput Biol}, 4(8):e1000147, 2008.
 
 \bibitem[SKC{\etalchar{+}}12]{sacomoto2012}
 Gustavo~AT Sacomoto, Janice Kielbassa, Rayan Chikhi, Raluca Uricaru, Pavlos
