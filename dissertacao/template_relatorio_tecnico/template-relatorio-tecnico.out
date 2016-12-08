@@ -10,14 +10,21 @@
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Propriedades}{subsection.2.2}% 10
 \BOOKMARK [3][-]{subsubsection.2.2.2}{Utiliza\347\343o}{subsection.2.2}% 11
 \BOOKMARK [2][-]{subsection.2.3}{Bloom Filter}{section.2}% 12
-\BOOKMARK [2][-]{subsection.2.4}{Trabalhos Anteriores}{section.2}% 13
-\BOOKMARK [1][-]{section.3}{Materiais e M\351todos}{}% 14
-\BOOKMARK [2][-]{subsection.3.1}{Conjunto de dados...}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.2}{Pr\303\251-processamento}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.3}{Extra\303\247\303\243o de caracter\303sticas}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.4}{Treinamento}{section.3}% 18
-\BOOKMARK [2][-]{subsection.3.5}{Processo de valida\303\247\303\243o}{section.3}% 19
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Valida\303\247\303\243o cruzada generalizada}{subsection.3.5}% 20
-\BOOKMARK [1][-]{section.4}{Resultados}{}% 21
-\BOOKMARK [1][-]{section.5}{Cronograma}{}% 22
-\BOOKMARK [1][-]{section.6}{Conclus\365es}{}% 23
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Descri\347\343o do Algoritmo}{subsection.2.3}% 13
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Vantagens de tempo e espa\347o}{subsection.2.3}% 14
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Probabilidade dos Falsos Positivos}{subsection.2.3}% 15
+\BOOKMARK [4][-]{paragraph.2.3.3.1}{N\372mero \323timo de Fun\347\365es de Hash}{subsubsection.2.3.3}% 16
+\BOOKMARK [3][-]{subsubsection.2.3.4}{Aproximando o n\372mero de itens em um Bloom Filter}{subsection.2.3}% 17
+\BOOKMARK [3][-]{subsubsection.2.3.5}{Uni\343o e Interse\347\343o de Conjuntos}{subsection.2.3}% 18
+\BOOKMARK [3][-]{subsubsection.2.3.6}{Propriedades}{subsection.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.4}{Trabalhos Anteriores}{section.2}% 20
+\BOOKMARK [1][-]{section.3}{Materiais e M\351todos}{}% 21
+\BOOKMARK [2][-]{subsection.3.1}{Conjunto de dados...}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.2}{Pr\303\251-processamento}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.3}{Extra\303\247\303\243o de caracter\303sticas}{section.3}% 24
+\BOOKMARK [2][-]{subsection.3.4}{Treinamento}{section.3}% 25
+\BOOKMARK [2][-]{subsection.3.5}{Processo de valida\303\247\303\243o}{section.3}% 26
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Valida\303\247\303\243o cruzada generalizada}{subsection.3.5}% 27
+\BOOKMARK [1][-]{section.4}{Resultados}{}% 28
+\BOOKMARK [1][-]{section.5}{Cronograma}{}% 29
+\BOOKMARK [1][-]{section.6}{Conclus\365es}{}% 30

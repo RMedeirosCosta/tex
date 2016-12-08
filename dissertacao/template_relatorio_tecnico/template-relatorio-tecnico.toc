@@ -11,14 +11,21 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Propriedades}{6}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Utiliza\c c\~ao}{6}{subsubsection.2.2.2}
 \contentsline {subsection}{\numberline {2.3}Bloom Filter}{6}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Trabalhos Anteriores}{6}{subsection.2.4}
-\contentsline {section}{\numberline {3}Materiais e M\'etodos}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Conjunto de dados...}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Pr\~A\IeC {\copyright }-processamento}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Extra\~A\IeC {\S }\~A\IeC {\pounds }o de caracter\~A\discretionary {-}{}{}sticas}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Treinamento}{8}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Processo de valida\~A\IeC {\S }\~A\IeC {\pounds }o}{8}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Valida\~A\IeC {\S }\~A\IeC {\pounds }o cruzada generalizada}{8}{subsubsection.3.5.1}
-\contentsline {section}{\numberline {4}Resultados}{8}{section.4}
-\contentsline {section}{\numberline {5}Cronograma}{8}{section.5}
-\contentsline {section}{\numberline {6}Conclus\~oes}{8}{section.6}
+\contentsline {subsubsection}{\numberline {2.3.1}Descri\c c\~ao do Algoritmo}{7}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Vantagens de tempo e espa\c co}{7}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Probabilidade dos Falsos Positivos}{8}{subsubsection.2.3.3}
+\contentsline {paragraph}{\numberline {2.3.3.1}N\'umero \'Otimo de Fun\c c\~oes de Hash}{9}{paragraph.2.3.3.1}
+\contentsline {subsubsection}{\numberline {2.3.4}Aproximando o n\'umero de itens em um Bloom Filter}{10}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}Uni\~ao e Interse\c c\~ao de Conjuntos}{10}{subsubsection.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}Propriedades}{11}{subsubsection.2.3.6}
+\contentsline {subsection}{\numberline {2.4}Trabalhos Anteriores}{11}{subsection.2.4}
+\contentsline {section}{\numberline {3}Materiais e M\'etodos}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Conjunto de dados...}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Pr\~A\IeC {\copyright }-processamento}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Extra\~A\IeC {\S }\~A\IeC {\pounds }o de caracter\~A\discretionary {-}{}{}sticas}{12}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Treinamento}{12}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Processo de valida\~A\IeC {\S }\~A\IeC {\pounds }o}{12}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Valida\~A\IeC {\S }\~A\IeC {\pounds }o cruzada generalizada}{13}{subsubsection.3.5.1}
+\contentsline {section}{\numberline {4}Resultados}{13}{section.4}
+\contentsline {section}{\numberline {5}Cronograma}{13}{section.5}
+\contentsline {section}{\numberline {6}Conclus\~oes}{13}{section.6}

@@ -4,45 +4,45 @@ The top-level auxiliary file: template-relatorio-tecnico.aux
 The style file: alpha.bst
 Database file #1: bibliografia.bib
 Warning--empty journal in rosenfeld1981
-You've used 39 entries,
+You've used 45 entries,
             2543 wiz_defined-function locations,
-            806 strings with 12234 characters,
-and the built_in function-call counts, 18542 in all, are:
-= -- 1821
-> -- 1148
-< -- 5
-+ -- 422
-- -- 414
-* -- 1610
-:= -- 3178
-add.period$ -- 119
-call.type$ -- 39
-change.case$ -- 312
-chr.to.int$ -- 39
-cite$ -- 40
-duplicate$ -- 560
-empty$ -- 1154
-format.name$ -- 441
-if$ -- 3596
+            841 strings with 13272 characters,
+and the built_in function-call counts, 21220 in all, are:
+= -- 2097
+> -- 1284
+< -- 7
++ -- 469
+- -- 460
+* -- 1806
+:= -- 3614
+add.period$ -- 138
+call.type$ -- 45
+change.case$ -- 351
+chr.to.int$ -- 45
+cite$ -- 46
+duplicate$ -- 662
+empty$ -- 1341
+format.name$ -- 492
+if$ -- 4148
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 40
-newline$ -- 200
-num.names$ -- 117
-pop$ -- 217
+missing$ -- 47
+newline$ -- 230
+num.names$ -- 135
+pop$ -- 252
 preamble$ -- 1
-purify$ -- 352
+purify$ -- 398
 quote$ -- 0
-skip$ -- 465
+skip$ -- 555
 stack$ -- 0
-substring$ -- 1151
-swap$ -- 48
-text.length$ -- 5
+substring$ -- 1314
+swap$ -- 69
+text.length$ -- 7
 text.prefix$ -- 3
 top$ -- 0
-type$ -- 308
+type$ -- 352
 warning$ -- 1
-while$ -- 178
-width$ -- 49
-write$ -- 508
+while$ -- 208
+width$ -- 56
+write$ -- 586
 (There was 1 warning)

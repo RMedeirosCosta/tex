@@ -7,6 +7,11 @@ Yoseph Barash, John~A Calarco, Weijun Gao, Qun Pan, Xinchen Wang, Ofer Shai,
 \newblock Deciphering the splicing code.
 \newblock {\em Nature}, 465(7294):53--59, 2010.
 
+\bibitem[BEM02]{blustein2002}
+James Blustein and Amal El-Maazawi.
+\newblock Bloom filters. a tutorial, analysis, and survey.
+\newblock {\em Halifax, NS: Dalhousie University}, pages 1--31, 2002.
+
 \bibitem[Bla03]{black2003}
 Douglas~L. Black.
 \newblock Mechanisms of alternative pre-messenger rna splicing.
@@ -17,6 +22,13 @@ Douglas~L. Black.
 Burton~H. Bloom.
 \newblock Space/time trade-offs in hash coding with allowable errors.
 \newblock {\em Commun. ACM}, 13(7):422--426, July 1970.
+
+\bibitem[BMP{\etalchar{+}}06]{bonomi2006}
+Flavio Bonomi, Michael Mitzenmacher, Rina Panigrahy, Sushil Singh, and George
+  Varghese.
+\newblock An improved construction for counting bloom filters.
+\newblock In {\em European Symposium on Algorithms}, pages 684--695. Springer,
+  2006.
 
 \bibitem[BMS77]{berget1977}
 Susan~M Berget, Claire Moore, and Phillip~A Sharp.
@@ -67,6 +79,13 @@ William~G Fairbrother, Dirk Holste, Christopher~B Burge, and Phillip~A Sharp.
 \newblock Single nucleotide polymorphism--based validation of exonic splicing
   enhancers.
 \newblock {\em PLoS Biol}, 2(9):e268, 2004.
+
+\bibitem[GG10]{goel2010}
+Ashish Goel and Pankaj Gupta.
+\newblock Small subset queries and bloom filters using ternary associative
+  memories, with applications.
+\newblock {\em ACM SIGMETRICS Performance Evaluation Review}, 38(1):143--154,
+  2010.
 
 \bibitem[GHY{\etalchar{+}}11]{grabherr2011}
 Manfred~G Grabherr, Brian~J Haas, Moran Yassour, Joshua~Z Levin, Dawn~A
@@ -140,6 +159,12 @@ Richard Maki, William Roeder, Andre Traunecker, Charles Sidman, Matthias Wabl,
   expression of immunoglobulin delta genes.
 \newblock {\em Cell}, 24(2):353--365, 1981.
 
+\bibitem[MU05]{mitzenmacher2005}
+Michael Mitzenmacher and Eli Upfal.
+\newblock {\em Probability and computing: Randomized algorithms and
+  probabilistic analysis}.
+\newblock Cambridge University Press, 2005.
+
 \bibitem[ND78]{nevins1978}
 Joseph~R Nevins and James~E Darnell.
 \newblock Steps in the processing of ad2 mrna: poly (a)+ nuclear sequences are
@@ -185,6 +210,13 @@ Michael~G Rosenfeld, Chijen~R Lin, Susan~G Amara, Lana Stolarsky, Bernard~A
 \newblock {\em Proceedings of the National Academy of Sciences},
   79(6):1717--1721, 1982.
 
+\bibitem[SB07]{swamidass2007}
+S~Joshua Swamidass and Pierre Baldi.
+\newblock Mathematical correction for fingerprint similarity measures to
+  improve chemical retrieval.
+\newblock {\em Journal of chemical information and modeling}, 47(3):952--964,
+  2007.
+
 \bibitem[SFG08]{sammeth2008}
 Michael Sammeth, Sylvain Foissac, and Roderic Guig{\'o}.
 \newblock A general definition and nomenclature for alternative splicing
@@ -209,6 +241,11 @@ Rolf~I Skotheim and Matthias Nees.
 \newblock Alternative splicing in cancer: noise, functional, or systematic?
 \newblock {\em The international journal of biochemistry \& cell biology},
   39(7):1432--1449, 2007.
+
+\bibitem[STA03]{starobinski2003}
+David Starobinski, Ari Trachtenberg, and Sachin Agarwal.
+\newblock Efficient pda synchronization.
+\newblock {\em IEEE Transactions on Mobile Computing}, 2(1):40--51, 2003.
 
 \bibitem[Tod33]{todd1933}
 J~Ax Todd.

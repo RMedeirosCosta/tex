@@ -7,6 +7,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}              % if you want the fonts
 \usepackage{amssymb}
+\usepackage{titlesec}
 \usepackage{url}
 \usepackage[pdftex]{graphicx}
 \usepackage[pagebackref,colorlinks=true,urlcolor=black,citecolor=black,linkcolor=blue]{hyperref}
@@ -33,6 +34,14 @@
 \setlength{\textheight}{23.0cm}
 \setlength\oddsidemargin{0cm}           % juntamente com a linha seg. dÃ¡ impr.frente.
 \setlength\evensidemargin{0cm}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 
 %% ------------------------------------------------------------------- %%
@@ -87,7 +96,7 @@ Spling Alternativo foi observado pela primeira vez em 1977, em uma pesquisa com 
 Em 1981, o primeiro exemplo de splicing alternativo em um transcrito de um gene normal e endógeno foi caracterizado \cite{leff1986}. O gene que codifica o hormônio da tireóide, calcitonina, foi descoberto em um processo de splicing alternativo em células de mamíferos. O transcrito primário desse gene contém seis éxons. O mRNA da calcitonina contém éxons 1-4 e termina após um sítio de poliadenilação no éxon 4. Outro mRNA é produzido por esse pré-mRNA pulando o éxon 4 e incluíndo o éxon 1-3, 5, e o 6. Isso codifica a proteína conhecida como CGRP \cite{rosenfeld1981} \cite{rosenfeld1982}. Exemplos de splicing alternativo em transcritos de genes de imunoglobulina em mamíferos foram observados em 1980 \cite{leff1986} \cite{maki1981}. Desde então eventos de splicing alternativo vem sendo encontrados com frequência em organismos eucariotos \cite{black2003}.
 
 \subsubsection{Formas de Splicing Alternativo}
-\label{sssec:formas}
+\label{sssec:as_formas}
 Cinco formas de splicing alternativo são reconhecidos comumente: \cite{black2003} \cite{pan2008} \cite{matlin2005} \cite{sammeth2008}
 
 \begin{description}
@@ -99,13 +108,13 @@ Cinco formas de splicing alternativo são reconhecidos comumente: \cite{black2003
 \end{description}
 
 \subsubsection{Mecanismo geral de splicing}
-\label{sssec:formas}
+\label{sssec:as_mecanismos}
 
 Introns e éxons estão incluídos no pré-mRNA após a transcrição do DNA. Os éxons que serão conservados são determinados durante o processo de splicing. A regulação e seleção dos sítios de splicing são feitas pelo ativador \emph{trans-acting} e pela proteína repressora de splicing assim como \emph{cis-acting} elementos dentro do próprio pré-mRNA como o ativador de splicing exonico e o silenciador de splicing exonico. O splicing do mRNA é realizado por um RNA e um complexo de proteína conhecido com spliceossomo, cujo contém snRNPs denominadas U1, U2, U4, U5 e U6 \cite{clark2005}. U1 se acopla ao 5' GU e U2, com o auxílio dos fatores de proteína U2AF, se acopla ao ponto de ramificação A que esta contido no ramo. Nesse estágio o complexo é conhecido como complexo spliceossomo A. A formação do complexo A é geralmente o passo chave na determinação as extremidades dos intros que serão removidos, e a definição das extremidades dos éxons que serão conservados \cite{matlin2005}.
 Os complexos U4, U5, U6 se ligam e U6 substitui a posição do U1. U1 e U4 se desacoplam. O complexo remanescente então executa duas reações de transesterificação. Na primeira transesterificação, a extremidade 5' do intron é clivada do éxon a montante e é ligada ao ramo A por uma ligação 2',5' fosfodiéster. Na segunda transesterificação, a extremidade 3' do intron é clivada do éxon a jusante, e os dois éxons são ligados por uma ligação fosfodiéster. O íntron é então liberado em forma de laço e é degradado. \cite{black2003}
 
 \subsubsection{Elementos regulatórios e proteínas}
-\label{sssec:elementos_regulatorios_proteinas}
+\label{sssec:as_elementos_regulatorios_proteinas}
 
 Splicing é regulado por proteínas \emph{trans-acting} (repressoras e ativadoras) e correspondentes sítios de regulação \emph{cis-acting} (silenciadores e ativadores) no pré-RNA. Como parte da complexidade do splicing alternativo, nota-se que os efeitos de um fator de splicing são frequentemente dependente da posição. Ou seja, um fator de splicing que serve como um ativador splicing quando se liga ao um elemento ativador intronico pode servir como um repressor quando se liga ao seu elemento de splicing no contexto de um éxon e vice-versa \cite{lim2011}. A segunda estrutura do transcrito pré-mRNA também executa uma regra na regulação do splicing, como reunindo elementos de splicing ou mascarando uma sequência que poderia servir como um elemento de ligação para um fator de splicing \cite{warf2010} \cite{reid2009}. Juntos esses elementos formam uma espécie de ``código de splicing'' que governa como splicing irá ocorrer sobre diferentes condições celulares.
 Há dois tipos principais de \emph{cis-acting} elementos de sequências de RNA que estão presentes nos pré-mRNAs e eles tem correspondência com as proteínas de ligação de RNA \emph{trans-acting}. Silenciadores splicing são sítios no qual proteínas repressoras de splicing se ligam, reduzindo a probabilidade que um sitío próximo será usado como uma junção de splice. Estes podem estar contidos no próprio intron (\emph{intronic splicing silencers}, ISS) ou em um éxon vizinho (\emph{exonic splicing silencers}, ESS). Eles variam na sequência, da mesma forma que variam nos tipos das proteínas que se ligam neles. A maioria dos repressores splicing são ribonucleoproteínas nucleares heterogêneas como as hnRNPA1 e as proteínas de ligação polipirimidina \cite{matlin2005} \cite{wang2008}. Estimuladores splicing são sítios no qual as proteínas ativadores de splicing se ligam, aumentando a probabilidade de um síte próximo ser usado como uma junção splice. Estes também podem ocorrer no intron (\emph{intronic splicing enhancers}, ISE) ou éxon (\emph{exonic splicing enhancers}, ESE). A maioria das proteínas ativadores que se liga aos ISEs e aos ESEs são membros da família de proteínas SR. Tais proteínas contém reconhecimento de motifs do RNA e domínios de arginina e domínios ricos em serina.
@@ -121,7 +130,7 @@ Se um dos vértices pode ser expresso como outro vértice trocando todos os seus s
 $$ E = \{((v_1, v_2, \ldots, v_n), (v_2, \ldots, v_n, s_1)) : i = 1, \ldots, m \} $$
 
 \subsubsection{Propriedades}
-\label{sssec:propriedades_dbg}
+\label{sssec:dbg_propriedades}
 De Bruijn graphs devem satisfazer as seguintes propriedades: \cite{todd1933}\\
 \begin{itemize}
     \item Se $ n = 1 $ então a condição para dois vértices quaisquer formar uma aresta se mantém vazia, portanto, todos os vértices estão conectados formando um total de $ m^{2} $ arestas.
@@ -131,12 +140,138 @@ De Bruijn graphs devem satisfazer as seguintes propriedades: \cite{todd1933}\\
 \end{itemize}
 
 \subsubsection{Utilização}
-\label{sssec:utilização_dbg}
+\label{sssec:dbg_utilização}
 Em bioninformática, De Bruijn graphs são utilizados em \emph{de novo assembly} de sequências curtas de leitura (\emph{short read sequences}) de um genoma/transcriptoma \cite{pevzner2001eulerian}  \cite{pevzner2001fragment} \cite{zerbino2008} \cite{chikhi2015}.
 
 
 \subsection{Bloom Filter}\label{ssec:bf}
-Esse é o Bloom Filter
+Um Bloom Filter é uma estrutura de dados probabilística eficiente em termos de espaço, concebida por Burton Howard Bloom em 1970, cujo é usada para testar se um elemento é membro de um conjunto. Falsos positivos são possíveis, mas falsos negativos não são, devido a isso um Bloom Filter tem uma taxa de sensibilidade (\emph{recall rate}) de 100\%. Uma consulta pode retornar que determinado dado está possivelmente dentro do conjunto ou que definitivamente não está. No Bloom Filter convencional, elementos podem ser adicionados ao conjunto mas não podem ser removidos. Quanto mais elementos são adicionados ao conjunto, maior se torna a probabilidade de falsos positivos \cite{bloom1970}. 
+\\ Bloom propôs a técnica for aplicações no qual a quantidade de dados poderiam exigir uma enorme quantidade de memória se forem aplicadas técnicas de hashing livre de erros (\emph{error-free}). Ele demonstrou com um exemplo de um algoritmo de hifenização para um dicionário de 500000 palavras, no qual 90\% delas seguem regras simples de hifenização, mas os 10\% restante exigem um alto custo de acessos ao disco para se obter padrões específicos de hifenização. Com a quantidade suficiente de memória de núcleo (\emph{core memory}), uma hash livre de erros poderia ser usada para eliminar todos os acessos desnecessários ao disco. Em outras palavras, com uma quantidade limitada de memória, a técnica de Bloom usa uma pequena quantidade de espaço hash mas ainda elimina a maioria dos acessos desnecessários. Por exemplo, uma área hash com apenas 15\% do tamanho necessário por uma hash livro de erros ideal ainda elimina 85\% dos acessos ao disco, uma forma 85-15 do princípio de Pareto \cite{bloom1970}. Ou seja 85\% das consequências advêm de 15\% das causas. \\ %Ver que porra é essa%
+Menos de 10 bits por elemento são exigidos para uma probabilidade de 1\% de falso positivo, independentemente do tamanho ou do número de elementos do conjunto \cite{bonomi2006}.
+
+\subsubsection{Descrição do Algoritmo}
+\label{sssec:bloom_descricao}
+Um Bloom Filter vazio é um array de bits de $m$ bits, todos definidos para 0. Também deve-se existir diferentes $k$ funções hash, cada uma no qual apontando para algum elemento do conjunto para uma das posições do array $m$ com uma distribuição aleatória uniforme. Geralmente $k$ é uma constante muito menor que $m$, cujo é proporcional a quantidade de elementos a ser adicionado. Uma escolha precisa do elemento $k$ e da constante proporcionalidade de $m$ são determinadas pela taxa de falsos positivos pretendidas pelo filtro. \\
+Para se adicionar um elemento, supra-se cada elemento das $k$ funções de hash afim de se obter o array $k$ de posições, definindo todas as posições para 1. Para verificar se um elemento está no conjunto, supra-se cada elemento das $k$ funcções de hash afim de obter o array $k$ de posições. Se algum elemento desses bits está definido para 0, então o elemento definitivamente não está no conjunto - se ele estivesse, então todos os bits deveriam ter sido definidos para 1 quando ele foi inserido. Se todos estiverem definidos para 1, então ou elemento esta no conjunto, ou os bits foram definidos pra 1 por acaso durante a inserção de outro elemento, resultando em um falso positivo. \\
+Remover um elemento de um Bloom Filter é impossível porque falsos negativos não são permitidos. Um elemento mapeia para $k$ bits, embora definir alguns desses $k$ bits para zero é suficiente para remover o elemento, isso também resulta na remoção de algum outro elemento que eventualmente mapeia para aquele bit. Devido a isso não há uma forma de determinar se algum outro elemento que foi adicionado afeta os bits de um elemento a ser removido, limpando alguns dos bits pode-se introduzir a possibilidade de falsos negativos. \\
+A remoção única (\emph{one-time removal}) de um elemento proveniente de um Bloom Filter pode ser simulado por meio de um segundo Bloom Filter que contém itens que foram removidos. No entanto, falsos positivos no segundo Bloom Filter tornam-se falsos negativos no Bloom Filter composto e isso não convém. Nessa abordagem uma re-adição de um item anteriormente removido não é possível, pois seria necessário removê-lo do filtro ``removido''.\\ % verificar esse parágrafo que ficou porco %
+Em alguns casos todas as chaves estão disponíveis, mas o custo para enumerá-las é muito alto (por exemplo, exigindo muitas leituras de disco). Quando a taxa de falsos positivos se torna muito elevada, o filtro pode ser regenerado. No entanto esse evento pode ser considerado raro.
+
+\subsubsection{Vantagens de tempo e espaço}
+\label{sssec:bloom_vantagens}
+Mesmo arriscando falsos positivos, os Bloom Filter tem uma grande vantagem se comparado com outras estruturas de dados para representar conjuntos como, árvores binárias de busca auto-balanceadas, árvore de prefixos, tabelas hash, arrays simples ou listas ligadas das entradas. A maioria desses métodos exigem armazenar pelo menos os próprios itens de dados, os quais podem exigir algum lugar para um pequeno número de bits, para um pequeno número de inteiros, para um número arbitrário de bits, como para as string. Todavia, Bloom Filters não armazenam os dados, e uma solução separada deve ser provida para o real armazenamento. Estruturas ligadas ocasionam um espaço adicional de \emph{overhead} para ponteiros. Um Bloom Filter com 1\% de erro e um ótimo valor de $k$ exige por volta de apenas 9,6 bits por elemento, independentemente do tamanho dos elementos. Essa vantagem advém parcialmente de sua capacidade de compactação, herdada dos arrays e parcialmente de sua natureza probabilística. A taxa de 1\% de falsos positivos pode ser reduzida por um fator de dez se for adicionado aproximadamente 4,8 bits por elemento.\\
+Não obstante, se o número de pontencial valores é pequeno e muitos deles podem estar no conjunto, o Bloom Filter é facilmente ultrapassado por um array determinístico de bits, no qual requer apenas um bit para cada pontecial elemento. Nota-se também que tabelas hash ganham um espaço e vantagem de tempo se elas ignorarem colisões e armazenar apenas se cada \emph{bucket} contém uma entrada. Nesse caso, elas se tornaram efetivamente Bloom Filters com $ k = 1 $ \cite{mitzenmacher2005}.\\
+Os Bloom Filters também uma propriedade incomum que o tempo necessário para adicionar um item ou o tempo para verificar se um item esta no conjunto uma constante fixa, $O(k)$, completamente independente dos números de items que já estão no conjunto. Nenhuma outra estrutura de dados com espaço constante tem essa propriedade, mas o tempo médio de acesso de tabelas hash de dispersão podem, na prática, realizar isso mais rápido que alguns Bloom Filters. Em uma implementação de hardware, os Bloom Filters chamam atenção porque seus $k$ \emph{lookups} são independentes e podem ser paralelizados.\\
+Para se entender a eficiência de espaço do Bloom Filter, compara-se o Bloom Filter geral com o caso especial de $ k = 1 $. Se o $ k = 1 $, então a fim de manter a taxa de falsos positivos suficientemente baixa, uma pequena fração de bits deve ser definidos, isso significa que o array deve ter um tamanho muito grande e conter longos caminhos de zeros. A informação contida no array em relação ao seu tamanho é baixa. O Bloom Filter generalizado (com $ k > 1 $) permite muitos mais bits para ser definidos enquanto ainda mantém uma baixa taxa de falsos positivos. Se os parâmetros $k$ e $m$ forem bem escolhidos, por volta de metado dos bits serão definidos, e estes serão aparentemente randômicos, minimizando a redundância e maximizando o conteúdo das informações \cite{blustein2002}.
+
+\subsubsection{Probabilidade dos Falsos Positivos}
+\label{sssec:bloom_probabilidade_fp}
+
+Assume-se que uma função de hash seleciona cada posição do array com probabilidade igual. Se $m$ é o número de bits do array, a probabilidade que um certo bit não esta definido para 0 por uma certa função hash durante a inserção de um elemento é\\
+$$ 1 - \frac{1}{m} $$
+
+Se $k$ é o número de funções de hash, a probabilidade que um bit não esta definido para 1 por qualquer uma das funções de hash é\\
+
+$$ \left(1-\frac{1}{m}\right)^{k} $$
+
+Se foram inseridos $n$ elementos, a probabilidade de um certo bit ainda ser 0 é\\
+
+$$ \left(1-\frac{1}{m}\right)^{kn} $$
+
+Consequentemente a probabilidade dele ser 1 é \\
+
+$$ 1 - \left(1-\frac{1}{m}\right)^{kn} $$
+
+Cada um das $k$ posições do array calculadas pelas funções de hash com 1 tem uma probabilidade como descrita acima. A probabilidade de todos eles serem 1, o que poderia causar que o algoritmo classifique erroneamente que o elemento esta no conjunto é frequentemente fornecido como \\
+
+$$ \left(1 - \left(1-\frac{1}{m}\right)^{kn}\right)^{k} \approx \left(1-\mathrm{e}^{-\frac{kn}{m}}\right)^{k} $$
+
+Isto não é estritamente correto porque é assumido independência para as probabilidades de cada bit que estão definidos. %Verificar essa sentença%
+Porém, assumindo isso como uma aproximação, temos que a probabilidade de falsos positivos diminui conforme $m$ (o número de bits no array) aumenta, e aumenta conforme $n$ (o número de números de elementos inseridos) cresce. Há outra abordagem alternativa da mesma aproximação sem a suposição de independência \cite{mitzenmacher2005}. Depois de todos os $n$ itens serem adicionados no Bloom Filter, tomamos $q$ como a fração de $m$ bits que estão definidos como 0. Então, ao testar se determinado elemento não esta no conjunto, para a posição do array dada por qualquer uma das $k$ funções de hash, a probabilidade que o bit encontrado está definido como 1 é $ 1 - q $. Então a probabilidade de todas as $k$ funções de has encontrar seus bits que estão definidos para 1 é $ (1 - q)^{k} $. Além disso, o valor esperado de $q$ é a probabilidade que uma posição de array dada é deixada intocada por cada uma das $k$ funções de hash por cada um dos $n$ itens, cujo é\\
+
+$$ E[q] = \left(1 - \frac{1}{m}\right)^{kn} $$
+
+É possível provar, sem suposição de independência, que $q$ é fortemente concentrado em torno do seu valor esperado. Utilizando a inequação Azuma-Hoeffding, que provaram que \cite{mitzenmacher2005}
+
+$$ Pr(|q-E[q]| \geq \frac{\lambda}{m}) \leq 2 exp(-2 \lambda^{2}/m) $$
+
+Devido a isso, podemos dizem que a exata probabilidade de falsos positivos é\\
+
+$$ \sum_t Pr(q=t)(1-t)^{k} \approx (1-E[q])^{k} = \left(1 - \left(1-\frac{1}{m}\right)^{kn}\right)^{k} \approx \left(1-\mathrm{e}^{-\frac{kn}{m}}\right)^{k}  $$
+
+como anteriormente.
+
+\paragraph{Número Ótimo de Funções de Hash}
+\label{paragraph:bloom_nr_otimo_fh}
+
+Para um certo $m$ e $n$, o valor de $k$ (número de funções de hash) que minimiza a probabilidade de falsos positivos é\\
+
+$$ k = \frac{m}{n} \ln 2 $$
+
+O número necessário de bits $m$, dado $n$ (número de elementos inseridos) e uma desejável probabilidade de falsos positivos $p$ (assumindo que o ótimo valor de $k$ foi utilizado) pode ser calculado substituindo o ótimo valor de $k$ na expressão de probabilidade acima: \\
+
+
+$$ p = (1 - \mathrm{e}^{-\left(\frac{m}{n} \ln 2\right)\frac{n}{m}})^{\frac{m}{n} \ln 2} $$
+
+Que pode ser simplificada em: \\
+
+$$ \ln p = - \frac{m}{n}(\ln2)^{2}  $$
+
+Resultando em:\\
+
+$$ m = - \frac{n \ln p}{(\ln2)^{2}} $$
+
+Com o número correspondente de $k$ funções hash:\\
+
+$$ k = -\frac{\ln p}{\ln2}$$
+
+Isto significa que para uma probabilidade $p$ de falsos positivos, o comprimento de um Bloom Filter $m$ é proporcional ao número de elementos $n$ que estão sendo filtrados e o número de funções hash exigidas depende apenas da probabilidade $p$ de falsos positivos alvo \cite{starobinski2003}. Enquanto a equação acima é assintótica. Ou seja, aplicado como $m,n \to \infty$, a concordância com valores finitos de $m,n$ também são relativamente bons. A probabilidade de falsos positivos para um Bloom Filter finito com $m$ bits, $n$ elementos e $k$ funções de has é no máximo\\
+
+$$ (1- \mathrm{e}^{-\frac{k(n+0,5)}{m-1}}) $$
+
+Pode-ser utilizar a fórmula assintótica se for pago uma penalidade para no máximo metade de um elemento extra e no máximo um pouco menos \cite{goel2010}.% Verificar %
+
+\subsubsection{Aproximando o número de itens em um Bloom Filter}
+\label{sssec:bloom_aproximando_nr_itens}
+
+Os números de itens de um Bloom Filter podem ser aproximados com a seguinte função \cite{swamidass2007} \\
+
+$$ n* = -\frac{m}{k} \ln \left[1-\frac{X}{m} \right], $$
+
+cujo $n*$ é o número estimado de itens do Bloom Filter, $m$ é o comprimento (tamanho) do filtro, $k$ é o número de funções de hash e $X$ é o número de bits definidos como 1.
+
+\subsubsection{União e Interseção de Conjuntos}
+\label{sssec:bloom_uniao_intersecao}
+
+Sabe-se que os Bloom Filters são uma maneira de representar compactadamente um conjunto de itens. É comum tentar calcular o tamanho da interção ou união entre dois conjuntos. Os Bloom Filters podem ser usados para aproximar o tamanho da interção e união de dois conjuntos. Para dois Bloom Filters de comprimento $m$, suas contagens respectivas podem ser estimadas como \cite{swamidass2007} \\
+
+$$ n(A*)= - \frac{m}{k}\ln \left[1-\frac{n(A)}{m}\right] $$
+
+e\\
+
+$$ n(B*)= - \frac{m}{k}\ln\left[1-\frac{n(B)}{m}\right] $$
+
+O tamanho de sua união podem ser estimados como\\
+
+$$ n(A* \cup B*) = -\frac{m}{k}\ln \left[1- \frac{n(A \cup B)}{m} \right],  $$
+
+cujo $n(A \cup B)$ é o número de bits definidos como 1 em cada um dos Bloom Filters. Nessa perspectiva, a interseção pode ser estimada como \\
+
+$$ n(A* \cap B*) = n(A*) + n(B*) - n(A* \cup B*),  $$
+
+utilizando as três expressões juntas.
+
+\subsubsection{Propriedades}
+\label{sssec:bloom_propriedades}
+\begin{itemize}
+  
+\item Diferente de uma tabela hash convencional, um Bloom Filter de um tamanho fixo pode representar um conjunto com um número arbitrariamente grande de elementos. Adicionar um elemento nunca falha porque é uma estrutura de dados do tipo \emph{filling up}. Não obstante, o taxa de falsos positivos aumentam conforme os elementos são adicionados até todos os bits no filtro estarem definidos como 1, nesse estágio, todas as consultas retornam um resultado positivo.
+
+\item União e interseção de Bloom Filters com o mesmo tamanho e o mesmo conjunto de funções de hash pode ser implementados como operações binárias OR e AND, respectivamente. A operação de união não possui perdas se comparado a um Bloom Filter que foi criado usando a união de dois conjuntos. A operação de  interseção satisfaz uma propriedade fraca: a probabilidade de falsos positivos no Bloom Filter resultante é no máximo os falsos positivos em um dos dois constituintes, mas pode ser maior que a probabilidade de falsos positivos no Bloom Filter criado desde o princípio usando a interseção de dois conjuntos.
+
+\item Alguns tipos de \emph{superimposed code} pode ser vistos como um Bloom Filter implementado como \emph{edge-notched cards} físicos.
+  
+\end{itemize}
 
 \subsection{Trabalhos Anteriores}
 \label{ssec:trabalhos_anteriores}
@@ -149,6 +284,7 @@ Em ano tal foi feito tal e foi tal, depois feito tal
 
 O reconhecimento de caracteres...
 
+% Exemplo de Imagem %
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.5\textwidth]{processo_ocr.jpg}
@@ -156,55 +292,6 @@ O reconhecimento de caracteres...
     \label{fig:metodo}
 \end{figure}
 
-% ------------------------------------------------------------------- %%
-\subsection {Conjunto de dados...}
-\label{ssec:conjunto}
-
-Para a primeira parte do trabalho...
-
-% ------------------------------------------------------------------- %%
-\subsection {PrÃ©-processamento}
-\label{ssec:preprocessamento}
-
-Nesta etapa....
-
-O operador ...Ã© definido pela seguinte equaÃ§Ã£o:
-\begin{equation}
-f \hat{\circ} b = f - (f \circ b)
-\end{equation}
-
-\noindent{na qual $f \circ b$ Ã© ....}.
-
-% ------------------------------------------------------------------- %%
-\subsection {ExtraÃ§Ã£o de caracterÃ­sticas}
-\label{ssec:caracteristicas}
-
-A extraÃ§Ã£o de caracterÃ­sticas foi baseada no artigo
-
-Neste projeto, esta parte foi implementada em ...
-
-
-% ------------------------------------------------------------------- %%
-\subsection {Treinamento}
-\label{ssec:treinamento}
-
-Nesta etapa usa-se o algoritmo....
-
-% ------------------------------------------------------------------- %%
-\subsection{Processo de validaÃ§Ã£o}
-\label{ssec:validacao}
-
-As tÃ©cnicas usadas no processo de validaÃ§Ã£o do nosso sistema foram...
-
-% ------------------------------------------------------------------- %%
-\subsubsection{ValidaÃ§Ã£o cruzada generalizada}
-A validaÃ§Ã£o cruzada generalizada conhecida tambÃ©m como k-validaÃ§Ã£o cruzada, 
-Ã© uma das tÃ©cnicas mais aplicadas na verificaÃ§Ã£o da estabilidade de 
-modelos
-
-Seu funcionamento consiste em....
-
-% ------------------------------------------------------------------- %%
 \section{Resultados}
 \label{sec:resultados}
 
