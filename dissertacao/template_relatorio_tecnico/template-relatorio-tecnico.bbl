@@ -101,6 +101,14 @@ David P. Clark~BA (honors)Christ's College Cambridge 1973<br>PhD University~of
 \newblock {\em Molecular Biology}.
 \newblock Academic Cell, 2005.
 
+\bibitem[HPY{\etalchar{+}}13]{haas2013}
+Brian~J Haas, Alexie Papanicolaou, Moran Yassour, Manfred Grabherr, Philip~D
+  Blood, Joshua Bowden, Matthew~Brian Couger, David Eccles, Bo~Li, Matthias
+  Lieber, et~al.
+\newblock De novo transcript sequence reconstruction from rna-seq using the
+  trinity platform for reference generation and analysis.
+\newblock {\em Nature protocols}, 8(8):1494--1512, 2013.
+
 \bibitem[HZZ{\etalchar{+}}09]{he2009}
 Chunjiang He, Fang Zhou, Zhixiang Zuo, Hanhua Cheng, and Rongjia Zhou.
 \newblock A global view of cancer-specific transcript variants by subtractive
@@ -152,6 +160,12 @@ Arianne~J Matlin, Francis Clark, and Christopher~WJ Smith.
 \newblock Understanding alternative splicing: towards a cellular code.
 \newblock {\em Nature reviews Molecular cell biology}, 6(5):386--398, 2005.
 
+\bibitem[MGMB07]{medvedev2007}
+Paul Medvedev, Konstantinos Georgiou, Gene Myers, and Michael Brudno.
+\newblock Computability of models for sequence assembly.
+\newblock In {\em International Workshop on Algorithms in Bioinformatics},
+  pages 289--301. Springer, 2007.
+
 \bibitem[MRT{\etalchar{+}}81]{maki1981}
 Richard Maki, William Roeder, Andre Traunecker, Charles Sidman, Matthias Wabl,
   William Raschke, and Susumu Tonegawa.
@@ -164,6 +178,11 @@ Michael Mitzenmacher and Eli Upfal.
 \newblock {\em Probability and computing: Randomized algorithms and
   probabilistic analysis}.
 \newblock Cambridge University Press, 2005.
+
+\bibitem[MW11]{martin2011}
+Jeffrey~A Martin and Zhong Wang.
+\newblock Next-generation transcriptome assembly.
+\newblock {\em Nature Reviews Genetics}, 12(10):671--682, 2011.
 
 \bibitem[ND78]{nevins1978}
 Joseph~R Nevins and James~E Darnell.
@@ -181,6 +200,11 @@ Qun Pan, Ofer Shai, Leo~J Lee, Brendan~J Frey, and Benjamin~J Blencowe.
 Pavel~A Pevzner and Haixu Tang.
 \newblock Fragment assembly with double-barreled data.
 \newblock {\em Bioinformatics}, 17(suppl 1):S225--S233, 2001.
+
+\bibitem[PTT04]{pevzner2004}
+Paul~A Pevzner, Haixu Tang, and Glenn Tesler.
+\newblock De novo repeat classification and fragment assembly.
+\newblock {\em Genome research}, 14(9):1786--1796, 2004.
 
 \bibitem[PTW01]{pevzner2001eulerian}
 Pavel~A Pevzner, Haixu Tang, and Michael~S Waterman.
@@ -210,12 +234,30 @@ Michael~G Rosenfeld, Chijen~R Lin, Susan~G Amara, Lana Stolarsky, Bernard~A
 \newblock {\em Proceedings of the National Academy of Sciences},
   79(6):1717--1721, 1982.
 
+\bibitem[RSC{\etalchar{+}}10]{robertson2010}
+Gordon Robertson, Jacqueline Schein, Readman Chiu, Richard Corbett, Matthew
+  Field, Shaun~D Jackman, Karen Mungall, Sam Lee, Hisanaga~Mark Okada, Jenny~Q
+  Qian, et~al.
+\newblock De novo assembly and analysis of rna-seq data.
+\newblock {\em Nature methods}, 7(11):909--912, 2010.
+
+\bibitem[Sam09]{sammeth2009}
+Michael Sammeth.
+\newblock Complete alternative splicing events are bubbles in splicing graphs.
+\newblock {\em Journal of Computational Biology}, 16(8):1117--1140, 2009.
+
 \bibitem[SB07]{swamidass2007}
 S~Joshua Swamidass and Pierre Baldi.
 \newblock Mathematical correction for fingerprint similarity measures to
   improve chemical retrieval.
 \newblock {\em Journal of chemical information and modeling}, 47(3):952--964,
   2007.
+
+\bibitem[Sch10]{schulz2010}
+Marcel~H Schulz.
+\newblock {\em Data structures and algorithms for analysis of alternative
+  splicing with RNA-seq data}.
+\newblock PhD thesis, Freie Universit{\"a}t Berlin, 2010.
 
 \bibitem[SFG08]{sammeth2008}
 Michael Sammeth, Sylvain Foissac, and Roderic Guig{\'o}.
@@ -246,6 +288,12 @@ Rolf~I Skotheim and Matthias Nees.
 David Starobinski, Ari Trachtenberg, and Sachin Agarwal.
 \newblock Efficient pda synchronization.
 \newblock {\em IEEE Transactions on Mobile Computing}, 2(1):40--51, 2003.
+
+\bibitem[SWJ{\etalchar{+}}09]{simpson2009}
+Jared~T Simpson, Kim Wong, Shaun~D Jackman, Jacqueline~E Schein, Steven~JM
+  Jones, and Inan{\c{c}} Birol.
+\newblock Abyss: a parallel assembler for short read sequence data.
+\newblock {\em Genome research}, 19(6):1117--1123, 2009.
 
 \bibitem[Tod33]{todd1933}
 J~Ax Todd.

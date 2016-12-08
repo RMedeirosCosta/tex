@@ -1,0 +1,269 @@
+[ricardo]@[gentoo_desktop]:/home/ricardo/projects/tex/dissertacao/template_relatorio_tecnico
+> $ cd /home/ricardo/projects/tex/dissertacao/template_relatorio_tecnico/
+[ricardo]@[gentoo_desktop]:/home/ricardo/projects/tex/dissertacao/template_relatorio_tecnico
+> $ pdflatex \\nonstopmode\\input template-relatorio-tecnico.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 3 languages loaded.
+
+(./template-relatorio-tecnico.tex
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+(/usr/share/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+(/usr/share/texmf-dist/tex/generic/babel/babel.def)))
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texmf-dist/tex/latex/base/t1enc.def))
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texmf-dist/tex/latex/base/latin1.def))
+(/usr/share/texmf-dist/tex/generic/epsf/epsf.sty
+This is `epsf.tex' v2.7.4 <14 February 2011>
+) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg)
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)))
+(/usr/share/texmf-dist/tex/latex/psnfss/pifont.sty
+(/usr/share/texmf-dist/tex/latex/psnfss/upzd.fd)
+(/usr/share/texmf-dist/tex/latex/psnfss/upsy.fd))
+(/usr/share/texmf-dist/tex/latex/subfigure/subfigure.sty
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-dist/tex/latex/subfigure/subfigure.cfg))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty)
+(/usr/share/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty))
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+(/usr/share/texmf-dist/tex/latex/hyperref/backref.sty
+(/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty)))
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def)
+(./template-relatorio-tecnico.aux)
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty)
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texmf-dist/tex/latex/latexconfig/color.cfg))
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+(./template-relatorio-tecnico.out) (./template-relatorio-tecnico.out)
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd)
+(./template-relatorio-tecnico.toc [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdf
+tex.map}]) [2]
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd) [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+
+[10]
+
+LaTeX Warning: Citation `grabher2011' on page 11 undefined on input line 283.
+
+[11] <./figuras/processo_ocr.jpg, id=321, 240.9pt x 428.60126pt>
+<use ./figuras/processo_ocr.jpg> (./template-relatorio-tecnico.bbl
+(./template-relatorio-tecnico.brf) [12]
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 
+     
+! Missing $ inserted.
+<inserted text> 
+                $
+l.38 
+     
+! Extra }, or forgotten $.
+\mathtwosuperior ->{^2}
+                       
+l.38 
+     
+
+LaTeX Font Warning: Command \em invalid in math mode on input line 38.
+
+
+! LaTeX Error: Command \itshape invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 
+     
+! Missing $ inserted.
+<inserted text> 
+                $
+l.38 
+     
+! Missing } inserted.
+<inserted text> 
+                }
+l.38 
+     
+
+Underfull \hbox (badness 2762) in paragraph at lines 38--38
+[]\T1/cmr/m/n/10 Susan M Ber-get, Claire Mo-ore, and Phil-lip A Sharp.  Spli-ce
+d seg-ments at the
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 
+     
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 
+     
+! Extra }, or forgotten $.
+\mathtwosuperior ->{^2}
+                       
+l.50 
+     
+
+LaTeX Font Warning: Command \em invalid in math mode on input line 50.
+
+
+! LaTeX Error: Command \itshape invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 
+     
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 
+     
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 
+     
+[13 <./figuras/processo_ocr.jpg>] [14] [15]) [16]
+(./template-relatorio-tecnico.aux)
+
+LaTeX Warning: There were undefined references.
+
+ )
+(see the transcript file for additional information){/usr/share/texmf-dist/font
+s/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type
+1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
+er/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
+></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/
+type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm
+-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000
+.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on template-relatorio-tecnico.pdf (16 pages, 354040 bytes).
+Transcript written on template-relatorio-tecnico.log.
+[ricardo]@[gentoo_desktop]:/home/ricardo/projects/tex/dissertacao/template_relatorio_tecnico
+> $ qpdfview *pdf
+[ricardo]@[gentoo_desktop]:/home/ricardo/projects/tex/dissertacao/template_relatorio_tecnico
+> $ exit
+exit

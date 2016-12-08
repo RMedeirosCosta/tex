@@ -275,35 +275,59 @@ utilizando as três expressões juntas.
 
 \subsection{Trabalhos Anteriores}
 \label{ssec:trabalhos_anteriores}
-Em ano tal foi feito tal e foi tal, depois feito tal
 
+De Bruijn Graphs foram usados a primeira vez no contexto de montagem de genoma em 2001 \cite{pevzner2001eulerian}. Em 2007, houve uma pesquisa na qual foi modificado a definição para melhorar o DNA modelo como uma molécula dupla fita \cite{medvedev2007}. O sequenciamento de \emph{short reads} tem a necessidade de ser remontado a fim de obter novamente as moléculas inicias de RNA. Muitos esforços tem sido realizados nessa tarefa de montagem, cujo a presença se tem ou não o genoma de referência, mas o objetivo de identificar e quantificar todas as moléculas de RNA inicialmente presente na amostra ainda se mostra uma tarefa complicada \cite{martin2011}.\\
+Como foram demonstradas, montagens baseadas no genoma de referência e montagens \emph{de novo} tem suas próprias limitações. Montadores baseados no genoma de referência dependem da qualidade da referência enquanto apenas um pequeno número de espécies tem um genoma de referência de alta qualidade disponível atualmente. Montadores \emph{ee novo} implementam reconstrução baseado em heurística, o que pode levá-los a perca de transcritos alternativos que não são frequentes ao contrário de transcritos que tem alta similaridade, os quais são provavelmente mais montados em um único transcrito \cite{martin2011}.\\
+A identificação de bolhas em um De Bruijn Graph vem sendo estudado no contexto de montagem de genoma. Porém, o propósito dessas pesquisas não são enumerar esse padrões mas apenas removê-las do grafo. Soma-se a isso, uma vez que nesses estudos os padrões correspondentes a SNPs e erros de sequência, os autores apenas consideraram caminhos de comprimento menor que uma constante \cite{zerbino2008} \cite{simpson2009} \cite{pevzner2004}.\\
+A extração de splicing alternativo proveniente de um grafo foi estudada anteriormente, mas há uma diferença significante entre grafos de splicing e De Bruijn Graphs que esta no seu formato. Os vértices são ordenados genômicamente, por isso é necessário o uso de uma referência de um genoma anotado, por consequência, levando-os a uma DAG (\emph{Directed Acyclic Graph}). Ao contrário dos Bruijn Graphs que são grafos convencionais. Isto é, não necessitam de nenhuma informação adicional para serem construídos \cite{sammeth2009}.\\
+A maioria dos montadores de RNA-seq fazem uso de um De Bruijn Graph, mas, uma vez que o objetivo de um montador é produzir os \emph{contigs} mais compridos, heurísticas são aplicadas, assim como a remoção da extremidade ou da bolha, afim de obter a linearidade do grafo. A aplicação dessas heurísticas resultam na perda de informação o que pode ser um fato crucial se o objetivo é estudar os polimorfismos \cite{grabher2011} \cite{robertson2010} \cite{schulz2010}.\\
+Em 2012 foi proposto uma abordagem que tinha por objetivo caracterizar os polimorfismos em dados de RNA-seq sem montar todo o transcrito. Essa pesquisa tinha o foco na específica tarefa de categorizar eventos de splicing alternativo \cite{sacomoto2012}. Apesar de apresentar resultados melhores na identificação de eventos de splicing alternativo que montadores utilizados atualmente como o Trinity \cite{haas2013}, seu alto custo de memória utilizado na criação do grafo se tornou ineficiente. Ainda em 2012, foi realizado uma pesquisa na qual um pesquisador utilizou Bloom Filter na criação dos Bruijn Graphs \cite{chikhi2012} que se demonstrou uma maneira eficiente de alocação de espaço na memória. Em 2016, é implementado uma alteração mais robusta do Bloom Filter em montador de genoma sem a utilização do genoma de referência, cujo obteve resultados melhores que os montadores atuais, tanto na alocação de memória quanto no tempo de execução, podendo ser executado em um computador pessoal, porém esta abordagem não tem o objetivo de classificar especificamente os eventos de splicing alternativos. \cite{jackman2016}
 
 % ------------------------------------------------------------------- %%
 \section {Materiais e Métodos}
 \label{sec:materiais_metodos}
 
-O reconhecimento de caracteres...
+Este capítulo descreve as principais ferramentas e técnicas que serão empregados na realização deste projeto. Será realizado a criado scripts para simulação de dados de sequência de DNA, em que serão simulados alguns eventos de splicing alternativo afim de avaliar as limitações do método de identificação e classificação de splicing alternativo, que são as limitações de alocação de memória e performance de execução.\\
+Após constatar tal limitação, será empregado a utilização de implementações modernas do Bloom Filter, como \emph{Chaining} Bloom Filters os quais foram utilizadas no intuito de obter eficiência na alocação de memória \cite{jackman2016}. \\
+O passo a seguir será validação da eficácia da técnica proposta nesse trabalho, com dados simulados criados sinteticamente por algoritmos computacionais. Verificado melhora ou relativamente a mesma eficácia em relação ao método comparado, será averiguado a eficiência da nova técnica. Isto é, se exige menos poder computacional para ser executado que o método comparado. \\
+Para finalizar, serão realizados as mesmas comparações, mas com dados reais provenientes de RNA-seq.
 
 % Exemplo de Imagem %
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.5\textwidth]{processo_ocr.jpg}
-    \caption{\small{Diagrama...}}
-    \label{fig:metodo}
-\end{figure}
+%\begin{figure}[!ht]
+%    \centering
+%    \includegraphics[width=0.5\textwidth]{processo_ocr.jpg}
+%    \caption{\small{Diagrama...}}
+%    \label{fig:metodo}
+%\end{figure}
 
 \section{Resultados}
 \label{sec:resultados}
 
-Neste trabalho....
+Este projeto ainda não possui resultados.
 
 % ------------------------------------------------------------------- %%
 
 \section{Cronograma}
 \label{sec:cronograma}
 
-Neste trabalho....
+O desenvolvimento desse projeto se dará da seguinte forma:
 
+\begin{tabular}{l c c}
+  \hline
+  \ & 2015 & 2016 \\
+  \hline
+  Análise dos conceitos biológicos & X & X  \\
+  Análise dos métodos de montagem \emph{de novo} de genoma. & X & X  \\
+  Análise dos métodos para se obter maior eficiência na montagem do genoma. & X & X  \\
+  Verificação da limitação dos métodos atuais. & X & \  \\
+  Desenvolvimento de nova abordagem. & X & X  \\
+  Validação da nova abordagem com dados sintéticos.  & \ & X  \\
+  Validação da nova abordagem com dados reais. & \ & X  \\
+  Escrita da qualificação & X & X  \\
+  Escrita de artigos preliminares. & \ & X  \\
+  Escrita da dissertação & \ & X  \\
+  Defesa da dissertação & \ & X  \\    
+\end{tabular}
 % ------------------------------------------------------------------- %%
 
 \section{Conclusões}

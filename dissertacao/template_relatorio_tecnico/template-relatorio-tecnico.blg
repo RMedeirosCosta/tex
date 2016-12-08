@@ -3,46 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: template-relatorio-tecnico.aux
 The style file: alpha.bst
 Database file #1: bibliografia.bib
+Warning--I didn't find a database entry for "grabher2011"
 Warning--empty journal in rosenfeld1981
-You've used 45 entries,
+You've used 53 entries,
             2543 wiz_defined-function locations,
-            841 strings with 13272 characters,
-and the built_in function-call counts, 21220 in all, are:
-= -- 2097
-> -- 1284
-< -- 7
-+ -- 469
-- -- 460
-* -- 1806
-:= -- 3614
-add.period$ -- 138
-call.type$ -- 45
-change.case$ -- 351
-chr.to.int$ -- 45
-cite$ -- 46
-duplicate$ -- 662
-empty$ -- 1341
-format.name$ -- 492
-if$ -- 4148
+            882 strings with 14754 characters,
+and the built_in function-call counts, 25337 in all, are:
+= -- 2504
+> -- 1545
+< -- 10
++ -- 565
+- -- 556
+* -- 2164
+:= -- 4307
+add.period$ -- 163
+call.type$ -- 53
+change.case$ -- 419
+chr.to.int$ -- 53
+cite$ -- 54
+duplicate$ -- 786
+empty$ -- 1590
+format.name$ -- 595
+if$ -- 4954
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 47
-newline$ -- 230
-num.names$ -- 135
-pop$ -- 252
+missing$ -- 54
+newline$ -- 270
+num.names$ -- 159
+pop$ -- 305
 preamble$ -- 1
-purify$ -- 398
+purify$ -- 475
 quote$ -- 0
-skip$ -- 555
+skip$ -- 659
 stack$ -- 0
-substring$ -- 1314
-swap$ -- 69
-text.length$ -- 7
-text.prefix$ -- 3
+substring$ -- 1576
+swap$ -- 87
+text.length$ -- 10
+text.prefix$ -- 5
 top$ -- 0
-type$ -- 352
+type$ -- 416
 warning$ -- 1
-while$ -- 208
-width$ -- 56
-write$ -- 586
-(There was 1 warning)
+while$ -- 245
+width$ -- 64
+write$ -- 691
+(There were 2 warnings)

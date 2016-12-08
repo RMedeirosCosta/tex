@@ -19,13 +19,7 @@
 \contentsline {subsubsection}{\numberline {2.3.5}Uni\~ao e Interse\c c\~ao de Conjuntos}{10}{subsubsection.2.3.5}
 \contentsline {subsubsection}{\numberline {2.3.6}Propriedades}{11}{subsubsection.2.3.6}
 \contentsline {subsection}{\numberline {2.4}Trabalhos Anteriores}{11}{subsection.2.4}
-\contentsline {section}{\numberline {3}Materiais e M\'etodos}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}Conjunto de dados...}{11}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Pr\~A\IeC {\copyright }-processamento}{11}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Extra\~A\IeC {\S }\~A\IeC {\pounds }o de caracter\~A\discretionary {-}{}{}sticas}{12}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Treinamento}{12}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Processo de valida\~A\IeC {\S }\~A\IeC {\pounds }o}{12}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Valida\~A\IeC {\S }\~A\IeC {\pounds }o cruzada generalizada}{13}{subsubsection.3.5.1}
-\contentsline {section}{\numberline {4}Resultados}{13}{section.4}
-\contentsline {section}{\numberline {5}Cronograma}{13}{section.5}
+\contentsline {section}{\numberline {3}Materiais e M\'etodos}{12}{section.3}
+\contentsline {section}{\numberline {4}Resultados}{12}{section.4}
+\contentsline {section}{\numberline {5}Cronograma}{12}{section.5}
 \contentsline {section}{\numberline {6}Conclus\~oes}{13}{section.6}
