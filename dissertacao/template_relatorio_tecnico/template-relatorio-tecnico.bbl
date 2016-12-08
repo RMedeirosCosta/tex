@@ -1,5 +1,11 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{LBAO{\etalchar{+}}05}
+\begin{thebibliography}{hCCbUoBE05}
+
+\bibitem[BCG{\etalchar{+}}10]{barash2010}
+Yoseph Barash, John~A Calarco, Weijun Gao, Qun Pan, Xinchen Wang, Ofer Shai,
+  Benjamin~J Blencowe, and Brendan~J Frey.
+\newblock Deciphering the splicing code.
+\newblock {\em Nature}, 465(7294):53--59, 2010.
 
 \bibitem[Bla03]{black2003}
 Douglas~L. Black.
@@ -38,6 +44,12 @@ Hugues~Roest Crollius, Olivier Jaillon, Alain Bernot, Corinne Dasilva, Laurence
   tetraodon nigroviridis dna sequence.
 \newblock {\em Nature genetics}, 25(2):235--238, 2000.
 
+\bibitem[CLJ{\etalchar{+}}15]{chikhi2015}
+Rayan Chikhi, Antoine Limasset, Shaun Jackman, Jared~T Simpson, and Paul
+  Medvedev.
+\newblock On the representation of de bruijn graphs.
+\newblock {\em Journal of Computational Biology}, 22(5):336--352, 2015.
+
 \bibitem[CR12]{chikhi2012}
 Rayan Chikhi and Guillaume Rizk.
 \newblock Space-efficient and exact de bruijn graph representation based on a
@@ -50,6 +62,12 @@ Brent Ewing and Phil Green.
 \newblock Analysis of expressed sequence tags indicates 35,000 human genes.
 \newblock {\em Nature genetics}, 25(2):232--234, 2000.
 
+\bibitem[FHBS04]{fairbrother2004}
+William~G Fairbrother, Dirk Holste, Christopher~B Burge, and Phillip~A Sharp.
+\newblock Single nucleotide polymorphism--based validation of exonic splicing
+  enhancers.
+\newblock {\em PLoS Biol}, 2(9):e268, 2004.
+
 \bibitem[GHY{\etalchar{+}}11]{grabherr2011}
 Manfred~G Grabherr, Brian~J Haas, Moran Yassour, Joshua~Z Levin, Dawn~A
   Thompson, Ido Amit, Xian Adiconis, Lin Fan, Raktima Raychowdhury, Qiandong
@@ -57,6 +75,12 @@ Manfred~G Grabherr, Brian~J Haas, Moran Yassour, Joshua~Z Levin, Dawn~A
 \newblock Full-length transcriptome assembly from rna-seq data without a
   reference genome.
 \newblock {\em Nature biotechnology}, 29(7):644--652, 2011.
+
+\bibitem[hCCbUoBE05]{clark2005}
+David P. Clark~BA (honors)Christ's College Cambridge 1973<br>PhD University~of
+  Brsitol (England)~1977.
+\newblock {\em Molecular Biology}.
+\newblock Academic Cell, 2005.
 
 \bibitem[HZZ{\etalchar{+}}09]{he2009}
 Chunjiang He, Fang Zhou, Zhixiang Zuo, Hanhua Cheng, and Rongjia Zhou.
@@ -77,6 +101,12 @@ Shaun~D Jackman, Benjamin~P Vandervalk, Hamid Mohamadi, Justin Chu, Sarah Yeo,
 \newblock Abyss 2.0: Resource-efficient assembly of large genomes using a bloom
   filter.
 \newblock {\em bioRxiv}, 2016.
+
+\bibitem[KZC08]{ke2008}
+Shengdong Ke, Xiang H-F Zhang, and Lawrence~A Chasin.
+\newblock Positive selection acting on splicing motifs reflects compensatory
+  evolution.
+\newblock {\em Genome research}, 18(4):533--543, 2008.
 
 \bibitem[LBAO{\etalchar{+}}05]{lopez2005}
 N{\'u}ria L{\'o}pez-Bigas, Benjamin Audit, Christos Ouzounis, Gen{\'\i}s Parra,
@@ -122,12 +152,30 @@ Qun Pan, Ofer Shai, Leo~J Lee, Brendan~J Frey, and Benjamin~J Blencowe.
   transcriptome by high-throughput sequencing.
 \newblock {\em Nature genetics}, 40(12):1413--1415, 2008.
 
+\bibitem[PT01]{pevzner2001fragment}
+Pavel~A Pevzner and Haixu Tang.
+\newblock Fragment assembly with double-barreled data.
+\newblock {\em Bioinformatics}, 17(suppl 1):S225--S233, 2001.
+
+\bibitem[PTW01]{pevzner2001eulerian}
+Pavel~A Pevzner, Haixu Tang, and Michael~S Waterman.
+\newblock An eulerian path approach to dna fragment assembly.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  98(17):9748--9753, 2001.
+
 \bibitem[RAR{\etalchar{+}}81]{rosenfeld1981}
 Michael~G Rosenfeld, Susan~G Amara, Bernard~A Roos, Estelita~S Ong, and
   Ronald~M Evans.
 \newblock Altered expression of the calcitonin gene associated with rna
   polymorphism.
 \newblock 1981.
+
+\bibitem[RCG{\etalchar{+}}09]{reid2009}
+Daniel~C Reid, Brian~L Chang, Samuel~I Gunderson, Lauren Alpert, William~A
+  Thompson, and William~G Fairbrother.
+\newblock Next-generation selex identifies sequence and structural determinants
+  of splicing factor binding in human pre-mrna sequence.
+\newblock {\em RNA}, 15(12):2385--2397, 2009.
 
 \bibitem[RLA{\etalchar{+}}82]{rosenfeld1982}
 Michael~G Rosenfeld, Chijen~R Lin, Susan~G Amara, Lana Stolarsky, Bernard~A
@@ -162,9 +210,36 @@ Rolf~I Skotheim and Matthias Nees.
 \newblock {\em The international journal of biochemistry \& cell biology},
   39(7):1432--1449, 2007.
 
+\bibitem[Tod33]{todd1933}
+J~Ax Todd.
+\newblock A combinatorial problem.
+\newblock {\em journal of Mathematics and Physics}, 12(1):321--333, 1933.
+
+\bibitem[WB08]{wang2008}
+Zefeng Wang and Christopher~B Burge.
+\newblock Splicing regulation: from a parts list of regulatory elements to an
+  integrated splicing code.
+\newblock {\em Rna}, 14(5):802--813, 2008.
+
+\bibitem[WB10]{warf2010}
+M~Bryan Warf and J~Andrew Berglund.
+\newblock Role of rna structure in regulating pre-mrna splicing.
+\newblock {\em Trends in biochemical sciences}, 35(3):169--178, 2010.
+
 \bibitem[WC10]{ward2010}
 Amanda~J Ward and Thomas~A Cooper.
 \newblock The pathobiology of splicing.
 \newblock {\em The Journal of pathology}, 220(2):152--163, 2010.
+
+\bibitem[ZB08]{zerbino2008}
+Daniel~R Zerbino and Ewan Birney.
+\newblock Velvet: algorithms for de novo short read assembly using de bruijn
+  graphs.
+\newblock {\em Genome research}, 18(5):821--829, 2008.
+
+\bibitem[ZL87]{zhang1987}
+Fu~Ji Zhang and Guo~Ning Lin.
+\newblock On the de bruijn-good graphs.
+\newblock {\em Acta Math. Sinica}, 30(2):195--205, 1987.
 
 \end{thebibliography}

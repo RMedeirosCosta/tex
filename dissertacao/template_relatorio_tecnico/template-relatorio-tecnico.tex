@@ -115,7 +115,25 @@ A presença de um particular elemento de sequência de RNA \emph{cis-acting} pode 
 
 \subsection{De Bruijn graph}
 \label{ssec:dbg}
-Esse é o De Bruijn Graph
+Na teoria dos grafos, um \emph{n}-dimensional De Bruijn graph de \emph{m} símbolos é um grafo direcionado representando sobreposições entre sequências de símbolos. Esta estrutura tem $m^{n}$ vértices, cujo são todas as possíveis sequências de tamanho-\emph{n} de um conjunto de símbolos dado. O mesmo símbolo pode aparecer múltiplas vezes na sequência. Se temos o conjunto de \emph{m} símbolos $ S = \{ s_1, \ldots, s_m\}$ então o conjunto de vértices é: \cite{todd1933} \\
+$$ V = S^{n} = \{(s_1, \ldots, s_1, s_1), (s_1, \ldots, s_1, s_2), \ldots, (s_1, \ldots, s_1, s_m), (s_1, \ldots, s_2, s_1), \ldots, (s_m, \ldots, s_m, s_m) \} $$\\
+Se um dos vértices pode ser expresso como outro vértice trocando todos os seus símbolos por uma posição até a esquerda e adicionando um novo símbolo ao final deste vértice, então o último tem uma aresta direcionada para o vértice anterior. Devido a isso o conjunto de vértices é: \cite{todd1933}
+$$ E = \{((v_1, v_2, \ldots, v_n), (v_2, \ldots, v_n, s_1)) : i = 1, \ldots, m \} $$
+
+\subsubsection{Propriedades}
+\label{sssec:propriedades_dbg}
+De Bruijn graphs devem satisfazer as seguintes propriedades: \cite{todd1933}\\
+\begin{itemize}
+    \item Se $ n = 1 $ então a condição para dois vértices quaisquer formar uma aresta se mantém vazia, portanto, todos os vértices estão conectados formando um total de $ m^{2} $ arestas.
+    \item Cada vértice tem exatamente $m$ arestas de entradas e saída.
+    \item Cada $n$-dimensional De Bruijn graph é um grafo linha de $(n - 1)$-dimensional De Bruijn graph com o mesmo conjunto de símbolos \cite{zhang1987}.
+    \item Cada De Bruijn graph é Euleriano e Hamiltoniano. Os ciclos de Euler e Hamilton desses grafos (equivalente entre si por meio de uma construção do grafo linha) são De Bruijn sequences.    
+\end{itemize}
+
+\subsubsection{Utilização}
+\label{sssec:utilização_dbg}
+Em bioninformática, De Bruijn graphs são utilizados em \emph{de novo assembly} de sequências curtas de leitura (\emph{short read sequences}) de um genoma/transcriptoma \cite{pevzner2001eulerian}  \cite{pevzner2001fragment} \cite{zerbino2008} \cite{chikhi2015}.
+
 
 \subsection{Bloom Filter}\label{ssec:bf}
 Esse é o Bloom Filter
